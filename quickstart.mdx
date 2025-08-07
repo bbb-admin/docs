@@ -1,80 +1,209 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Create and Connect WhatsApp API"
 ---
 
-## Get started in three steps
+If you are ready to start working with the "WhatsApp Cloud API" and boost your business potential, here is a guide on how to integrate a number into your WhatsApp account. Please remember to check the **"Requirements section"** so you can follow the process smoothly.
 
-Get your documentation site running locally and make your first customization.
+## Requirements Before You Start the Process
 
-### Step 1: Set up your local environment
+- **Verified Meta Business Manager (Business Verification)**
+- Your business must be verified by Meta with legal documents.
+- 
+- **Admin Access to Meta Business Manager**
+- You must have full control access in your Business Manager account.
+- 
+- \*\*A Phone Number (Clean & Unused)\*\*‍
+- Not currently used on any WhatsApp (personal or business).
+- **Can receive SMS or phone calls for verification.**
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+**- If your number is active on WhatsApp, you must delete the WhatsApp account first.** To do so, please follow [steps 3-5 of this process](https://developers.facebook.com/docs/whatsapp/on-premises/get-started/migrate-existing-whatsapp-number-to-a-business-account).
 
-### Step 2: Deploy your changes
+- **Highly Recommended**
+- Use a **new phone number** that has never been used on WhatsApp to ensure a smooth process.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+**Business Details Ready:**
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+- Business name, address, website or social media page, email.
+- 
+- Legal documents (NPWP, SIUP, or equivalent).
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+## **Create Meta Business Manager (if you don’t have one)**
 
-### Step 3: Go live
+- Go to [business.facebook.com](http://business.facebook.com) and create a new Business Account.
+- 
+- Complete your business information and verify your email address.
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+⚠️ **Make sure your Facebook account has Full Control (Admin Access)** in Business Settings → People. This is required to continue the integration process.
 
-## Next steps
+### **Verify Your Business Manager**
 
-Now that you have your docs running, explore these key features:
+- In Business Settings, go to Security Center → Business Verification.
+- 
+- Submit your legal business documents (e.g. NPWP, SIUP, or other equivalent documents as required).
 
-<CardGroup cols={2}>
+⚠️ **Business verification is mandatory** to unlock full WhatsApp API access and use it for real customer messaging.
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+## Integration Process
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+**Step 1: Access Integrations**
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+1. **Navigate** to the "[Integrations](https://app.bitbybit.studio/integrations)" dashboard. Select “Connect” in WhatsApp Cloud API.
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/DYCjY1Liavnk6XO4nenhyJoi.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
 
-</CardGroup>
+Select "Connect"
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+**Step 2:** Connect your Facebook account
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/AT3m3nXkdpIcnGLpo3hL8lWM.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Connect your Facebook account
+
+1. **Click** "Continue as your Facebook Account".
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/m0jeY3R45y9huNIpsFqQ8lgR.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+**Click** "Continue as your Facebook Account"
+
+2. **Click** "Get started".
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/D6zjrMQqQXiODky9oRMlhi2R.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+**Click** "Get started"
+
+## Create New Business Information 
+
+⚠️ This step will only be necessary if you are creating a new Facebook Business Manager Account.
+
+1. On the "**Fill in your business information**", click the "Business portfolio" dropdown and choose between:
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/FoEN8hMFw1YQM0XOQQdsAsMc.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Create business portfolio
+
+- **Create a business portfolio** and fill in details like "Business name," "Business email," "Business website or profile page," and "Country".
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/prTv6leF6fudyDLa6j0Atja7.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Create a business portfolio
+
+- Or select an existing **business portfolio** from the dropdown, which will auto-fill the form.
+- Click **"Next"**.
+
+4. On the  "**Create or select your WhatsApp Business Account**", click the "Create a WhatsApp Business Account" and “Create or Choose WhatsApp Business Profile” dropdown and choose between:
+
+- Choose "Create a WhatsApp Business Account" and in the next dropdown, "Create a new WhatsApp Business Profile."
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/8M4Uib6VfTB6DqiNHszSsi1j.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Create or select your WhatsApp Business Account
+
+- Fill in "WhatsApp Business Account Name," "WhatsApp Business display name," and "Category". Then click “Next”.
+- 
+- ⚠️ **We recommend using the same "Display Name" as the branding on your website.**[Check the Display name guidelines.](https://www.facebook.com/business/help/757569725593362)
+- 
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/LTFNvR3uubGVbrJonnjyNvT5.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Create your WhatsApp Business Profile
+
+Or Select Existing Facebook Business Manager
+
+- Or select an existing “WhatsApp Business account” and, in the "Create or choose WhatsApp Business Profile" dropdown, choose to "Create a new WhatsApp Business profile."
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/pnkx5CP5rx0PtX1a7oLCoSay.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Create your WhatsApp Business Account
+
+⚠️ **Importance\!** **You can create multiple profiles on your WhatsApp Business account.**
+
+## Add A Phone Number for WhatsApp
+
+Add the phone number that you will be connecting with [bitbybit Studio](https://app.bitbybit.studio/integrations). Please remember that this number can't be used simultaneously in WhatsApp business or the WhatsApp consumer app.
+
+Or, get a free WhatsApp number: WhatsApp will generate a \+1 555 number to use exclusively for sending messages. It cannot be used to start or receive calls or texts. No verification is required. [This option will be available for selected accounts.](https://developers.facebook.com/docs/whatsapp/embedded-signup/#555-business-phone-numbers)
+
+Once done, click "Next".
+
+If the existing phone number is active on one of the WhatsApp apps, you'll need to delete it from the app. To do so, please [follow steps 3-5 of this process.](https://developers.facebook.com/docs/whatsapp/on-premises/get-started/migrate-existing-whatsapp-number-to-a-business-account)
+
+5. Enter a **phone number** to receive the **verification code** in "Add a new or existing number."
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/po7Et2WpNaMexSHxNhuIZ11V.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Enter a phone number to receive the verification code
+
+## Insert verification code
+
+⚠️Make sure your phone number is able to receive SMS or phone calls for verification
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/Qh7GRETBQDk6EeAPPdJ8Gl6M.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Insert your verification code
+
+Note: We highly recommend enabling **two-factor authentication** for enhanced security.
+
+## **Add Payment Method**
+
+1. \*\*\*\* Complete the process by clicking **"Add payment method"**
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/hqnbxujmLemismDlIJRCoDvN.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Add payment method
+
+**Please pay attention**: To unlock additional features and other advanced functionalities, **you need to add a payment method**.
+
+- If you **skip** adding a payment method, your WhatsApp Cloud API will **still be connected**, but some features **will be restricted** like message templates and campaigns.
+
+To fully activate your WhatsApp Cloud API and unlock all messaging features, you need to add a payment method in Meta Business Manager. Please follow the steps below carefully:
+
+1. Go to Business Settings at[ business.facebook.com](https://business.facebook.com).
+2. In the left sidebar, select Settings and click WhatsApp Accounts.
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/s5TPqDs69TGQEO1WmErqxqm4.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Settings \> WhatsApp Account
+
+1. Select the WhatsApp Business Account you’ve just connected.
+2. Scroll down and click Payment Settings.
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/NqaMm4cNqxu5j9PnQAkSwEti.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Scroll down and click "Payment Settings"
+
+1. Click Add Payment Method and complete the required billing details.
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/w5MPHzMxsMXd7kJGF4cXK1wa.png?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Click " Add payment method"
+
+1. Fill in all Business Information as requested (name, legal entity, billing address, etc).
+2. After saving, make sure there are no alerts or warnings on the payment settings page.
+
+### **Test Your WhatsApp API**
+
+After setting up WhatsApp Cloud API including adding the payment method, send a test message, test it by sending a message using a **Campaign, Automation, or Chat Initiation** template. Follow these guides to create your template:
+
+- **Campaign**:[Create Template Campaign](http://www.bitbybit.studio/knowledge-base/how-to-create-a-message-template-campaign-for-whatsapp-api)
+- 
+- **Automation**:[Create Template Automation](http://www.bitbybit.studio/knowledge-base/how-to-create-a-message-template-for-whatsapp-business-app-automation%20WA%20API)
+- 
+- **Chat Initiation**: [Create Template Chat Initiation](http://www.bitbybit.studio/knowledge-base/how-to-create-a-chat-initiation-template)
+
+Note that Meta categorizes messages into conversation rate: \*\*\*\* Authentication, Marketing, Utility, Service. Check Meta’s pricing details[ here](https://business.whatsapp.com/products/platform-pricing).
+
+Once your template is created, test it in [bitbybit’s LiveChat](https://app.bitbybit.studio/bitchat/livechat) page to ensure it sends and receives successfully.
+
+**⚠️** If the message successfully delivers, your integration is 100% complete.
+
+**⚠️** If it fails, recheck the steps above, especially your payment status and phone number verification.
+
+**The message** you sent should appear on the **bitbybit** Livechat page.
+
+![](https://slabstatic.com/prod/assets/1f9l4mft/post/tf0yjeyi/images/lgStjWEdt4488nkX9zATvzgT.jpeg?jwt=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3NsYWJzdGF0aWMuY29tIiwiZXhwIjoxNzU1NTkxNzUwLCJpYXQiOjE3NTQzODIxNTAsImlzcyI6Imh0dHBzOi8vYXBwLnNsYWIuY29tIiwianRpIjoiMzFjZDJoYmFjbjRkaGRkcTB1NmFpMTgzIiwibmJmIjoxNzU0MzgyMTUwLCJwYXRoIjoicHJvZC9hc3NldHMvMWY5bDRtZnQvcG9zdC90ZjB5amV5aSJ9.aVazOFLjJt6-aXc5_KQITTDFVsMR9nDIhTIqhE17_0n5vNdWzK8Q84QyQdBQ6LCJ7bytydMFf2uWPnE1uxEJj_B2YGblb0Zqj2XcM4F9U0QXvbAVPB9UisLjlgf9kuJUhhUO08cy5Wnq2fLxKvJuEEKMJP2qqGmDlfRIKu2PbbQbpWOudYUJyMzd-RmLzLMJkhL7QDM1YzoHe43zqo0bXDjMSLH7xszXroP-1jfZcW0loV2ej-3iftz6IqCM67n9JVNWNjxGH_I3M2vN5uAzTRz5_S5rTSFzwqObfkCSTu_rXzOKrI_NBTYbu_zPiaBc39YQJxC8LQzsAycwZk7EZg)
+
+Display message
+
+**Congratulations\! You have successfully created and connected your WhatsApp Cloud API with bitbybit**. This powerful integration will help you manage your customer communications more efficiently, providing a seamless and professional experience for your clients.
+
+Happy messaging\!
