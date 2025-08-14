@@ -1,86 +1,54 @@
----
-title: "Logging in to Shopify with bitLogin"
----
+# Logging in to Shopify with bitLogin – Quick Customer Guide
 
-This guide explains how you can sign up and log in to your Shopify customer account using either the standard Shopify login or **bitLogin** (social login with Google, Facebook, Apple, Microsoft, Amazon, etc.).\
-It also covers why some login attempts may fail and how to avoid these issues.
+This guide explains the easiest way to log in to your Shopify account using either Shopify login or **bitLogin** (social login like Google, Facebook, Apple, Microsoft, Amazon, etc.).  
+Follow the rules below to avoid login errors.
 
 ---
 
-## 1. Understanding Your Login Options
+## Required Before Login
 
-You can access your Shopify account in two ways:
-
-1. **Shopify Login**
-   - Use your email and password set when signing up via Shopify.
-2. **bitLogin**
-   - Use a social account (Google, Facebook, Apple, Microsoft, Amazon, etc.).
-   - **Important:** Every time you log in with bitLogin, your Shopify password will be automatically reset for security reasons.
+- ✅ If you **last logged in with bitLogin** → **Reset your password** before using Shopify login (email & password).
+- ✅ If you **only use Shopify login** → No reset needed.
+- ✅ If you **only use bitLogin** → No reset needed, just keep using social login.
 
 ---
 
-## 2. Signing Up for the First Time
+## Quick Outcome Table
 
-- **Sign up via Shopify:**\
-  You will create a Shopify customer account by entering your first name, last name, email, and password.
-- **Sign up via bitLogin:**\
-  A new Shopify customer account will be created automatically using your social account details.
+| Sign Up Method | Next Login | Following Login | Works? | Action Needed |
+|----------------|------------|-----------------|--------|---------------|
+| Shopify        | Shopify    | bitLogin        | ✅      | None |
+| Shopify        | bitLogin   | Shopify         | ❌      | Reset password before last step |
+| bitLogin       | bitLogin   | Shopify         | ❌      | Reset password before last step |
+| bitLogin       | Shopify    | bitLogin        | ✅      | None |
 
 ---
 
-## 3. How Password Reset Works with bitLogin
+## Why This Happens
 
-When you log in using bitLogin, Shopify will reset your account password automatically.\
+When you log in with **bitLogin**, your Shopify password is automatically reset for security reasons.  
 This means:
-
-- If you try to log in later using **Shopify login** (email/password), it may fail because the password has changed.
-- To log in again via Shopify after using bitLogin, you must reset your password first.
-
----
-
-## 4. Successful Login Scenarios ✅
-
-From customer testing, the following sequences work without any issues:
-
-1. **Sign up with Shopify → Sign in with Shopify → Sign in with bitLogin**
-   - Works fine. Password is only reset when you use bitLogin, but since the last login was bitLogin, future Shopify logins will require a reset.
-2. **Sign up with bitLogin → Sign in with bitLogin → Sign in with Shopify** _(after resetting password)_
-   - Works if password reset is completed before logging in with Shopify.
-3. **Sign up with bitLogin → Sign in with Shopify → Sign in with bitLogin**
-   - Works fine; just note that after using bitLogin again, the password is reset.
-4. **Sign up with Shopify → Sign in with bitLogin → Sign in with Shopify** _(after resetting password)_
-   - Works if password reset is completed before logging in with Shopify.
+- Trying to log in later via **Shopify login** will fail unless you reset your password first.
+- Using **bitLogin** again will always work because it doesn’t need your Shopify password.
 
 ---
 
-## 5. Failed Login Scenarios ❌
+## How to Reset Your Password
 
-These happen when trying to log in with Shopify after using bitLogin, **without** resetting the password:
-
-- **Sign up with bitLogin → Sign in with bitLogin → Sign in with Shopify (no password reset)**
-  - Fails because bitLogin reset the password.
-- **Sign up with Shopify → Sign in with bitLogin → Sign in with Shopify (no password reset)**
-  - Fails for the same reason.
-
----
-
-## 6. How to Avoid Login Problems
-
-- **If you last logged in with bitLogin** → Always reset your password before trying Shopify login again.
-- **If you only use Shopify login** → No reset needed; your password remains unchanged.
-- **If you only use bitLogin** → No issues; just keep using social login.
+1. Go to Shopify login page.
+2. Click **Forgot password?**
+3. Check your email and follow the reset link.
+4. Set your new password.
+5. Use Shopify login again with the new password.
 
 ---
 
-## 7. Recommended Practice
+## Tips to Avoid Login Issues
 
-To ensure smooth access:
-
-- Decide on your primary login method and stick to it as much as possible.
-- If you switch from bitLogin to Shopify login, reset your password first.
-- Keep your email address consistent across both Shopify and bitLogin accounts to avoid account duplication.
+- Decide your main login method and stick to it.
+- If switching from bitLogin to Shopify login → always reset your password first.
+- Keep the same email address for Shopify and bitLogin accounts to avoid duplicate profiles.
 
 ---
 
-This guide covers all possible customer login flows, their outcomes, and how to prevent login failures.\
-By understanding how bitLogin works with Shopify, you can always access your account successfully.
+By following these quick steps, you can ensure your login always works without frustration.
