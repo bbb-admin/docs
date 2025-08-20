@@ -1,0 +1,105 @@
+---
+title: "How to Set Up Facebook OAuth"
+description: "Step-by-step guide to integrating Facebook login with bitLogin for seamless user authentication."
+---
+
+import {Step, StepList, Alert} from "@mintlify/components";
+
+# How to Set Up Facebook OAuth
+
+Integrating Facebook login into your application allows users to authenticate using their Facebook credentials, providing a seamless and secure login experience. Follow these steps to set up Facebook OAuth with bitLogin.
+
+## Step 1: Create a Facebook Developer Account
+
+- Visit the [Facebook for Developers](https://developers.facebook.com) website.
+- Click on **"Get Started"** or log in with your existing Facebook credentials.
+
+<img
+  src="/images/facebook-developer-login.png"
+  alt="Facebook Developer Login"
+  className="rounded-lg"
+/>
+
+## Step 2: Create a New App
+
+- Navigate to the [Facebook Apps](https://developers.facebook.com/apps/) page.
+- Click on **"Create App"**.
+- Select **"Consumer"** as the app type.
+- Enter your app name, contact email, and choose a Business Account.
+- Click **"Create App"**.
+
+<img
+  src="/images/create-facebook-app.png"
+  alt="Create Facebook App"
+  className="rounded-lg"
+/>
+
+## Step 3: Configure Use Case
+
+- In the left sidebar, click on **"Use Case"**.
+- Under **"Authentication and Account Creation"**, click **"Customize"**.
+- In the permissions section, click **"Add"** for **email** and wait for its status to update to **"Ready for testing"**.
+- Click **"Go To Settings"**.
+- In the **"Valid OAuth Redirect URIs"** section, input:
+  `https://api.bitbybit.studio/bitlogin/api/login/facebook/callback`
+- Click **"Save Changes"** and return to the dashboard.
+
+<img
+  src="/images/facebook-use-case.png"
+  alt="Facebook Use Case Configuration"
+  className="rounded-lg"
+/>
+
+## Step 4: App Settings Configuration
+
+- Navigate to **"App Settings"** > **"Basic"**.
+- Fill in the required details:
+- **Display Name**: Enter your store's name.
+- **Namespace**: Optional.
+- **App Domains**: Enter your store’s domain.
+- **Privacy Policy URL**: Use your store’s privacy policy URL or [https://bitbybit.studio/privacy](https://bitbybit.studio/privacy).
+- **Terms of Service URL**: Use your store’s terms URL or [https://www.bitbybit.studio/terms-conditions](https://www.bitbybit.studio/terms-conditions).
+- **App Icon**: Upload your store’s logo.
+- **Category**: Select "Utility & Productivity".
+- **User Data Deletion**: Enter [https://www.bitbybit.studio/terms-conditions](https://www.bitbybit.studio/terms-conditions).
+- Click **"Save Changes"**.
+
+<img
+  src="/images/facebook-app-settings.png"
+  alt="Facebook App Settings"
+  className="rounded-lg"
+/>
+
+## Step 5: Configure Facebook OAuth in bitLogin
+
+- Copy your **"App ID"** and **"App Secret"**.
+- Go to the [bitLogin Facebook Settings](https://app.bitbybit.studio) page.
+- Paste your **"App ID"** and **"App Secret"** into the respective fields.
+- Click **"Save Changes"**.
+- Enable the **"Use your store name on Facebook login"** toggle until it turns green.
+
+<img
+  src="/images/bitlogin-facebook-setup.png"
+  alt="Configure Facebook OAuth in bitLogin"
+  className="rounded-lg"
+/>
+
+## Step 6: Publish Your Facebook App
+
+- Go to the **"Go Live"** section.
+- Verify your business, then select your verified business.
+- Answer the required questions in the **"Data Handling Questions"** section.
+- Click **"Go Live"** to make the app publicly accessible for Facebook login.
+- Once published, the Facebook login will be ready to use in your store.
+
+<img
+  src="/images/facebook-app-publish.png"
+  alt="Publish Facebook App"
+  className="rounded-lg"
+/>
+
+## Step 7: Completion
+
+Congratulations! You've successfully set up Facebook OAuth and obtained your App ID and App Secret. Make sure to store your app secret securely, as it’s crucial for authentication.
+
+For further assistance, reach out to us at [help@bitbybit.studio](mailto:help@bitbybit.studio).

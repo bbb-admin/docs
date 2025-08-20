@@ -16,7 +16,6 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
               "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
               "bitcrm/how-to-connect-whatsapp-business-app",
               "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
@@ -48,9 +47,7 @@
               "bitcrm/how-to-test-and-preview-your-automation",
               "bitcrm/understanding-the-unsubscribe-option-for-messages",
               "bitcrm/how-to-edit-or-delete-an-automation",
-              "bitcrm/how-to-use-dynamic-variables-in-automation-messages",
-              "bitcrm/how-to-create-a-message-template-for-whatsapp-api-automation",
-              "bitcrm/how-to-create-a-message-template-for-whatsapp-business-app-automation"
+              "bitcrm/how-to-use-dynamic-variables-in-automation-messages"
             ]
           },
           {
@@ -91,42 +88,130 @@
         "tab": "bitChat",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting started with bitChat",
             "pages": [
-              "api-reference/introduction"
+              "bitchat/how-to-create-and-connect-whatsapp-cloud-api-with-bitbybit",
+              "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-facebook",
+              "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-the-app",
+              "bitchat/how-to-connect-whatsapp-business-app-with-bitbybit",
+              "bitchat/how-to-integrate-your-instagram-business-with-bitchat",
+              "bitchat/how-to-integrate-facebook-messenger-with-bitchat"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Working with Livechat",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "bitchat/understanding-the-anatomy-of-multi-agent-chat",
+              "bitchat/how-to-filter-chat",
+              "bitchat/how-to-start-chat-with-a-new-number",
+              "bitchat/how-to-create-a-quick-reply-template",
+              "bitchat/how-to-edit-or-delete-a-quick-reply-template",
+              "bitchat/how-to-create-a-ticket-category",
+              "bitchat/how-to-filter-customer-chat-by-ticket",
+              "bitchat/how-to-create-and-organize-tickets",
+              "bitchat/how-to-resolve-tickets-automatically",
+              "bitchat/understanding-users-role-authority-super-admin-admin-agents-regular-user"
+            ]
+          },
+          {
+            "group": "Creating and Editing Chatbot",
+            "pages": [
+              "bitchat/how-to-create-a-chatbot-flow",
+              "bitchat/how-to-create-and-activate-welcome-message",
+              "bitchat/how-to-create-and-activate-away-message",
+              "bitchat/how-to-set-a-fallback-template"
+            ]
+          },
+          {
+            "group": "Setting Up Chat Widget",
+            "pages": [
+              "bitchat/how-to-add-chat-widget-to-your-store",
+              "bitchat/how-to-add-message-text-to-your-stores-chat-widget",
+              "bitchat/how-to-add-quick-responses",
+              "bitchat/how-to-set-up-chat-widget-appearance",
+              "bitchat/how-to-hide-chat-widget-on-specific-pages"
+            ]
+          },
+          {
+            "group": "AI Settings",
+            "pages": [
+              "bitchat/how-to-create-and-set-up-your-ai-agent-persona",
+              "bitchat/understanding-ai-tagging-and-how-you-can-utilize-them"
+            ]
+          },
+          {
+            "group": "Other Settings",
+            "pages": [
+              "bitchat/how-to-set-and-customize-your-operational-hours",
+              "bitchat/how-to-blast-a-rating-review-for-customer-service",
+              "bitchat/how-to-blast-a-rating-review-for-chatbot",
+              "bitchat/how-to-setup-chat-notifications",
+              "bitchat/how-to-create-a-chat-initiation-template"
+            ]
+          },
+          {
+            "group": "WhatsApp Form",
+            "pages": [
+              "bitchat/how-to-create-a-whatsapp-form"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "bitLogin",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "bitlogin/how-to-activate-bitlogin-from-shopify"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "bitlogin/how-to-set-up-google-oauth-google-one-tap",
+              "bitlogin/how-to-set-up-amazon-oauth",
+              "bitlogin/how-to-set-up-microsoft-oauth",
+              "bitlogin/how-to-set-up-facebook-oauth"
+            ]
+          },
+          {
+            "group": "Appearance",
+            "pages": [
+              "bitlogin/how-to-adjust-social-buttons-appearance"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "bitlogin/how-to-disable-hcaptcha-on-shopify",
+              "bitlogin/quick-fix-continue-with-google-invalid-email-or-incorrect-password"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "bitApp",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "bitapp/how-to-setup-your-bitapp-account"
+            ]
+          },
+          {
+            "group": "Designing & Editing",
+            "pages": [
+              "bitapp/how-to-design-your-homepage",
+              "bitapp/how-to-add-an-image-slider",
+              "bitapp/how-to-edit-or-delete-an-image-slider",
+              "bitapp/how-to-move-and-arrange-image-slider",
+              "bitapp/how-to-add-a-link-to-an-image-slider"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/bbb-logo-dark.png",

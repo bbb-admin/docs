@@ -1,0 +1,137 @@
+---
+title: "How to Create and Connect WhatsApp Cloud API with bitbybit"
+description: "Integrating WhatsApp Cloud API with bitbybit enhances your customer communication capabilities. Follow this step-by-step guide to set up and connect your WhatsApp Cloud API."
+---
+
+import {Step, StepList, Alert} from "@mintlify/components";
+
+## Requirements Before You Start
+
+- **Verified Meta Business Manager**: Your business must be verified by Meta with legal documents.
+- **Admin Access to Meta Business Manager**: Ensure you have full control access in your Business Manager account.
+- **A Phone Number (Clean & Unused)**:
+  - Not currently used on any WhatsApp (personal or business).
+  - Can receive SMS or phone calls for verification.
+  - If your number is active on WhatsApp, you must delete the WhatsApp account first. Follow steps 3-5 of this process.
+- **Business Details Ready**:
+  - Business name, address, website or social media page, email.
+  - Legal documents (NPWP, SIUP, or equivalent).
+
+## Step 1: Create Meta Business Manager (if you don’t have one)
+
+- Go to [business.facebook.com](https://business.facebook.com) and create a new Business Account.
+- Complete your business information and verify your email address.
+
+⚠️ Make sure your Facebook account has Full Control (Admin Access) in Business Settings → People. This is required to continue the integration process.
+
+## Step 2: Verify Your Business Manager
+
+- In Business Settings, go to Security Center → Business Verification.
+- Submit your legal business documents (e.g., NPWP, SIUP, or other equivalent documents as required).
+
+⚠️ Business verification is mandatory to unlock full WhatsApp API access and use it for real customer messaging.
+
+## Step 3: Access Integrations
+
+- Navigate to the [Integrations](https://app.bitbybit.studio) dashboard.
+- Select “Connect” in WhatsApp Cloud API.
+
+<img
+  src="/images/integrations-dashboard.png"
+  alt="Integrations Dashboard"
+  className="rounded-lg"
+/>
+
+## Step 4: Connect Your Facebook Account
+
+- Click "Continue as your Facebook Account".
+- Click "Get started".
+
+<img
+  src="/images/facebook-login.png"
+  alt="Facebook Login"
+  className="rounded-lg"
+/>
+
+## Step 5: Create New Business Information
+
+⚠️ This step will only be necessary if you are creating a new Facebook Business Manager Account.
+
+- On the "Fill in your business information", click the "Business portfolio" dropdown and choose between:
+  - Create a business portfolio and fill in details like "Business name," "Business email," "Business website or profile page," and "Country".
+  - Or select an existing business portfolio from the dropdown, which will auto-fill the form.
+- Click "Next".
+
+## Step 6: Create or Select Your WhatsApp Business Account
+
+- On the "Create or select your WhatsApp Business Account", click the "Create a WhatsApp Business Account" and “Create or Choose WhatsApp Business Profile” dropdown and choose between:
+  - Choose "Create a WhatsApp Business Account" and in the next dropdown, "Create a new WhatsApp Business Profile."
+  - Fill in "WhatsApp Business Account Name," "WhatsApp Business display name," and "Category". Then click “Next”.
+  - Or select an existing “WhatsApp Business account” and, in the "Create or choose WhatsApp Business Profile" dropdown, choose to "Create a new WhatsApp Business profile."
+
+⚠️ Importance! You can create multiple profiles on your WhatsApp Business account.
+
+## Step 7: Add A Phone Number for WhatsApp
+
+- Add the phone number that you will be connecting with bitbybit Studio. Please remember that this number can't be used simultaneously in WhatsApp business or the WhatsApp consumer app.
+- Enter a phone number to receive the verification code in "Add a new or existing number."
+- Insert your verification code.
+
+⚠️ Make sure your phone number is able to receive SMS or phone calls for verification.
+
+<img
+  src="/images/whatsapp-phone-number.png"
+  alt="Add Phone Number"
+  className="rounded-lg"
+/>
+
+## Step 8: Add Payment Method
+
+- Complete the process by clicking "Add payment method".
+- Please pay attention: To unlock additional features and other advanced functionalities, you need to add a payment method.
+  - If you skip adding a payment method, your WhatsApp Cloud API will still be connected, but some features will be restricted like message templates and campaigns.
+
+To fully activate your WhatsApp Cloud API and unlock all messaging features, you need to add a payment method in Meta Business Manager. Please follow the steps below carefully:
+
+- Go to Business Settings at [business.facebook.com](https://business.facebook.com).
+- In the left sidebar, select Settings and click WhatsApp Accounts.
+- Select the WhatsApp Business Account you’ve just connected.
+- Scroll down and click Payment Settings.
+- Click Add Payment Method and complete the required billing details.
+- Fill in all Business Information as requested (name, legal entity, billing address, etc).
+- After saving, make sure there are no alerts or warnings on the payment settings page.
+
+<img
+  src="/images/payment-method.png"
+  alt="Add Payment Method"
+  className="rounded-lg"
+/>
+
+## Step 9: Test Your WhatsApp API
+
+After setting up WhatsApp Cloud API including adding the payment method, send a test message, test it by sending a message using a Campaign, Automation, or Chat Initiation template. Follow these guides to create your template:
+
+- Campaign: Create Template Campaign
+- Automation: Create Template Automation
+- Chat Initiation: Create Template Chat Initiation
+
+Note that Meta categorizes messages into conversation rate: Authentication, Marketing, Utility, Service. Check Meta’s pricing details here.
+
+Once your template is created, test it in bitbybit’s LiveChat page to ensure it sends and receives successfully.
+
+⚠️ If the message successfully delivers, your integration is 100% complete.
+⚠️ If it fails, recheck the steps above, especially your payment status and phone number verification.
+
+The message you sent should appear on the bitbybit Livechat page.
+
+<img
+  src="/images/livechat-message.png"
+  alt="LiveChat Message"
+  className="rounded-lg"
+/>
+
+Congratulations! You have successfully created and connected your WhatsApp Cloud API with bitbybit. This powerful integration will help you manage your customer communications more efficiently, providing a seamless and professional experience for your clients.
+
+Happy messaging!
+
+For further assistance, reach out to us at [help@bitbybit.studio](mailto:help@bitbybit.studio).

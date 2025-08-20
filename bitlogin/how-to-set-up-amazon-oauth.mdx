@@ -1,0 +1,69 @@
+---
+title: "How to Set Up Amazon OAuth"
+description: "Step-by-step guide to integrating Amazon OAuth with bitLogin for seamless user authentication."
+---
+
+import {Step, StepList, Alert} from "@mintlify/components";
+
+# How to Set Up Amazon OAuth
+
+Integrating Amazon OAuth into your application allows users to log in using their Amazon credentials, streamlining the authentication process. Follow these steps to set up Amazon OAuth with bitLogin.
+
+## Step 1: Access the Amazon Developer Console
+
+- Navigate to the [Amazon Developer Console](https://developer.amazon.com).
+- Sign in with your Amazon account, or create one if you don’t have an account yet.
+
+<img
+  src="/images/amazon-developer-console.png"
+  alt="Amazon Developer Console"
+  className="rounded-lg"
+/>
+
+## Step 2: Create a Security Profile
+
+- After logging in, go to your dashboard at the [Amazon Developer Dashboard](https://developer.amazon.com).
+- Select the "Login with Amazon" tab.
+- Click "Create a New Security Profile."
+- Provide the Profile name, description, privacy URL, and store logo.
+- Click "Save" to proceed.
+
+<img
+  src="/images/create-security-profile.png"
+  alt="Create Security Profile"
+  className="rounded-lg"
+/>
+
+## Step 3: Configure Web Settings
+
+- Once your profile is created, go to "Manage" > "Web settings."
+- Click "Edit" to modify the settings.
+- In the "Allowed Origins" field, enter your store URL.
+- For "Allowed Return URLs," use: `https://api.bitbybit.studio/bitlogin/api/login/amazon/callback`
+- Click "Save" to apply the changes.
+
+<img
+  src="/images/configure-web-settings.png"
+  alt="Configure Web Settings"
+  className="rounded-lg"
+/>
+
+## Step 4: Set Up Your Amazon OAuth
+
+- Copy the "Client ID" and "Client Secret" provided by Amazon.
+- Go to the [bitLogin Amazon Settings page](https://app.bitbybit.studio).
+- Paste the "Client ID" and "Client Secret" into the respective fields.
+- Click "Save Changes."
+- Enable the "Use your store name on Amazon login" toggle.
+
+<img
+  src="/images/setup-amazon-oauth.png"
+  alt="Set Up Amazon OAuth"
+  className="rounded-lg"
+/>
+
+## Step 5: Completion
+
+Congratulations! You have successfully set up Amazon OAuth. Ensure you securely store the "Client Secret" as it is required for authentication.
+
+For further assistance, reach out to us at [help@bitbybit.studio](mailto:help@bitbybit.studio).
