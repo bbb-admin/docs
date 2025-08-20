@@ -14,7 +14,7 @@
         "tab": "bitCRM",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
               "bitcrm/how-to-connect-whatsapp-business-app",
@@ -88,7 +88,7 @@
         "tab": "bitChat",
         "groups": [
           {
-            "group": "Getting started with bitChat",
+            "group": "Getting Started",
             "pages": [
               "bitchat/how-to-create-and-connect-whatsapp-cloud-api-with-bitbybit",
               "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-facebook",
@@ -161,7 +161,7 @@
         "tab": "bitLogin",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "bitlogin/how-to-activate-bitlogin-from-shopify"
             ]
