@@ -1,0 +1,94 @@
+---
+title: "How to Set Up Google OAuth & Google One Tap"
+description: "Step-by-step guide to integrating Google OAuth and Google One Tap with bitLogin for seamless user authentication."
+---
+
+import {Step, StepList, Alert} from "@mintlify/components";
+
+# How to Set Up Google OAuth & Google One Tap
+
+Integrating Google OAuth and Google One Tap into your login system offers users a seamless, secure way to access your platform. This process helps increase conversion rates by simplifying sign-ups and logins with just a few steps.
+
+## Step 1: Access Google Console
+
+- Log in to [Google Console](https://console.cloud.google.com) with your account credentials.
+
+<img
+  src="/images/google-console-login.png"
+  alt="Google Console Login"
+  className="rounded-lg"
+/>
+
+## Step 2: Create a New Project
+
+- Click "My Project" and choose "New Project."
+- Enter your project name and click "Create" (the parent organization field is optional).
+
+<img
+  src="/images/create-new-project.png"
+  alt="Create New Project"
+  className="rounded-lg"
+/>
+
+## Step 3: Configure APIs and Credentials
+
+- Navigate to your new project via the notification icon.
+- Select "APIs and Services" > "Credentials."
+- Click "Configure Consent Screen," choose "External," and click "Create."
+
+<img
+  src="/images/configure-api-credentials.png"
+  alt="Configure API Credentials"
+  className="rounded-lg"
+/>
+
+## Step 4: Consent Screen Details
+
+- Fill out the required fields: App Name, App Logo, User Support Email, App Domain, Privacy Policy Link, Terms of Service Link.
+- Click "Add Domain," enter your domain, and save.
+
+<img
+  src="/images/consent-screen-details.png"
+  alt="Consent Screen Details"
+  className="rounded-lg"
+/>
+
+## Step 5: Define Access Scopes
+
+- Click "Add or Remove Access Scopes" and include:
+  - `https://www.googleapis.com/auth/userinfo.email`
+  - `https://www.googleapis.com/auth/userinfo.profile`
+  - `openid`
+- Click "Save and continue."
+
+<img
+  src="/images/define-access-scopes.png"
+  alt="Define Access Scopes"
+  className="rounded-lg"
+/>
+
+## Step 6: Generate OAuth Credentials
+
+- Go to "Credentials" and create new credentials.
+- Select "OAuth Client ID" and choose "Web Application."
+- For Authorized JavaScript Origins, enter: `https://<store-url>`
+- For Authorized Redirect URIs, enter: `https://<store-url>/pages/bitlogin-google-callback`
+- Copy the Client ID and Client Secret to bitLogin Google Settings and save.
+
+<img
+  src="/images/oauth-credentials.png"
+  alt="Generate OAuth Credentials"
+  className="rounded-lg"
+/>
+
+## Step 7: Optional - Enable Google One Tap
+
+For a seamless login experience, go to [bitLogin Google Settings](https://app.bitbybit.studio) and enable Google One Tap.
+
+<img
+  src="/images/enable-google-one-tap.png"
+  alt="Enable Google One Tap"
+  className="rounded-lg"
+/>
+
+For further assistance, reach out to us at [help@bitbybit.studio](mailto:help@bitbybit.studio).
