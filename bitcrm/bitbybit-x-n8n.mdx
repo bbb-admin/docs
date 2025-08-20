@@ -1,5 +1,5 @@
 ---
-title: "Integration Guide: bitbybit × n8n"
+title: "bitbybit × n8n"
 ---
 
 This guide will help you connect **bitbybit** with **n8n** so you can:
@@ -13,10 +13,12 @@ This guide will help you connect **bitbybit** with **n8n** so you can:
    Open your n8n workspace and create a new project/flow.
 
    ![Screenshot2025 08 20at15 47 34 Pn](/images/Screenshot2025-08-20at15.47.34.png)
+
 2. **Add a Webhook Trigger**\
    Choose **Webhook** as your trigger.
 
    ![Screenshot2025 08 20at15 48 05 Pn](/images/Screenshot2025-08-20at15.48.05.png)
+
 3. **Copy the Webhook URL provided by n8n.**\
    This is where bitbybit will send incoming messages.
 
@@ -25,10 +27,11 @@ This guide will help you connect **bitbybit** with **n8n** so you can:
 ## **Step 2: Setup in bitbybit**
 
 1. **Create an Automation**\
-   - Go to the **Automation** page in bitbybit [<u>https://app.bitbybit.studio/bitcrm/automation-new</u>](https://app.bitbybit.studio/bitcrm/automation-new) . Then click Create a new scenario.\
+   - Go to the **Automation** page in bitbybit [<u>https://app.bitbybit.studio/bitcrm/automation-new</u>](https://app.bitbybit.studio/bitcrm/automation-new) . Then click Create a new scenario.
    - Choose **Trigger: Incoming Chat**. Also, choose the chat source for the selected messaging channel
-2. **Add an Action after the Trigger: HTTP Request**\
-   **- **Add new Action -\> HTTP Request
+2. **Add an Action after the Trigger: HTTP Request**
+
+   - Add new Action -\> HTTP Request
 
    ![Screenshot2025 08 20at15 51 08 Pn](/images/Screenshot2025-08-20at15.51.08.png)
 
@@ -37,6 +40,7 @@ This guide will help you connect **bitbybit** with **n8n** so you can:
    ![Screenshot2025 08 20at15 51 16 Pn](/images/Screenshot2025-08-20at15.51.16.png)
 
    - (Optional) Add any custom **header key and value**.
+
 3. **Save the automation.**
 
 Now, every incoming chat in bitbybit will be forwarded to your n8n.
@@ -76,16 +80,16 @@ If your workflow includes sending a reply back to the customer (e.g., after AI A
 2. **Add an HTTP Request in n8n**
    - Choose the **HTTP Request (POST)** node.
    - Use this URL for sending a message:\
-     \`https://api.bitbybit.studio/whatsapp/api/v3.1/message\`
-3. **Add Headers**
-   x-bitbybit-key: {{your-bitchat-api-key}}
+     `https://api.bitbybit.studio/whatsapp/api/v3.1/message `
+3. **Add Headers**\
+   `x-bitbybit-key: {{your-bitchat-api-key}}`
 4. **Add the Payload**
 
    ```json
    {
-     "to": "{{client-number}}", 
+     "to": "{{client-number}}",
      "message": "{{message-body}}",
-     "imageUrl": "{{image-url}}", 
+     "imageUrl": "{{image-url}}",
      "sources": "{{messaging-channel}}"
    }
    ```
