@@ -17,16 +17,78 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development",
-              "bitChat",
-              "test-for-diagram-bitlogin"
+              "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
+              "bitcrm/how-to-connect-whatsapp-business-app",
+              "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
+              "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-facebook"
+            ]
+          },
+          {
+            "group": "Creating and Editing a Campaign",
+            "pages": [
+              "bitcrm/how-to-create-a-new-whatsapp-business-app-campaign",
+              "bitcrm/how-to-create-a-new-whatsapp-cloud-api-campaign-with-bitbybit",
+              "bitcrm/how-to-create-a-message-template-campaign-for-whatsapp-api",
+              "bitcrm/how-to-create-a-new-campaign-for-whatsapp-business-app",
+              "bitcrm/how-to-add-an-image-to-your-campaign",
+              "bitcrm/how-to-create-a-personalized-message-using-dynamic-variables",
+              "bitcrm/how-to-create-a-campaign-with-button-options",
+              "bitcrm/how-to-edit-or-cancel-an-already-scheduled-campaign"
+            ]
+          },
+          {
+            "group": "Creating & Editing an Automation",
+            "pages": [
+              "bitcrm/how-to-create-an-automation",
+              "bitcrm/how-to-create-a-message-template-for-whatsapp-api-automation",
+              "bitcrm/how-to-create-a-message-template-for-whatsapp-business-app-automation",
+              "bitcrm/how-to-set-up-a-trigger",
+              "bitcrm/how-to-add-steps-to-an-automation",
+              "bitcrm/how-to-schedule-steps-in-an-automation",
+              "bitcrm/how-to-test-and-preview-your-automation",
+              "bitcrm/understanding-the-unsubscribe-option-for-messages",
+              "bitcrm/how-to-edit-or-delete-an-automation",
+              "bitcrm/how-to-use-dynamic-variables-in-automation-messages",
+              "bitcrm/how-to-create-a-message-template-for-whatsapp-api-automation",
+              "bitcrm/how-to-create-a-message-template-for-whatsapp-business-app-automation"
+            ]
+          },
+          {
+            "group": "Creating a Push App Notification",
+            "pages": [
+              "bitcrm/how-to-send-a-push-app-notification",
+              "bitcrm/how-to-preview-push-notifications",
+              "bitcrm/how-to-direct-push-notifications-to-a-specific-page-in-app"
+            ]
+          },
+          {
+            "group": "Creating & Editing Customer Segments",
+            "pages": [
+              "bitcrm/how-to-create-a-customer-segment",
+              "bitcrm/how-to-create-customer-segmentation-and-track-message-after-a-broadcast"
+            ]
+          },
+          {
+            "group": "Report & Analytics",
+            "pages": [
+              "bitcrm/understanding-whatsapp-campaign-metrics",
+              "bitcrm/understanding-automation-metrics-pending",
+              "bitcrm/understanding-push-app-notification-metrics-pending"
+            ]
+          },
+          {
+            "group": "Integrating with Apps",
+            "pages": [
+              "bitcrm/how-to-integrate-bitcrm-with-whatsapp-business-app",
+              "bitcrm/how-to-create-a-review-request-scenario-with-stamped-io",
+              "bitcrm/how-to-create-a-review-request-scenario-with-yotpo",
+              "bitcrm/how-to-integrate-bitcrm-with-shopify"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "bitChat",
         "groups": [
           {
             "group": "API documentation",
