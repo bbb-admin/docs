@@ -8,7 +8,6 @@
   j.async = true;
   j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
   f.parentNode.insertBefore(j, f);
-  console.log("Google Tag Manager script loaded (Head part)");
 })(window, document, "script", "dataLayer", "GTM-KQ6RZZG");
 
 // Google Tag Manager (noscript)
@@ -16,4 +15,3 @@ var noscript = document.createElement("noscript");
 noscript.innerHTML =
   '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ6RZZG" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
 document.body.appendChild(noscript);
-console.log("Google Tag Manager noscript added (Body part)");
