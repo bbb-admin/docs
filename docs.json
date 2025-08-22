@@ -7,7 +7,7 @@
     "light": "#fc7b54",
     "dark": "#ff734c"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -353,16 +353,10 @@
     "dark": "/logo/bbb-logo-light.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:help@bitbybit.studio"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Support",
+      "href": "https://api.whatsapp.com/send/?phone=6281514231000&text=Hello+bitbybit+team%2C+I+need+some+assistance"
     }
   },
   "contextual": {
