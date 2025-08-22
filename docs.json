@@ -76,7 +76,6 @@
           {
             "group": "Integrating with Apps",
             "pages": [
-              "bitcrm/how-to-integrate-bitcrm-with-whatsapp-business-app",
               "bitcrm/how-to-create-a-review-request-scenario-with-stamped-io",
               "bitcrm/how-to-create-a-review-request-scenario-with-yotpo",
               "bitcrm/how-to-integrate-bitcrm-with-shopify",
@@ -185,6 +184,7 @@
           {
             "group": "FAQ",
             "pages": [
+              "bitlogin/login-to-shopify-with-bitlogin",
               "bitlogin/how-to-disable-hcaptcha-on-shopify",
               "bitlogin/quick-fix-continue-with-google-invalid-email-or-incorrect-password"
             ]
@@ -197,7 +197,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "bitapp/how-to-setup-your-bitapp-account"
+              "bitapp/how-to-set-up-your-bitapp-account"
             ]
           },
           {
@@ -207,7 +207,141 @@
               "bitapp/how-to-add-an-image-slider",
               "bitapp/how-to-edit-or-delete-an-image-slider",
               "bitapp/how-to-move-and-arrange-image-slider",
-              "bitapp/how-to-add-a-link-to-an-image-slider"
+              "bitapp/how-to-add-a-link-to-an-image-slider",
+              "bitapp/how-to-add-circle-image-grid",
+              "bitapp/how-to-edit-or-delete-a-circle-image-grid",
+              "bitapp/how-to-move-and-arrange-circle-image-grid",
+              "bitapp/how-to-add-link-to-a-circle-image-grid",
+              "bitapp/how-to-add-a-product-collection",
+              "bitapp/how-to-edit-or-delete-a-product-collection",
+              "bitapp/how-to-set-a-product-collection-display",
+              "bitapp/how-to-set-up-review-section-in-product-page",
+              "bitapp/how-to-activate-stamped-review-section-in-product-page",
+              "bitapp/how-to-activate-yotpo-review-section-in-product-page",
+              "bitapp/how-to-add-a-category",
+              "bitapp/how-to-add-a-sub-category",
+              "bitapp/how-to-arrange-categories",
+              "bitapp/how-to-edit-or-delete-a-category",
+              "bitapp/how-to-activate-bottom-navigation",
+              "bitapp/how-to-arrange-bottom-navigations",
+              "bitapp/how-to-upload-an-app-icon-for-your-app",
+              "bitapp/how-to-set-up-app-name-subtitle-and-description",
+              "bitapp/how-to-set-your-app-branding-color",
+              "bitapp/how-to-set-your-apps-splash-screen"
+            ]
+          },
+          {
+            "group": "Previewing Your App",
+            "pages": [
+              "bitapp/how-to-preview-your-app-in-real-time",
+              "bitapp/how-to-create-your-apple-developer-account",
+              "bitapp/inviting-bitapp-to-your-apple-developer-account",
+              "bitapp/how-to-create-your-google-play-developer-account",
+              "bitapp/inviting-bitapp-to-your-google-play-store"
+            ]
+          },
+          {
+            "group": "Login Options",
+            "pages": [
+              "bitapp/how-to-add-login-options-to-your-app"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "bitapp/how-to-integrate-bitapp-with-shopify"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "bitLink",
+        "groups": [
+          {
+            "group": "Creating & Editing Link",
+            "pages": [
+              "bitlink/how-to-add-a-new-link",
+              "bitlink/how-to-add-an-image-section",
+              "bitlink/how-to-add-a-text-section",
+              "bitlink/how-to-add-a-divider",
+              "bitlink/how-to-add-a-shoppable-link",
+              "bitlink/how-to-add-a-whatsapp-section",
+              "bitlink/how-to-embed-a-youtube-video",
+              "bitlink/how-to-add-social-media-icons",
+              "bitlink/how-to-delete-a-link",
+              "bitlink/how-to-arrange-your-links",
+              "bitlink/how-to-archive-a-link",
+              "bitlink/how-to-add-a-mailing-list-button"
+            ]
+          },
+          {
+            "group": "Designing Link Page",
+            "pages": [
+              "bitlink/how-to-upload-your-store-profile-photo",
+              "bitlink/how-to-add-or-edit-your-store-bio",
+              "bitlink/how-to-use-a-preset-theme-for-your-link-page",
+              "bitlink/how-to-customize-your-link-pages-theme"
+            ]
+          },
+          {
+            "group": "Sharing Your Link",
+            "pages": [
+              "bitlink/how-to-edit-your-link-url",
+              "bitlink/how-to-share-your-bitlink-to-social-media",
+              "bitlink/how-to-preview-your-link-in-real-time"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "bitAI",
+        "groups": [
+          {
+            "group": "Creating & Designing Sorting Model",
+            "pages": [
+              "bitai/how-to-create-a-sorting-model",
+              "bitai/how-to-edit-or-delete-a-sorting-model"
+            ]
+          },
+          {
+            "group": "Settings & Preview",
+            "pages": [
+              "bitai/how-to-push-out-of-stock-products-to-the-bottom-of-collections",
+              "bitai/how-to-preview-your-sorted-collection"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "bitai/how-to-integrate-bitai-with-shopify"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Settings",
+        "groups": [
+          {
+            "group": "Company Settings",
+            "pages": [
+              "settings/how-to-reset-your-password",
+              "settings/how-to-create-or-add-a-company",
+              "settings/how-to-add-a-user",
+              "settings/how-to-top-up-ai-token",
+              "settings/managing-your-personal-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI Studio",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "ai-studio/how-to-setup-an-ai-studio",
+              "ai-studio/how-to-setup-skillset-data-collection-in-ai-studio",
+              "ai-studio/how-to-setup-skillset-product-recommendation-in-ai-studio"
             ]
           }
         ]
