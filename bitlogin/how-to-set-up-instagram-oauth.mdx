@@ -1,0 +1,30 @@
+---
+title: "How to Set Up Instagram OAuth"
+---
+
+Integrating Instagram OAuth allows users to log in using their Instagram credentials, providing a fast, secure, and convenient authentication experience. With this integration, users don't need to create a new account, improving both retention and accessibility for your application.
+
+## **Step 1:** **Register as a Developer**
+
+* Visit [Meta for Developers](https://developers.facebook.com/) and create a new application.
+* Select "Instagram" as the product to be used.
+
+## **Step 2:** **Configure OAuth Client**
+
+* Obtain the Client ID and Client Secret from the Instagram API.
+* Set up a redirect URI that matches your application's requirements.
+
+## **Step 3:** **Create an Authentication Request**
+
+* Use Instagram’s authorization endpoint to redirect users to the login page.
+* Request the necessary permissions, such as access to user profiles and media.
+
+## **Step 4:** **Handle Access Tokens**
+
+* Once the user grants permission, exchange the authorization code for an access token.  
+Use this token to retrieve user data from the Instagram Graph API.
+
+## **Step 5:** **Ensure Security and Privacy**
+
+* Store access tokens securely and refresh them periodically.
+* Request only the necessary permissions to maintain user trust.
