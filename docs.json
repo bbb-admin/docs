@@ -7,7 +7,10 @@
     "light": "#fc7b54",
     "dark": "#ff734c"
   },
-  "favicon": "/bbb-icon.png",
+  "favicon": {
+    "light": "/bbb-icon.png",
+    "dark": "/bbb-icon.png"
+  },
   "navigation": {
     "tabs": [
       {
@@ -349,7 +352,7 @@
     ]
   },
   "logo": {
-    "light": "/logo/bbb-logo-dark.png",
+    "light": "/logo/bbb-logo-default.png",
     "dark": "/logo/bbb-logo-light.png"
   },
   "navbar": {
