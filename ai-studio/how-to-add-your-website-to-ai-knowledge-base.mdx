@@ -1,0 +1,53 @@
+---
+title: "Add your website to AI Agent Knowledge Base"
+description: "This article will guide you to use your website as AI Agent knowledge"
+---
+
+Empower your AI Agent by feeding it information directly from a website. This allows your agent to learn from product documentation, blog posts, company information, or any other web-based resource. Follow these simple steps to expand your agent's knowledge. 🧠
+
+## Step-by-Step Guide
+
+Adding a website is straightforward. Here’s how you do it:
+
+1. Go to the AI knowledge base page at [**https://app.bitbybit.studio/ai-studio/knowledge-base**](https://app.bitbybit.studio/ai-studio/knowledge-base).
+2. Click the "Add Knowledge" button.
+3. Provide a clear and descriptive Knowledge Title (e.g., "Company Blog Posts" or "Product FAQs").
+4. In the source options, select "Website".
+5. Enter the URL you want to add.
+6. Choose whether to add a single page or crawl the entire site.
+
+## Understanding Your Options: Single Page vs. Entire Website
+
+This is the most important step. You have two ways to add web content:
+
+1. **Adding a Single Page**
+   This is the default option. If you want your AI to learn from one specific article, blog post, or page, simply paste the full URL and leave the "Crawl entire website" box unchecked.
+
+- When to use this: You want to add a specific news article, a single product page, or one chapter of your documentation.
+- Example URL: `https://yourwebsite.com/blog/our-latest-feature`
+
+2. **Crawling an Entire Website**
+   This is a powerful feature that instructs your AI Agent to find and learn from all the pages on a website.
+
+When you check the "Crawl entire website" box, the system looks for the website's sitemap file and systematically visits and learns from every page listed there.
+
+### ⚠️ Important Best Practice:
+
+For this feature to work optimally, you should provide the main domain of the website, not a specific sub-page.
+
+- **✅ Do this:** Enter a root domain like https://bitbybit.studio or https://mycompany.com. This allows the crawler to easily find the sitemap and index all connected pages.
+- **❌ Avoid this:** Do not enter a specific page like https://bitbybit.studio/bitchat and check the "Crawl entire website" box. Doing so may cause an error or result in only that single page being indexed, as the crawler may not be able to locate the sitemap from a deep link.
+
+### Quick Guide: Which Option Should I Choose?
+
+Use this simple checklist to decide:
+
+**To teach my AI about one specific blog post:**
+
+- URL: https://myblog.com/posts/my-awesome-article
+- Crawl entire website: Unchecked
+
+**To teach my AI about my entire company, its products, and services:**
+
+- URL: https://mycompany.com
+- Crawl entire website: Checked 👍
