@@ -1,3 +1,63 @@
 ---
-title: "How to Set Up Amazon OAuth"
+title: "Integrating Amazon OAuth"
+description: "Step-by-step guide to configuring Amazon OAuth for your application with App ID and App Secret."
 ---
+
+Unlock the power of seamless authentication by setting up Amazon OAuth for your application. Follow these steps to obtain your App ID and App Secret efficiently:
+
+## Step 1: Access the Amazon Developer Console
+
+- Navigate to the [Amazon Developer Console](https://developer.amazon.com/).
+- Sign in with your Amazon account, or create one if you’re new.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63cb4e0345bb04b7995_AD_4nXfQT9HV2pZEkq50FrREE_WvbivtFD6pl9a6783VhBN4XVzEGMy4DwnUOc9HqdaKCgO8dx8jaLgtsxGN3sH8qiysiJeg0DECgGcWOWMR107UhHqIGOUawjbLsCQAaaPS37ug3-3UPG-_ei_Yzs7KAnYV7xK-.png)
+
+## Step 2: Create a Security Profile
+
+- After logging in, head to your dashboard at [Amazon Developer Dashboard](https://developer.amazon.com/dashboard).
+- Select the **"Login with Amazon"** tab.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c127a31ca652cb1ba_AD_4nXfr4uCR9J9P44G91kdXh1cmnzi0MYXp_PmBMjdNq_3xiUcNKR1an9gOTfSF-X97h3UgDS0_vUUIIEiQsByHjheNKxzfsyrobV25Cvo6BcHQpD_ikmIQngnuFecjpPpgVo-sq6Oa7rrcdtKHhs-50yZ2JnvK.png)
+- Click **"Create a New Security Profile."**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63cb9e7f47e91daf1f4_AD_4nXfB0nwr5RVoWK36407IEFEATLvmbjecaVY5MvRaebhN1f79ejvEIiTR4Qyjp-3IHW3oE2ueUvNeIubcg3a8oWRZvo_iDLzmv4fGIojGOteJTzRORpxXnCcrnl0YjI5R3Xs7iy4jr5tHma_xbtT3mtDoXUdp.png)
+- Provide the **Profile name, description, privacy URL, and store logo.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63cde9d3f0a2eb32774_AD_4nXcs3YEVVBupwkwNZgAx48BOpBSZlavB8lQQdLMGiKYi-qefZS6Vv-xXL7Gg3iS4cx_BXnIZE3xZSbvmg4NnVji0R1rPguiAY6ym7IRiaxypDD36H48MJX2OOVxfZqSpPl0wR_TSiqoVjiv7dyu-PPdGYDqG.png)
+- Click **Save** to proceed.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c829a0355691c3126_AD_4nXdRayi31R_59wY7txC9OsOZELIClfinCGfeLywuWT-oABr8NX1r5Fb25mA0pf_0xF6wiBQOIUSDZzHLAJZlHefGLwbc8e3-0wbwH4YirxMTZ0e_Hjch2IAcCn881X-1RQ0ulx3MhTKPcNLbo1bQ_x2ETYMa.png)
+
+## Step 3: Configure Web Settings
+
+- Once your profile is created, go to **Manage → Web settings.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c3c4fe7b17fd04d98_AD_4nXeG2nwTTLEqLecwheAd6cPueEwcdXH0GT2rlBE9290rnyPMi-elwGd4WHCKe4kfH_hlWFgubczYIdoJ_1ItLCvA2wPEzNVCA_vVFIfyFAm6qcTwmp68_juPrlYZaIAEprrF9W1ghKXZsgasGuUbOnU_GcYs.png)
+- Click **Edit** to modify settings.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c8199fe815995dfa6_AD_4nXdScA47kYWL_2E9jndQzIwECPnjyxuUgGaKHdKEyMWKsztRKMH0Hmf5G__szA7Mht1fc8u8QqLkLlrgXbc6qmfeSkc0wFETJxOBbBufAyTA7jW9TPcDfI-o9N-xiOhyOIVyOsR3mX_4Zc5-C2EUEaq1Zp22.png)
+- In the **Allowed Origins**, enter your store name. For **Allowed Return URLs**, use:
+  `https://api.bitbybit.studio/bitlogin/api/login/amazon/callback`
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c410040b8a9b8a51f_AD_4nXe4msvyTjiFMioX_36qL_31VbfkYGBI5elUyPCfw5ckoILvWAw0_-d0jsJAfLn5T7URTyUz5KYk75yZAPzk6JA__Bd_YV_eaaTcAF8rv8lwqJNn1PW4A6nrq5ToC7SpGt8Wyywh8eM3fH6hRbX0O31AzT3r.png)
+- Click **Save** to apply changes.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63cff25db12b2c4fa2b_AD_4nXfjSK1QKIkv2eJSqHvdqLnjC2xC8t99tx-sZqCnEYZ92RJ09ev22y5CdC-Sz2vHTF_6PHhmawtu2kJnncKeXcM2d_PlwUt1kc9-rP4cV4AeZDGrxpVWjFdTwK7HhbQphBA08DPyMczSF7939NyN_9H6M2dH.png)
+
+## Step 4: Set Up Your Amazon OAuth
+
+- Copy the **Client ID** and **Client Secret** provided.
+- Go to the **bitLogin Amazon Settings** page.
+- Paste the copied **Client ID** and **Client Secret** into the designated fields.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63da76cba9b9e8175de_AD_4nXde-YbcPmN0ym3JyoU4pArva1VbHA2gnjY3vnBotLgX2buPFGHJZf9rL4FrATdWAw-28-G-Zq5QrNDksnoo3rI2Xv3AdkthfmAGJfxP2bSuu8WlK1jd-GKTRAdYRZrBJvAN0YZqdvuIkMBwMOdoBiYo-2Fs.png)
+- Click **Save Changes.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63c56bcd584ec74b65f_AD_4nXfpAySHJl2xWbFzygqsp6Bcj36qWxNUSl8nx5YioERHnGePaTAj4GGtWG0hdjCgLwciDfU3D2EZbhnrZmI13vT9N6PV52GDJvZzobiUibjFfu1YIoeFAirrbJhqeMHSWXHPZVjZwIuSMr2I07lf9OSkPny0.png)
+- Activate the **Use your store name on Amazon login** switch until it turns green.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5f63cd5e451a15fa8105d_AD_4nXcoNu5KMhR-e453zL_LEA9IRtFTfACOqPBkQREZbFQ3KSwny3m-52NggosrGtYqm5cgeP-LcZAcg4wKJqaaPhNayxAjxmgmzFjAo6959w8oM0UPnAHVL5Y2w4X2PraYUeblbRayUzGk3jQXEaKn0uSLTdiK.png)
+
+## Step 5: Completion
+
+🎉 Congratulations\! You now have the Amazon App ID and App Secret necessary for configuring your Amazon OAuth. Ensure your App Secret is securely stored, as it is vital for authentication.

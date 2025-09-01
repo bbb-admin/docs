@@ -1,3 +1,92 @@
 ---
-title: "How to Set Up Facebook OAuth"
+title: "Integrating Facebook OAuth"
+description: "Step-by-step guide to integrating Facebook OAuth into your application for a seamless login experience."
 ---
+
+Setting up Facebook OAuth makes it easier for users to log in with their Facebook credentials, offering a convenient and familiar login experience. Follow these steps to integrate Facebook OAuth into your application:
+
+## Step 1: Create a Facebook Developer Account
+
+- Go to [Facebook for Developers](https://developers.facebook.com).
+- Click **"Get Started"** or log in with your Facebook credentials.
+
+![Facebook Developers - Get Started](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dbb647cc3b514f50c_AD_4nXf3awZYBKDn-Z6tTT8VXxY5HlMimfj1NRv-qREW53FY2A0KugZ1BazoqH4QY4jODy-BQV_gH9fX69zmm55RZv_YKEw2HL9WEzgoOW2erKknNTSxeoOYvlXGXzW590nSdkiZsSe2-nicgpJnmubU20sKNgCb.png)
+
+## Step 2: Create a New App
+
+- Go to [Facebook Apps](https://developers.facebook.com/apps/) and select **"Create App."**
+
+  ![Facebook Apps - Create App](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d1be866991c9aab8c_AD_4nXdzEhsW9ZCHGPKjhmDcOk9J65iEMEl_BmTaltTORxGDjvnkSOowpcpGjxjjTQ2yoAo2g3gnThlgb6ztvKLsKGrk8xQkhOuaI63z7Y7PbjbXvb-EHYXAEjG2Mb1i0udKCNPi26iw_kt6jUHEZ_xfp1U8yDcP.png)
+- Choose \*\*"Allow people to log in with their Facebook account" \*\*option, then click **Next.**
+
+  ![Facebook Apps - Allow people login option](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d2425cf5cf1aa680d_AD_4nXcSjQRwkpwkSv0RgrSFbwBTS7UcjtOZme69_pfygJQVKCEqZ21Xs_Dh_T1DPEaY6fbVYGnXSjUeIB1wMMgoCDzCntHeVn6jq1q2hYSaeiIfJ8_xv-ZGLNMNyMVin5Lht8q-c1AnZ5QV-lYJLcQSZ3qRSp8E.png)
+- Enter your app name (which will appear in the login popup), your contact email, and select a Business Account.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dce9e3cd9981e57cc_AD_4nXfhPZ2Cy3fVngcFdsZjPiK1LH1fbVp2LAQJxw44Tx7CYyTThBQZEkROeR2L76yOoxP2mVjvE2b7GTzXEfJvthiFn5GiR9QqBsKClSah5heyyNS7EXbmA1WJRhD81ZdwRfygHFDqgx8IIHTdYS0fGMsUvrZV.png)
+- Click **Create App.**
+
+## Step 3: Configure Use Case
+
+- Click on **Use Case.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d43efcae5a6b81f16_AD_4nXe_4-_ZmBJxvkzlJ-af3-id3p1m9U-6jXfYoQ_GyTjWlDGCvFD4zVyUTNRP0xzAdYIMRFMGcVKclVaxudCFGJfTKi4HKZPeiodemDBshWRXRhWZYB-0bFnwQ8t1wq_OZw62I7UnyDyYXgz0lsaG24ZuyR4.png)
+- On **Authentication and Account Creation**, click **Customize.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d8ab5317ccd28d27c_AD_4nXeVup7JTmuRAIEDQiXZaq5Z580Hm3IPTKcJ0-jNvwhQDQ8sdza_zKB4RKCJd1EZnlm731VFMSIH9oUuPha65IWxkf628eDNQbG07GOUh8k2PUfhatf_39zvp2VZSlJXR1U_6XtMPXfIxAsk9Axk20hEYn_c.png)
+- In the permissions section, click **Add** for email and wait for its status to update to **Ready for testing.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d63b9d161faaf763d_AD_4nXe0aszy2ev3EivdUMeNbauCfBghvWfjk6_vBgzlAIGL_wDbB2A8k645ywI4Y1aoR5kN8nca-Tlpz5X9QUf3avv6e_tUsBqsNuC79VTVArSmHswPQ7Hbcke0ocZaYGNWUQdTSI_C-ERx0wZriYTNUfbFuI9L.png)
+- Click **Go To Settings.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dfbd0daa69e3def57_AD_4nXdUTnirDkn8sINEQNwYPKs2tWMsynWv0riaYkkSc4mvkt5nGeLakJpzqfupEOGsQfa3AWxKn6iiOsOOXFgQGJbRHZxrRtnRt3uufpzbQ1HqJ5TtdJIy7BAQ6VvYIUz30K6nVIiG45XozYUuz-_Fswu0VGRd.png)
+- In the **Valid OAuth Redirect URIs** section, input:\
+  `https://api.bitbybit.studio/bitlogin/api/login/facebook/callback`
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dfed2bd65188d91a4_AD_4nXex1gWnMmiLKY0IW53jzW2KiK9DwRa2PzN3sWrO62A-iByFJ7UlJoluHT60QhX5jkcFAb1rs0di3tUf_5k_g_5OuvgPuSBxqUAP1OMwRCwi3Iw1ORNcOtw2hsNLlpaeTzo-0ajH4g3GEpoo2bH1gHwrXsgy.png)
+- Click **Save Changes** and return to the dashboard.
+
+## Step 4: App Settings Configuration
+
+Navigate to **App Settings → Basic** and complete the following:
+
+![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d876df40e6ec8a080_AD_4nXc5OO5cNprjfOW_ZapBXXdxvJUITCXSAM5C2tbZOD0UkmuU_HOcJosjvg03bS49k5JRiyV--OEjBQ0fLQqdM_bCXUF5R2Evov2h6rw0tosbbQVVsezNzDwweIDtIAIz8IjwO2b0Glds2XSNlTboBvLqzh4.png)
+
+- **Display Name**: Enter your store's name.
+- **Namespace**: Optional.
+- **App Domains**: Enter your store’s domain.
+- **Privacy Policy URL**: Use your store’s privacy policy URL or [bitbybit.studio/privacy](https://bitbybit.studio/privacy).
+- **Terms of Service URL**: Use your store’s terms URL or [bitbybit.studio/terms](https://www.bitbybit.studio/terms-conditions).
+- **App Icon**: Upload your store’s logo.
+- **Category**: Select "Utility & Productivity."
+- **User Data Deletion**: Enter [bitbybit.studio/terms](https://www.bitbybit.studio/terms-conditions).
+- Click **Save Changes.**
+
+## Step 5: Configure Facebook OAuth
+
+- Copy your **App ID** and **App Secret.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dde91dd981391145b_AD_4nXdDmkLse_99tAG0brryEF1HD6ZlPu57XW_vQ74y_crhU86oDPTe-xvX9F7zMufsvyGLo5QB4GGbslJeyYYb1pZrd_Wac_XmVTRlEeXAVCH560FeAzkTULw1N4hmrkhXTEWRdp3Jr1h-mwdMzLTXFVl3dC-i.png)
+- Paste them into the [bitLogin OAuth Settings - Facebook](https://app.bitbybit.studio/bitlogin/oauth-settings?section=facebook) page.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d7038bc8181397b97_AD_4nXf4fzUlO_Bfg-M10kyzW4uj4JVAIvIHgyio_mdnnqn-bjQujA_CkvQ4tA-x-kfIiKHqB9NBbPIc1k1yz_NEyJ1P5VYYaFkXtJafO_j-3Jq7OugiefNv7OAcWLdou49--qMRmTT4h16AnII-9P_ozI6tWJs.png)
+- Toggle the **Use your store name on Facebook login** switch until it turns green.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d426a22666c2a07a7_AD_4nXeURgdUvID8GBJysZrOz3JpgHqcyRjIDkruR0g8-HXCEJSAwNN_0r1RHs36i2UNeAm2C88ZgV1KjmKAfZQkoXeUJsAhI8og0sHEUiM8GSzarHLuC7tuEEYzirpM5AldwUOw3ba107tEhE7-nTx_iqWK0oQ.png)
+- Click **Save Changes.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66ff4e96dd07492f0ca27318_66fe685d5d78b249df1e1da0_AD_4nXfMEwmXptvBBdLzfO3EOuB2nz-Jx9Z2kxQrFCB-ra5eKGv4mcrmBYlkXxIUEfNxIcFo514grcgpErcE6zCgQxvY5ld1RUDFcgMDPc_4q3Yr8PqwnTVec3-hIrTFq5FGJc4lfzn1bj3JlWeJHPfneFldX-pb.png)
+
+## Step 6: Publish Your Facebook App
+
+- Go to the **Go Live** section.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16d8369cc822f22b4fd_AD_4nXcgx1GA0Ig4mTCQtSRq2PIW4WGn1lXW9YrTfURYHqDm8f_fYEBldk7quECm4vzc5P4zgamVy3DvNGsHTebGzyDB_ozIYaQMjQoegiUuAxyC-VKs0k04i0_nWLHYKhteABjn88iqI_zHmDcZh9Pk11zlRxY.png)
+- Verify your business, then select your verified business.
+- Answer the required questions in the **Data Handling Questions** section.
+- Click **Go Live** to make the app publicly accessible for Facebook login.
+- Once published, the Facebook login will be ready to use in your store.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6707b16dcf551656fca40ad8_AD_4nXdW4kJHoa0YeGdT7uU1a_JyZuOsc8t6ChdBteTwnup_ASTQUiAINiZreQt5jurv7L-5B8HONIloVEq370J0p8rWTnlGR5Z5p3__BvEC6RX4rT4aK-UimHF_QwcoFJD1uMOHLgzh4Np0V9V4wd1Yqp3coS8.png)
+
+🎉 Congratulations\! You've successfully set up Facebook OAuth and obtained your App ID and App Secret.\
+⚠️ Make sure to store your app secret securely, as it’s sensitive information critical to authentication.

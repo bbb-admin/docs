@@ -1,3 +1,66 @@
 ---
-title: "How to Set Up Microsoft OAuth"
+title: "Integrating Microsoft OAuth"
+description: "Step-by-step guide to integrating Microsoft OAuth and obtaining your App ID and App Secret."
 ---
+
+Enable smooth integration with Microsoft login using the following step-by-step guide to obtain your App ID and App Secret:
+
+## Step 1: Access Microsoft Azure Account
+
+- Visit the [Microsoft Azure Portal](https://portal.azure.com).
+- Log in with your Microsoft account, or register if needed.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66da9b39dc2a17f17bdcc830_AD_4nXc61owYLUPqDMIkVjj7VD277-2lE8-qrPaN0E9ny49swjlZbKdz_AAr5xmQlplpLFGBpbVJw8mV792yiwKH5zHesZO5DpBygPaChhDCNC5UaVOXNupU5UFStAlnS55UW6V23a7kFM0NtJk64qAUlG9YX7E6.png)
+- Under **Manage Microsoft Entra ID**, click **View.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa61963a327dca0b1d31_AD_4nXdEbnUuvz3ea6suUoLe8IVyopqqyPMgduszQvyARfhiV3_VnFfAAM1Qrln7A4eNsR40f52o_L-gNyX2Yp60rrxgWuaYRrm32jZu1z8Ak56UselQN3jiRut25Ob7UsMupvOfqdjlP4eVwnc3yBM1CeTZR1ih.png)
+
+## Step 2: Register Your Application
+
+- Select the **App Registrations** menu.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa611edc528b021a40a7_AD_4nXdgth-ZaQqNQ0E-sP6efOOC8ElQW6w9cQHQkL-5cXgfj0zZ-bGcN9_s7Rytl2YgdLRDfsmmiOmrGg7kTvdPWRW9BIBfWI6sHV_ZhlFu6Uox0BJSYXcy-ccfBy6ptQUC0rWkw6hR8bo7lFxzevFwlsGdd26d.png)
+- Click **\+ New registration.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa61adcbe3507b6271d4_AD_4nXfCGXEMjYnRCxNmJoblGGOb6qp8XlNpLfVe6KUTaqpSswVWUzog_YdYuxm3i1moo1T0xnq93B_RoJi3PI2A3myFx2R1ZC026nDMdsPz2K8qM2v8nacjLMgv2fJOcwHkY-Xh2ckXho51OIe10xYjw-i5vdkJ.png)
+- Enter your store name under **Name, **select **Microsoft accounts only **and for **Redirect URI**, choose **web** and use:\
+  `https://api.bitbybit.studio/bitlogin/api/login/microsoft/callback`
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa6112bedc0137694aab_AD_4nXcUx4FmZVULUgp7Rm3p53Ig8zz9YkiJv5UUjzcY0v31adnCz6JdMzzpHczidIY2mFDE7MzYMYCDWdkXUXkouY0vicY8Nm_TXgz1PyNiw4SYX7AbmRshG93Cz8YqRMtpzVGG1cD-JUfKsBeuowp-dyK8o1I.png)
+- Click **Register** to continue.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa6155ea5ee0ad378261_AD_4nXfFbNLla_rMwXa4Os76o_hoSxOAsFN_dpx_9QtdKoyfl4R93droWBn7dGit1Mvt7NSzDlKFgzim197fYtCrR3WKeSJOZ4aS6vXGBqQ8q9oAsQ_e8mEjI97GHJed3Dq4S0lnBzGhQwwR6OuLlNFqkVvCa_Mg.png)
+
+## Step 3: Obtain App ID & App Secret
+
+- Upon registration, find your **App ID** below the display name.
+
+  ![Screenshot2025 08 20at15 48 05 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa616d5d8ed5b8e7e77b_AD_4nXepGzRoU2jGdahKJeNVCLL9ETJ7IvZBU8f5Vqg83Lt2C8Egg1SrajEayU8aD_FMAsKdHh3ZgrE2mjOR_L8AN9-Ku2RNnj3p2fuy-bjw4cLLl7LhDibM9l2h1ZZXgu0BB4EIE8WbWRC8uq4PEoK19NbCbFFG.png)
+- Click **Add a certificate or secret** to set up the App Secret.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa61e0ef1aa3675bcd6f_AD_4nXd9Blt3jdqlh_KkNmo5UvTt1sTTkDjqMSvfyU6qqiC9qnIUkEG8vX25e5jIxj2osKM0IKkaCKUxLFCsZSNukIiIQY-OQ1_5lY5MFYbb09_vIScFce0yruYtx7AQRcHjZXzSb2CXOS4SIb-rRkiF8Bv3hYnA.png)
+- In **Certificates and secrets**, click **\+ New client secret**, provide a description and set expiration to 365 days (recommended).
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa618e0297241a14110e_AD_4nXeXL-p3iFioLufVd2LSMvaPzqF6zovaoeBe2hR-GsJWQrNfJWuuX7fn_om6mu5mw2T5wPjiaG8AErIC4rv6CnV2acrkCeyCcVmny_oUyQIBm_YEXT9awmwSMjQ1tNVp8rEmN2QrMkw3PCazfJck2IQ-CLwu.png)
+- Click **Add. **
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa61662c512d4192e304_AD_4nXcHJhsaA3DZpbDFCUoVBjhnd0pOor6PHxW-h9buSyWQq1sNGmqmUXLPp7-So7XefkYP4dQG0GyA7Qcasz8pr68XnsOQMYbyMe8V7cIU1abVZD9TFVrN6qof72h_A7UXp5tDb4vwr0wWo41Gkmktvw8OjgHn.png)
+- Copy the App Secret from the **Value** column.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa6156bcd584ec76fee9_AD_4nXduzbYIGiOM_Jh7ycIGDYx6E_FrUd5uF6hNVCnaZiCyF1aeGtwjofTjgmjyV51UWjGAmCveveeom4Qb-A9sZqKDSlHCyJPQVCxPyL6lHE89BMo2xxFh5yrk5Ylzzm4ExP78bQR7FIj9p0QACN5Wm7LkbfEL.png)
+
+## Step 4: Configure Microsoft OAuth
+
+- Copy the **App ID** and **App Secret. **Paste them into the Microsoft Settings on the bitLogin page.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa62b60365fc5092cb3d_AD_4nXcCeA5JIoUDLVAnJIYflJ9FaM9XFyiHXZFLJdPo15o0B67IdM7OWzKhIby7H3RHDbXap0FDFR5GeAWG_IFkn-nIYB-1yX30MF7slAd3pc452O-AlDTIVGVmDuW8ymbVYbbSMfWsk9hFfnSB5YRTLfkJypdc.png)
+- Click **Save Changes.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa628e7772327d76a270_AD_4nXdb3yf3rXXHElReZdhjsmZLeAtkZtwy7HRpeA41g9IqzCquPzzqs7XiTNOW5MjX9SufUCCbe2vJw55Z_w9Fc3LC7vw5AEAeHHcoZBji1WWqpzkM0-jPJ9zgvyiAm9QinSkkcbJNuNYJcR_2sLo4A9bq8df2.png)
+- Activate the **Use your store name on Microsoft login** switch until it turns green.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5fa61b9a147cf76a88ab4_AD_4nXetPAon8_5pZxMi6z58Xb-FitEisoOqTdjBIzOvMw5TAZX6tjpjR-qz_ej0uhEt7hieKiKqfhR0_1xfhMVDM-nrQECHsbDGMcj6uxSOB4pr08CV7ZFJZ656gA7lOcuI2_RhZ3m0uFvBg_Who4uzbCIFNcUd.png)
+
+## Step 5: Completion
+
+🎉 You’ve successfully obtained the Microsoft App ID and App Secret. Securely store your App Secret, as it’s crucial for secure authentication.

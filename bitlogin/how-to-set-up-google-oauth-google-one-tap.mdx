@@ -2,88 +2,90 @@
 title: "How to Set Up Google OAuth & Google One Tap"
 ---
 
-Integrating Google OAuth and Google One Tap into your login system offers users a seamless, secure way to access your platform. This process helps increase conversion rates by simplifying sign-ups and logins with just a few steps.
+Integrating Google OAuth and One Tap into your login system offers users a seamless, secure way to access your platform. This process helps increase conversion rates by simplifying sign-ups and logins with just a few steps.
 
 ## Step 1: Access Google Console
 
 - Log in to [Google Console](https://console.cloud.google.com) with your account credentials.
 
-<img
-  src="/images/google-console-login.png"
-  alt="Google Console Login"
-  className="rounded-lg"
-/>
-
 ## Step 2: Create a New Project
 
-- Click "My Project" and choose "New Project."
+- Click "My Project" and choose "New Project.
+
+  ![Step2](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c914b366fdff3cb27_AD_4nXf9dQypl5mAGWuxAUnbG-Q-ffovYJJCiFckuOqjjw32sF6KBGd6NVnv5LTg8Jl763xNpHnjoJt2dz2Ltgzo5xujhyjxNi02kuHjloMjc5j-K-BuYcOIo7bPaA4mk3tsEigghULU6PLQ4SfKQEJ5hU0M0tC7.png)
+
+  ![Step2](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9ca25a00f73d14ab07_AD_4nXeOnpt3RIEtiG4ppt2HT1wJERw_HPFNmYRJD973yC-5AIzLuNZz9ZueKChvCNAPKhafeOQ5FkdZURupjssd2lAmZbqMRyYAm5ek9klKSoMpEutr6H6CKImu4hWsdOqmb_MejRbnzeqYym16oOtG-9exMXIP.png)
 - Enter your project name and click "Create" (the parent organization field is optional).
 
-<img
-  src="/images/create-new-project.png"
-  alt="Create New Project"
-  className="rounded-lg"
-/>
+  ![Step2](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9ca2cad9101a8647d0_AD_4nXfwJOR4MkRUarDgsWjGJ_eT3pKow8p0ZNHa_eI3qo-hbk2MTGAPNKZaYptUZF222DtpVB3pxfXQUHdQVjSMR7CGXQB9U5kihxlHlrJbTvay10hAf8wgVHF9F_Nge-ar7szsKAZ3FC63JBTWMwK79lf5wVuj.png)
 
 ## Step 3: Configure APIs and Credentials
 
 - Navigate to your new project via the notification icon.
-- Select "APIs and Services" > "Credentials."
+
+  ![Step3](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cc0b92b8fd8a142c4_AD_4nXfAaaD9kbdu-rSYt3S7OWWMQB_ZCD_ZTTPLCE9d8YPl7axZNyUhpfw6r_vhQGY4lka907Ypg--Cyeqm1mJOrzuk9ss9ypzH20ZZA-1PaE1C2egzuLVocxq4If_emBt-q4jtiWQErca7Mdj1mpUp0d7vmd2n.png)
+- Select "APIs and Services" \> "Credentials."
+
+  ![Step3](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c5e2445f0e67539b8_AD_4nXfhzKLvIIjRVaRvL9oqkeOIgWSI1vXXMZOwrVoTbRxhB8bM7OCgIA4zHmez8ef6qXON8P2owGdJeiouQL6zZm3RtNe0XmkQuvkpRgmOy4sADiWnKHY1mAYU__ZfoVQBAuIocLhSCgCGBnR4HPhBEWxMurGd.png)
 - Click "Configure Consent Screen," choose "External," and click "Create."
 
-<img
-  src="/images/configure-api-credentials.png"
-  alt="Configure API Credentials"
-  className="rounded-lg"
-/>
+  ![Step3](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cb283ab0cd8b34192_AD_4nXdIWu6U5YOqVfg9L-hn-gfaZtMPdRiNBCS6oOG2XpXqv44nyxisnp26USzgXINubuUiqycQx5t8btfTkSbTgTRX2aQFLFvJdXfI_hvZLr6O9YuHsyfAmcg6K8-AcHWaujbZ3yoXvjCbevQAyTv6oX_7UtzK.png)
+
+  ![Step3](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cf93f3c827850bf3a_AD_4nXdDCAsvRNC8UWodjULo5fluE2TKd29hSqby4nT8cH13aGE_HZc__7KhKoIzInL68IByzsY0TfNnWVsdpmBUi_Tr_6R0YHSgMuMit7_qHiDNHXyIwOfJyPYn86Ni1yQlpXB290ufkF0vx226CH6lAm-bL0yr.png)
 
 ## Step 4: Consent Screen Details
 
 - Fill out the required fields: App Name, App Logo, User Support Email, App Domain, Privacy Policy Link, Terms of Service Link.
+
+  ![Step4](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cc9b7e2cff292554b_AD_4nXdNS13wm9KOMGePt_r0f9oy8uckJyv8vDM_zzUqeTKJs-dr6Ghwgs4GS8RbcIJQWlKieqrpoO503DiLplZXci1kL9sAJ-SWpOWqVIKOWJzpPiQPDmhDGIARmsuoc3I48DBWSk38mYgq0sBd6q1phhI-uMwl.png)
 - Click "Add Domain," enter your domain, and save.
 
-<img
-  src="/images/consent-screen-details.png"
-  alt="Consent Screen Details"
-  className="rounded-lg"
-/>
+  ![Step4](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c06afb8efd1706756_AD_4nXcSRzqTu01ZbGzGBxVWMlYq_flfFlREI-hmkppXDLl2xsEW-DdiN27sAlpXmKWaU5ktoEk_R8ds26DMf3xIQ_R3se-xlDZXJj7ZpbfVmWhp9_K8I3peS1EoAYNnRSve8LdGKDp2mzZbfj1FeGucNWPA-r-f.png)
 
 ## Step 5: Define Access Scopes
 
 - Click "Add or Remove Access Scopes" and include:
-  - `https://www.googleapis.com/auth/userinfo.email`
-  - `https://www.googleapis.com/auth/userinfo.profile`
+  - `.../auth/userinfo.email`
+  - `.../auth/userinfo.profile`
   - `openid`
+
+    <img
+      src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9ca25a00f73d14ab0a_AD_4nXercQmgs568fEFuGjBK3PZKXHrrd8m4Uad1b1KHrldmzPt54uxnmCaR4nfvIBxgfRZaGuwOox9IRAgqsMO3YmBUwqcs8XLAzCr3LjA9VluWk-Qjpe5paO3KJ1wittveXuVKw6Z89Im-omyaXLNKPs6fMSgu.png"
+      alt="Step5"
+      className="mx-auto"
+    />
+
+    ![Step5](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c71807e2b2d11fa91_AD_4nXfZ96Ht-qkAYowD5VcSKRP2caJDEG0IzFxWCeCOxbSIxQ-g_khvxA8KuEC6zQHkgPBQdQQxz2YAgbhE2p7MoOVCUyGJzdHgNed9Qv4w6qzB5xTtWvhd47BAaqHdp9pmkmTTPgYsQ6Ook_tCEHUvLg8e0-3r.png)
 - Click "Save and continue."
 
-<img
-  src="/images/define-access-scopes.png"
-  alt="Define Access Scopes"
-  className="rounded-lg"
-/>
+  ![Step5](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c0e44bfb9a01e8da9_AD_4nXff-_L6Fx5W-3Mlxb14yvQIOPbkBechdszDdSsgjlLNXtU9J0vG1e5tRKyeAf8523LnuC7kRdbrH3jwMJERIhpiq_0uXupBtz_lldwqidmO9wXP6ui0H3J3I-auMRn6Oh37V_f5_LXu0498AWNodNLhvOyd.png)
 
 ## Step 6: Generate OAuth Credentials
 
 - Go to "Credentials" and create new credentials.
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cb1f3e1bcf3e7d8d3_AD_4nXeJWU1iEOPBE843Q2nWoQ0LnfQcqsqV29UXUkN_-ZWXFbl6wOZBFhPonnEUmFY-RuUeJ4XUsVfLSkbsJtyuFsGZywZpzcyf9_4Wpm909g5iVz3kCe_nKU20fqQXmfIeejUb3Zrva-glJ7Iv8D5QZieQdhTt.png)
 - Select "OAuth Client ID" and choose "Web Application."
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9c4e16d133ccbebade_AD_4nXeVxBLy6gOK0nGrFqlDgTS6QbzMmnS-xphX5xCkvOUbGekyYq71xw4ucMdfun4rTdW1Q5W5ok9PEV5i8tvacB7pB4wOl_2XplXSJZW6PVv1Kth8V0TWCsNnePAIYgkm-Cjg02I68qAwvMCJAwCKXR4hD-oS.png)
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cba25ff21244223e1_AD_4nXeYuSs0gXVm8Cd-uReq3jpTOIfYzfUGMdOgNIe2lUKIb_HfL6r2KdIPNoHPH8KYklQDrUsSQ79_eGEm6c8S39jpB98JDeBlCoiYiitPGB8Vu0-XVD3McLc611VVvB1B14Vzow7cROHxBA8LpxEroxmOjQkp.png)
 - For Authorized JavaScript Origins, enter: `https://<store-url>`
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/674937111eef3246ea0177d2_AD_4nXe1w4Pydr3qUu1NdzzYJJTZhbL0Q6cqqYTljG8H7dnqQ1yMttSfYj3CEwgynfzkNL5g1j1rYeSuUZRq3ORby3SNAMWpaNFE_Im-0DFycXK0A9iMVcgiVknVaK3lVhwMa6aP8fpG0A.png)
 - For Authorized Redirect URIs, enter: `https://<store-url>/pages/bitlogin-google-callback`
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/674937404caddb2961a22507_AD_4nXcxseMJb7HFAxP4ZKMi1BalcO4wnUPDqt6PvqizRGXt6ebwJIDJWzmXZDB3lWe48YuTiOjxs_3PhhauBwM9wO7Sv7eu0YoHMXDnsXU7MhKCT74--xpwM7IYX0A_NtMFTTP0S29gjw.png)
 - Copy the Client ID and Client Secret to bitLogin Google Settings and save.
 
-<img
-  src="/images/oauth-credentials.png"
-  alt="Generate OAuth Credentials"
-  className="rounded-lg"
-/>
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/674937b2ecb3275d2bed00ce_AD_4nXfQxhyhuU1zODFTbR9IEmhKkVmkKftuWA-c6EWPmSHfk_sXyFLOQSfTeki2veWGg-h5-nuuXd_EFGgI6J991Vf0F9a9CTTUO1XDypcMNHB7HwnHl_29IE_D5cwtOaxfXSqrgGdREw.png)
+
+  ![Step6](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9d06afb8efd17067a3_AD_4nXebzbsbO74KWw-Yq2iXkXK2OUv4D1Atqapa-qKJGZKb3AA7Ed4SzHB39sFshjfeyS_VG9MzLRcikU4cxj3E6Ld5zQzb3TuD3-cvrsHBV1CHVKRV9dzvDm5X9JiYeLDo63iyWm4KtMBZ4rLBzheVM2FPnRsg.png)
 
 ## Step 7: Optional - Enable Google One Tap
 
 For a seamless login experience, go to [bitLogin Google Settings](https://app.bitbybit.studio) and enable Google One Tap.
 
-<img
-  src="/images/enable-google-one-tap.png"
-  alt="Enable Google One Tap"
-  className="rounded-lg"
-/>
+![Step7](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66b5bb9cb283ab0cd8b34199_AD_4nXezcxlikLP_5QxuzjnCjzjm2dr5qZGV5pHpVeO_I5YM6WlteXaOxwCgHiWJGbaqCG_KSGjyeWceoLG2opZI0FhlO2WDL7chogZUPP3eLaAXLWPSjHK8mKKQK6pXEQEGwvLa179O03BAUA8LO5lQoDkL0O2_.png)
 
 For further assistance, reach out to us at [help@bitbybit.studio](mailto:help@bitbybit.studio).

@@ -1,3 +1,85 @@
 ---
-title: "How to Set up Twitter OAuth"
+title: "Integrating Twitter OAuth"
+description: "Comprehensive guide to configuring Twitter OAuth for secure login integration."
 ---
+
+Twitter OAuth integration allows users to log in to your application securely using their Twitter credentials, simplifying access and improving user experience. Follow this comprehensive guide to configure Twitter OAuth for your app:
+
+## Step 1: Access the Twitter Developer Portal
+
+- Go to the [Twitter Developer Portal](https://developer.twitter.com).
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0f47dcf52698dce154_AD_4nXf_kHQUttwTTbd4wlaNHzVKXW9KT1BPQPuPx_en8QxLO8Cd9TVqTVoOBS5nRnbc6mPzIVjM6kZ2F-x_DR5W0B1kWWOwFekx_cS758fWm1NCAD608WYPUIW3h2vsqjAbRkEPr5zO0Ex74vHx18X0x4b13H4o.png)
+- Log in using your Twitter credentials, or create a new account if you don’t have one.
+
+## Step 2: Developer Agreement & Policy
+
+- Enter your use case and agree to their terms, then click **Submit.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0fa5dd10fa87770a9c_AD_4nXdDcjOC7y4DrLD5z55YQbqFq_5-g_ibDglSI_Vj6Z0u1mEtBw8SKao2zzNiLh7p_lAY6anraaKsx-fUA0FniYc751sWMW8eWJ14lbh1WH_imMw2deNTZ8JYEtQGkf3p-OQDx9h96UBHMDshxTBRLZzrGpkD.png)
+- You will be directed to the Twitter dashboard with a project created.
+
+## Step 3: Set Up Authentication
+
+- Click **Project & Apps** on the sidebar then select your project.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0fe3ba1983d18f37c7_AD_4nXeo_TZQ6lpEXtb3lT1ASHVfm-9YUPmngivdGX3NUTPmVlTbObhjGzmYV0lwJTDKb5FGZ9uDu7wqDQMMhX2ZfDiD87p7V20EYuVYHEkwZi4YH3_GYq1Uxx0iwv9sPvXM_s10SkLujZ8kE--tOYJCNILblDNu.png)
+- Click **Set up** User authentication settings.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f106fe99d2fd06e3de4_AD_4nXd2GZzh7uGAo_nY2VrvC8IuJSaLTYmuuoN1GuJHxZ1WRw9J65ucx6Kn8YufU3LFiIBQ-3PmKQIk0HWAV9ibG6e5IAFCa0Hbnr3gIyRdKHUegTmtB_FCzz72aBK3RUZUK50uAqMdjB6XbrujbnlHowES3IE.png)
+
+## Step 4: Configure Permissions
+
+- Select permissions by choosing **Read and Write** or **Read, Write, and Direct Messages** depending on your app's needs.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0f1e4cf7fe7c92c902_AD_4nXeGFO_VdDRdwUFfrq_pAW0DpnUeRI3Dud0EkcHm5VwvyGeofPSQ92xHX3pReGjkCSkl2YkNgt3aEOn-ZZGdLoqpQZU1rwLPP7MGf_IT9fgk2GZR5rK0xgW9TMz3bfMyh9A-O7IOghW_4aggD1Yo_qEWT89f.png)
+
+## Step 5: Set Your Type of App
+
+- Give the App permissions by selecting **Web App, Automated App or Bot.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6708910c8bf3188d57e5b297_AD_4nXdspewY7GnKlG_kKc5rZYqRerSVZh6eJ7_lyLE41-9_3iQBR4nvBFTp_I4LloCl_JNlm8wsJzlBiFwVuiyZyMseJ3R4XCV1puFfyCUFJnTStEmKgFDfiLD1usydRQjhlwbjHCBqXpff-o6kh3w7L2NyDXHO.png)
+
+## Step 6: Set App Info
+
+Fill in the following fields:
+
+- **Callback URL**:\
+  `https://api.bitbybit.studio/bitlogin/api/login/twitter/callback`
+- **Website URL**: Enter your domain or website URL
+- **Organization name**: bitbybit
+- **Organizational URL**: https://bitbybit.studio
+- **Terms of service**: https://ww.bitbybit.studio/terms-conditions
+- **Privacy policy**: https://bitbybit.studio/privacy
+
+## Step 7: Save Your Authentication Set Up
+
+- Click **Save**
+
+## Step 8: Generate Access Tokens
+
+- Return to **Project & Apps** and click **Default project.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0f96414aeb6378f458_AD_4nXeswWYXMmn_r6YAhbVS4v82DkO4dIo1Zv416vL_5zJBAfunRDwyjNGWbUFZH2wWRh8vtw3Fp99y2a6ousA_KIaM3FXn-kev2SXI6HNHld1BO4ks_zC4O1B6Xgd40DD76CGaUK-IyialcB4Wju_vQUA2pLIK.png)
+- Scroll down to the Apps and click the **Key icon.**
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0fab7c3533f9e6e40c_AD_4nXdNhzkyexAzUpbJgBRmUF0-LVwX3lGDmLAmoka4-V2k4kTPJkpyhd2eKe2WzS2LS-KiRJDZ7zV2wC7Eq9H6ZO251Wv5jFugUCau1oqCf37IpSZkXGQBlc7Nu724q1rGTiKwIHepTGWUSkWB0uVO1meU-AWm.png)
+- Click **Generate** to create your Access Token and Access Token Secret.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0f1d0ca33138604893_AD_4nXdsOKojmn7jbBnzTTU5gPQ9pUgKHaY3cUQury-4Exc6EBXUyCLUj7rm9YIcyCaIrXgDCLW_IGJkrUsdFpiU2gc2fPdX2kQg6qeaei9PLh8QhpVtCN5b_Kyt2_UCYQl6p3o7DIpGLjZHYNVswGqFHgIYC4Yq.png)
+
+## Step 9: Configure Twitter OAuth
+
+- Copy and paste **API Key** and **API Key Secret** into your bitLogin OAuth Settings - Twitter page.
+
+  ![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67087f0f11184b1565df0cc2_AD_4nXeX_atHnRQwJmBRlrEv3oJ4TKRsLG7VWLGNTsMFLJO_F0rfRaVS7ujs7Cu4WjJWbkOvEOpBfUcVV0hZXc-txyiM3oiRWc2Qm66uB3DVo5c-CMhywhff0xzCS9TJ1coiWCS-DAe93rZZ-evVhBJpG8ZU7-Y.png)
+
+## Step 10: Enable Twitter Login
+
+- Toggle the **Use your store name on Twitter login** switch until it turns green.
+- Click **Save Changes.**
+
+![Screenshot2025 08 20at15 47 34 Pn](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/66ff4e96dd07492f0ca27318_66fe685d5d78b249df1e1da0_AD_4nXfMEwmXptvBBdLzfO3EOuB2nz-Jx9Z2kxQrFCB-ra5eKGv4mcrmBYlkXxIUEfNxIcFo514grcgpErcE6zCgQxvY5ld1RUDFcgMDPc_4q3Yr8PqwnTVec3-hIrTFq5FGJc4lfzn1bj3JlWeJHPfneFldX-pb.png)
+
+\
+🎉 Congratulations\! You've now configured Twitter OAuth successfully.
