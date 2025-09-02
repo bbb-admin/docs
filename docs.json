@@ -166,7 +166,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "bitlogin/how-to-activate-bitlogin-from-shopify"
+              "bitlogin/how-to-activate-bitlogin-from-shopify",
+              "bitlogin/enabling-the-collect-data-feature-in-bitlogin"
             ]
           },
           {
