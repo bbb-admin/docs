@@ -1,6 +1,85 @@
 ---
-title: "bitbybit X Make.com "
-description: "This guide will help you connect bitbybit WhatsApp API with Make.com so you can send an approved template message to bitbybit from Make.com
-
-"
+title: "📖 Integration Guide: bitbybit and Make.com"
+description: "This guide explains how to integrate bitbybit with Make.com so you can send automated WhatsApp template messages directly from your business workflows."
 ---
+
+### 🔗 Step 1: Set up in [Make.com](http://Make.com)
+
+1. Create a Scenario
+   - Log in to [Make.com](http://Make.com)
+   - Create a **New Scenario**
+   - Add the apps or steps you need for your real business workflow (for example: trigger when a new order is placed, when a form is submitted, or when data is updated in your CRM).
+2. Add Http Request Module
+   - In your scenario, add an **HTTP module** → choose **Make a Request**
+   - This will be used to send messages through bitbybit's API.
+
+### 🔗 Step 2: Prepare Your Bitbybit API Key
+
+1. Go to [bitbybit Advance Settings](https://app.bitbybit.studio/settings?section=advance-settings)
+2. Copy your **bitChat API Key** (you will need this in [Make.com](http://Make.com))
+
+### 🔗 Step 3: Configure HTTP Request in [Make.com](http://Make.com)
+
+Set up your HTTP Request as follows:
+
+Method : `POST` 
+
+URL : 
+
+```
+https://api.bitbybit.studio/whatsapp/v3.1/message/template
+```
+
+Headers : 
+
+```
+x-bitbybit-key: {{paste-your-bitchat-api-key-here}}
+```
+
+Body Example (JSON) : 
+
+```
+{
+  "to": "6281234567890",
+  "template_name": "welcome_message",
+  "template_source": "CRM",
+  "params": [
+    "John",
+    "Order123",
+    "2024-01-01"
+  ]
+}
+```
+
+**_Payload Explanation : _**
+
+- **to** → The recipient’s phone number (must include country code, e.g., `62` for Indonesia)
+- **template_name** → The name of the template you have already created in bitbybit.
+- **template_source** →
+  - Use `AUTH` if the template is for OTP (one-time password).
+  - Use `CRM` for all other types (e.g., welcome messages, reminders, updates)
+- **params** → These are the **dynamic variables** in your template.
+
+  👉 Example for **params ]**
+
+  If your template looks like this:
+
+  ```
+  Hello {{1}}, your order {{2}} will be delivered on {{3}}.
+  ```
+
+  Then your params must have **3 values** in the same order:
+
+```
+"params": [
+  "John",          // {{1}} will be replaced with "John"
+  "Order123",      // {{2}} will be replaced with "Order123"
+  "2024-01-01"     // {{3}} will be replaced with "2024-01-01"
+]
+```
+
+If your template has 2 variables, you must send 2 values. If it has none, leave `params` as an empty list `[]`.
+
+### 📚 Additional Resources
+
+For full details about WhatsApp API and template messages, visit: [bitbybit Open API Documentation](https://api.bitbybit.studio/whatsapp/docs).
