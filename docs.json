@@ -19,9 +19,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
-              "bitcrm/how-to-connect-whatsapp-business-app",
-              "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
+              "bitcrm/how-to-create-and-connect-whatsapp-cloud-api","bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
               "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-facebook","bitcrm/how-to-integrate-WhatsApp-Coex-with-bitbybit"
             ]
           },
