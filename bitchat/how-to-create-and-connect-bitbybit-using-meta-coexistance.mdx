@@ -1,0 +1,106 @@
+---
+title: "How to Create and Connect bitbybit using Meta Coexistence"
+---
+
+For a step-by-step guide on how to complete this pros, please visit [our YouTube Channel.](https://www.youtube.com/@bitbybit.studio/videos)
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/ihnNUrOFfYQ"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+allowfullscreen>
+</iframe>
+
+META Coexistence (Coex) facilitates the simultaneous operation of the WhatsApp Business App and the Cloud API. This key feature allows user to migrate to an API-based solution without deactivating their current account, thereby ensuring the preservation of their chat history.
+
+This provides major benefits:
+
+1. **Flexibility and Cost-Efficiency:** Users can use for personal, one-on-one chats while using the powerful API for automation, chatbots, and high-volume broadcasts. This mix optimizes costs.
+2. **No Lost Data:** Businesses can adopt the API without deactivating their account. All messages are "mirrored" and synced between both platforms, preserving conversation history. All contacts are imported automatically. You can also choose to import up to 6 months of 1:1 chats and 2 weeks of multi-media history (group chats are not imported).
+3. **Scalability & Professionalism:** Companies can manage a high volume of messages using the API and still maintain a single, professional number for a seamless customer experience.
+
+**Important**
+
+The following are the requirements before integration:
+
+1. A valid [Facebook Business ](http://business.facebook.com/) account.
+2. An active **WhatsApp Business App** phone number.
+3. The [Meta Verification ](https://knowledge.bitbybit.studio/bitcrm/how-to-create-and-connect-whatsapp-cloud-api) process has been completed (phone number verification and business verification).
+
+### **Integration Process**
+
+**Step 1: Access Integrations**
+
+**Navigate** to the “[**Integrations**](https://app.bitbybit.studio/integrations?_gl=1*1ovr1nu*_gcl_au*MjExMjg5MDc3Mi4xNzU3OTg2Njg0LjUzODA2NTc2OS4xNzYxNzM1ODY1LjE3NjE3MzYwNjM.)” dashboard. Select WhatsApp Business App.
+
+![Screenshot 2025-11-01 094709.png](/images/Screenshot2025-11-01094709.png)
+
+**Step 2:** Connect your Meta account
+
+![Screenshot 2025-11-01 095444.png](/images/Screenshot2025-11-01095444.png)
+
+**Step 3:** Connect your Facebook account
+
+![Screenshot 2025-11-01 100536.png](/images/Screenshot2025-11-01100536.png)
+
+**Step 4:** Start Connecting to bitbybit
+
+![Screenshot 2025-11-01 100952.png](/images/Screenshot2025-11-01100952.png)
+
+**Step 5:** Choose your Business Portfolio and fill all the information
+
+![Screenshot 2025-11-01 101744.png](/images/Screenshot2025-11-01101744.png)
+
+Note: Choose the **portfolio** you want to integrate if your business has multiple **portfolios**.
+
+**Step 6:** Choose to Connect with WhatsApp Business
+
+![Screenshot 2025-11-01 112005.png](/images/Screenshot2025-11-01112005.png)
+
+**Step 7:** Insert the WhatsApp Business number that you want to integrate with bitbybit.
+
+![Screenshot 2025-11-01 112127 - Copy.png](/images/Screenshot2025-11-01112127-Copy.png)
+
+**Step 8:** Scan the QR Code from your **WhatsApp Business App**
+
+![Screenshot 2025-11-01 113512.png](/images/Screenshot2025-11-01113512.png)
+
+- Look at your screen for the **"Share Contacts and Chats"** pop-up, which will display a QR code.
+- Go to your WhatsApp Business App and find the message from **Facebook Business**.
+- Open the message, click **"Connect,"** and then confirm by clicking **"Connect to the Business Platform."**
+
+**Step 9:** Set up your timezone.
+
+![Screenshot 2025-11-01 114914.png](/images/Screenshot2025-11-01114914.png)
+
+**Step 10:** You are all Set
+
+![Screenshot 2025-11-01 115517.png](/images/Screenshot2025-11-01115517.png)
+
+To check if your WhatsApp account is connected to bitbybit.
+
+Your WhatsApp Business app will show a confirmation screen (also found in **Settings \> Account \> Connect to Business Platform**).
+
+![Screenshot 2025-11-01 115927.png](/images/Screenshot2025-11-01115927.png)
+
+Now same as Cloud API, You need to continoue into the [payment method](https://knowledge.bitbybit.studio/bitcrm/how-to-create-and-connect-whatsapp-cloud-api#add-payment-method)
+
+## [**Feature Comparison**](https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/onboarding-business-app-users/)
+
+The table below outlines the features available for each type of WhatsApp business setup: the standard **WhatsApp Business App**, the **WhatsApp Business App connected to Cloud API** (Coexistence), and the fully integrated **WhatsApp Cloud API**. It also highlights how certain features change once a business is onboarded to the Cloud API.
+
+| **Existing feature on the WhatsApp Business App**                                                                                                                                                                                                                                                                                                                                                               | **Changes to features on the WhatsApp Business App AFTER onboarding to Cloud API (Coexistence)**                                            | **Is the WhatsApp Business app feature supported on Cloud API?**                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Individual (1:1) chats                                                                                                                                                                                                                                                                                                                                                                                          | Message Edit/Revoke is no longer supported.                                                                                                 | Supported.  All chat messages in the most recent 6 months can be synchronized.  Messages sent and received are mirrored between the Cloud API and WhatsApp Business app. |
+| Contacts                                                                                                                                                                                                                                                                                                                                                                                                        | No change.                                                                                                                                  | Supported.  All contacts with a WhatsApp number can be synchronized.                                                                                                     |
+| Group chats                                                                                                                                                                                                                                                                                                                                                                                                     | No change.                                                                                                                                  | Not supported.  Group chats will not be synchronized.                                                                                                                    |
+| Disappearing messages                                                                                                                                                                                                                                                                                                                                                                                           | Disappearing messages will be turned off for all individual (1:1) chats                                                                     | Not supported.                                                                                                                                                           |
+| [View once message](https://l.facebook.com/l.php?u=https%3A%2F%2Ffaq.whatsapp.com%2F1077018839582332%3Ffbclid%3DIwZXh0bgNhZW0CMTEAYnJpZBExQlhhWHZBbHhpYndmZnIybwEeSExbFdF-1AC7_f4W21yve0M2niZFH2E1gCr1IruyCnAxaEcX2XE9YWbe5V0_aem_-7eauvd5r7eseLe_d2h_Zg&h=AT1-MtGo1k08uvmIUCeOlb9JGErqNP1GM17Ej0vBWPLtIU87j1jx64YspV4VE5d0OdCoW-8Fz1YLfYkkciwWlDWEhhiu4Zr4ZdhJZ7WcM6OVxZPAb4fqwbGCiAsVi0MQbXbS98VWty6HeDhkNso) | View once messages will be disabled for all individual (1:1) chats                                                                          | Not supported.                                                                                                                                                           |
+| Live location message                                                                                                                                                                                                                                                                                                                                                                                           | Live location messages will be disabled for all individual (1:1) chats                                                                      | Not supported.                                                                                                                                                           |
+| Broadcast lists                                                                                                                                                                                                                                                                                                                                                                                                 | Broadcast list will be disabled.  Business will not be able to create new Broadcast Lists.  Existing Broadcast Lists will become read-only. | Not supported.                                                                                                                                                           |
+| Voice and video calls                                                                                                                                                                                                                                                                                                                                                                                           | No change.                                                                                                                                  | Not supported.                                                                                                                                                           |
+| Business tools (eg. catalog, orders, status)                                                                                                                                                                                                                                                                                                                                                                    | No change.                                                                                                                                  | Not supported.                                                                                                                                                           |
+| Messaging tools (eg. marketing messages, greeting message, away message, quick replies, labels)                                                                                                                                                                                                                                                                                                                 | No change.                                                                                                                                  | Not supported.                                                                                                                                                           |
+| Business profile (eg. business name, address, website)                                                                                                                                                                                                                                                                                                                                                          | No change.                                                                                                                                  | Not supported.                                                                                                                                                           |
+| Channels                                                                                                                                                                                                                                                                                                                                                                                                        | No change.                                                                                                                                  | Not supported.                                                                                                                                                           |
+| Individual (1:1) chats                                                                                                                                                                                                                                                                                                                                                                                          | Message Edit/Revoke is no longer supported.                                                                                                 | Supported.  All chat messages in the most recent 6 months can be synchronized.  Messages sent and received are mirrored between the Cloud API and WhatsApp Business app. |
