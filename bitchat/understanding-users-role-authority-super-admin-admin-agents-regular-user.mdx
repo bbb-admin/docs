@@ -20,10 +20,9 @@ The **Agent** role is tailored for customer service representatives and support 
 
 The **Regular User** role is designed for general employees who require access to basic functionalities within bitbybit. Regular Users can interact with core applications like bitCRM and bitLogin, manage their account settings, and participate in customer interactions. However, they do not have permissions to manage tickets or make significant changes to company settings.
 
-**#Importance**
-If a **Regular User needs to manage tickets**, their **role authority** can be **updated** . Follow these steps to adjust their permissions:
+**Importance** If a **Regular User needs to manage tickets**, their **role authority** can be **updated** . Follow these steps to adjust their permissions:
 
-Step 1: Go to User & Authority:
+**Step 1: Go to User & Authority:**
 
 - Click on "[User & Authority](https://app.bitbybit.studio/settings?section=user-authority)" in the settings menu.
 
@@ -31,7 +30,7 @@ Step 1: Go to User & Authority:
 
 Click "User & Authority"
 
-Step 2:  Modify a User Email & Role :
+**Step 2:  Modify a User Email & Role :**
 
 - Click "Add User" to invite a new user or select an existing user to modify their role.
 
@@ -45,10 +44,35 @@ Click "Add User"
 
 Fill in "User Email" and choose "Regular User"
 
-Step 3:  Send the Invitation:
+**Step 3:  Send the Invitation:**
 
 - Enable the option by clicking the checkbox “Agent Access” and click "Send Invite."
 
   ![Screenshot2025 09 11132411 Pn](/images/Screenshot2025-09-11132411.png)
 
 Click "Agent Access" then click "Send Invite"
+
+**Table of Autority for Each role**
+
+| Page / Action List                   | **Super Admin** | Admin       | Agent       | User        |
+| :----------------------------------- | :-------------- | :---------- | ----------- | ----------- |
+| bitCRM, bitApp, bitLink, bitLogin    | ✅ Access        | ✅ Access    | ❌ No Access | ✅ Access    |
+| Handle Tickets                       | ✅ Access        | ✅ Access    | ✅ Access    | ❌ No Access |
+| Edit Ticket Status & Details         | ✅ Access        | ✅ Access    | ✅ Access    | ❌ No Access |
+| Chat Setup (Reply, Widget, Settings) | ✅ Access        | ✅ Access    | ✅ Access    | ✅ Access    |
+| Access Analytics Page                | ✅ Access        | ✅ Access    | ❌ No Access | ✅ Access    |
+| Customers Page                       | ✅ Access        | ✅ Access    | ✅ Access    | ✅ Access    |
+| Account Settings                     | ✅ Access        | ✅ Access    | ✅ Access    | ✅ Access    |
+| Company Settings                     | ✅ Access        | ✅ Access    | ❌ No Access | ❌ No Access |
+| User Authority (Add/Edit Users)      | ✅ Access        | ✅ Access    | ❌ No Access | ❌ No Access |
+| Pricing Page (View Only)             | ✅ Access        | ✅ Access    | ✅ Access    | ✅ Access    |
+| Pricing Actions (Upgrade/Downgrade)  | ✅ Access        | ✅ Access    | ❌ No Access | ❌ No Access |
+| Delete Company                       | ✅ Access        | ❌ No Access | ❌ No Access | ❌ No Access |
+
+**Key Role Distinctions**
+
+- **Super Admin:** The ultimate authority. They are the **only** role that can **delete the company**. They share every other permission with the Admin.
+- **Admin:** Identical to Super Admin in every day-to-day operation (managing users, pricing, settings), but blocked from the destructive action of deleting the company.
+- **Regular User vs. Agent:**
+  - **Regular Users** are for **internal work**: They get the Apps (CRM, etc.) and Analytics, but cannot handle support tickets.
+  - **Agents** are for **external support**: They get the Ticket/Chat tools, but are blocked from Apps and Analytics.
