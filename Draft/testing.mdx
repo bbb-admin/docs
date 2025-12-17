@@ -1,0 +1,79 @@
+---
+title: "Understanding user roles and authority"
+description: "Compare permissions for Super Admins, Admins, Agents, and Regular Users to manage your team effectively."
+---
+
+Assigning the correct roles ensures your team has access to the tools they need while keeping sensitive company settings secure.
+
+<Info>
+  **Prerequisite:** Only **Super Admins** and **Admins** can invite new users or modify the roles of existing team members.
+</Info>
+
+## Role definitions
+
+### Super Admin
+The **Super Admin** has ultimate authority over the workspace.
+* **Best for:** Business owners.
+* **Key Capability:** This is the *only* role that can delete the company workspace.
+* **Access:** Full access to all features, billing, and settings.
+
+### Admin
+The **Admin** manages day-to-day operations and team structure.
+* **Best for:** Managers and Team Leads.
+* **Key Capability:** Can manage users, billing, and settings.
+* **Limitation:** Cannot delete the company workspace.
+
+### Agent
+The **Agent** role is strictly for customer support handling.
+* **Best for:** Customer Service Representatives (CSRs).
+* **Access:** Focuses on Tickets and Live Chat.
+* **Limitation:** No access to internal apps (bitCRM, bitApp) or Analytics.
+
+### Regular User
+The **Regular User** role is for internal employees who do not do support work.
+* **Best for:** General staff and stakeholders.
+* **Access:** Can use internal apps (bitCRM, bitApp) and view Analytics.
+* **Limitation:** Cannot manage tickets or chat with customers.
+
+---
+
+## Permissions matrix
+
+Use this table to compare capabilities at a glance.
+
+| Feature / Page | Super Admin | Admin | Agent | Regular User |
+| :--- | :---: | :---: | :---: | :---: |
+| **Manage Company Settings** | ✅ | ✅ | ❌ | ❌ |
+| **Manage Users & Roles** | ✅ | ✅ | ❌ | ❌ |
+| **View Pricing/Billing** | ✅ | ✅ | ❌ | ❌ |
+| **Upgrade/Downgrade Plan**| ✅ | ✅ | ❌ | ❌ |
+| **Handle Tickets & Chat** | ✅ | ✅ | ✅ | ❌ |
+| **Access bitCRM & Apps** | ✅ | ✅ | ❌ | ✅ |
+| **View Analytics** | ✅ | ✅ | ❌ | ✅ |
+| **Delete Company** | ✅ | ❌ | ❌ | ❌ |
+
+---
+
+## How to manage permissions
+
+If a team member needs different access (e.g., a Regular User needs to help with support tickets), you can update their authority settings.
+
+<Steps>
+  <Step title="Access User & Authority">
+    Go to **Settings** and click on **User & Authority**.
+    ![Screenshot: The Settings menu highlighting User & Authority]
+  </Step>
+  <Step title="Select a user">
+    Click **Add User** to invite someone new, or click the **Edit** icon next to an existing user.
+  </Step>
+  <Step title="Define the role">
+    Enter the user's email (if new) and select their primary role (e.g., **Regular User**) from the dropdown menu.
+  </Step>
+  <Step title="Grant specific access">
+    If you need a Regular User to handle tickets without making them a full Admin, check the box labeled **Agent Access**.
+    ![Screenshot: The role selection dropdown and the Agent Access checkbox]
+  </Step>
+  <Step title="Send invite or save">
+    Click **Send Invite** (for new users) or **Save** (for existing users) to apply the changes immediately.
+  </Step>
+</Steps>
