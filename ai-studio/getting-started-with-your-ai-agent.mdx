@@ -3,10 +3,14 @@ title: "Getting Started with Your AI Agent"
 description: "Set up your WhatsApp AI assistant and start converting conversations into sales"
 ---
 
-Your AI agent handles customer conversations on WhatsApp 24/7 — answering questions, recommending products, and guiding customers to checkout. This guide walks you through the onboarding form so you can get your AI up and running.
+Your AI agent handles customer conversations on WhatsApp 24/7 — answering questions, recommending products, and guiding customers to checkout. This guide helps you fill out the onboarding form so we can build your AI.
+
+<Card title="Open the Onboarding Form" icon="file-lines" href="https://docs.google.com/document/d/1ACpJel8d3JDIgRe7O6NQTwB6gpN0jniDOkHlkRYj2N4/edit?usp=sharing">
+  Make a copy of the Google Doc and fill it out. This guide explains each section.
+</Card>
 
 <Info>
-**Setup time:** About 20 minutes to fill out the form. We'll have your AI ready in 1-3 business days.
+**Setup time:** About 20 minutes to complete the form. We'll have your AI ready in 1-3 business days.
 </Info>
 
 ---
@@ -31,248 +35,129 @@ Your AI agent handles customer conversations on WhatsApp 24/7 — answering ques
 
 Your AI has two parts that work together:
 
-<CardGroup cols={2}>
-  <Card title="Part A: System Prompt" icon="brain">
-    **Runs on every message**
-    
-    This is your AI's personality — its name, tone of voice, greeting, and the rules it always follows. Think of it as your AI's brain.
-  </Card>
-  <Card title="Part B: Knowledge Base" icon="book">
-    **Searched when needed**
-    
-    This is your AI's reference library — FAQs, store locations, policies, and promotions. The AI searches here when customers ask detailed questions.
-  </Card>
-</CardGroup>
+| Part A: System Prompt | Part B: Knowledge Base |
+|-----------------------|------------------------|
+| **Runs on every message** | **Searched when needed** |
+| Your AI's personality — name, tone, greeting, and rules it always follows | Your AI's reference library — FAQs, store info, policies, promotions |
+| Think of it as your AI's *brain* | Think of it as your AI's *memory* |
 
-### What goes where?
-
-| Put in Part A (System Prompt) | Put in Part B (Knowledge Base) |
-|-------------------------------|--------------------------------|
-| Agent name & personality | Detailed product info |
-| Welcome message | Store locations & hours |
-| Rules that always apply | FAQ answers |
-| Escalation triggers | Current promotions |
-| Upselling scripts | Return & shipping policies |
+**Quick rule:** Put personality and critical rules in Part A. Put detailed reference info in Part B.
 
 ---
 
-## Part A: System Prompt
+## Filling out the form
 
-The system prompt defines who your AI is and how it behaves in every conversation.
+The form includes examples from two brands — adidas (e-commerce) and McDonald's (restaurant). Copy the example closest to your business and customize it.
 
-### A1. Agent Identity
-
-<Accordion title="What to fill in">
-**Agent Name** — The name your AI uses when greeting customers. Keep it short and memorable. Examples: "Adi", "Rasa", "Maya"
-
-**Brand Name** — Your business name as customers know it.
-
-**Brand Description** — Explain what you sell and who you serve. This helps your AI understand your business context.
-
-*Example:*
-> "adidas Indonesia is a sportswear brand selling athletic footwear, apparel, and accessories to athletes and lifestyle customers who value performance and style."
-</Accordion>
-
-### A2. Conversation Style
-
-<Accordion title="What to fill in">
-**Primary Language** — The language your AI starts conversations in. It will automatically switch if customers respond in a different language.
-
-**Tone of Voice** — How should your AI sound?
-- **Professional & Helpful** — Best for B2B, electronics, services
-- **Friendly & Casual** — Best for fashion, lifestyle, retail
-- **Energetic & Fun** — Best for sports, entertainment, F&B
-- **Warm & Caring** — Best for beauty, wellness, kids products
-
-**Personality Details** — Add specific phrases, emoji preferences, or language quirks.
-
-*Example:*
-> "Address customers as 'Kak'. Use food emojis naturally 🍔🍟. Keep responses short (2-3 sentences)."
-</Accordion>
-
-### A3. Welcome Message
-
-<Accordion title="What to fill in">
-This is the first message customers see when they start a conversation. A great welcome message has three parts:
-
-1. **Greeting** — Warm, branded hello
-2. **Value** — What you offer or what's popular
-3. **Action** — Clear next step
-
-*Example:*
-> "Halo Kak! 👋 Selamat datang di McDonald's!
->
-> Mau pesan Big Mac, McChicken, atau menu lainnya? Langsung aja, aku bantu!"
->
-> [Button: Lihat Menu]
-
-**Button Text** — The call-to-action button shown with your welcome message. Examples: "Lihat Menu", "Lihat Katalog", "Mulai Belanja"
-</Accordion>
-
-### A4. Business Rules (Optional)
-
-<Accordion title="What to fill in">
-Add critical rules your AI should always enforce. Keep this focused — detailed policies go in the Knowledge Base.
-
-**Delivery & Orders** — Minimum orders, delivery fees, estimated times
-> "Free shipping for orders above Rp 500,000. Standard delivery 3-5 business days."
-
-**Product Guarantees** — Quality promises, certifications
-> "All products 100% authentic. 30-day return for unworn items with tags."
-
-**Important Restrictions** — Things your AI should never promise
-> "Never guarantee stock availability without checking. Cannot combine promo codes."
-</Accordion>
-
-### A5. Escalation Triggers (Optional)
-
-<Accordion title="What to fill in">
-List keywords or situations that should transfer the conversation to a human agent.
-
-*Examples:*
-- Quality issues: "defective, broken, wrong item, fake"
-- Order problems: "refund, return, cancel, missing"
-- Direct requests: "talk to human, speak to agent"
-- Complex needs: "bulk order, corporate, partnership"
-</Accordion>
-
-### A6. Forbidden Actions (Optional)
-
-<Accordion title="What to fill in">
-Tell your AI what it should never do.
-
-*Examples:*
-- "Never promise exact delivery dates"
-- "Never offer unauthorized discounts"
-- "Never mention competitor brands"
-- "Never guarantee specific promotional items"
-</Accordion>
-
-### A7. Upselling (Optional)
-
-<Accordion title="What to fill in">
-Define when and how your AI should suggest additional items. Good upselling feels helpful, not pushy.
-
-**Structure your upsell:**
-1. **When** — The trigger situation
-2. **Suggest** — What to recommend
-3. **Script** — Exact words to use
-
-*Example:*
-> When: Customer orders burger only (no meal)
-> Suggest: Upgrade to meal package
-> Script: "Kak, mending jadi paket aja! Tambah Rp 15,000 udah dapat fries + drink."
-</Accordion>
-
-### A8. Checkout (Optional)
-
-<Accordion title="What to fill in">
-**Customer Selections** — What customers need to specify before ordering. Examples: Size, Color, Quantity, Spice Level, Add-ons
-
-**Payment Methods** — Check all the payment methods you accept:
-- Bank Transfer (BCA, Mandiri, BNI, etc.)
-- E-wallet (ShopeePay, OVO, DANA, GoPay)
-- QRIS
-- Credit/Debit Card
-</Accordion>
-
----
-
-## Part B: Knowledge Base
-
-The Knowledge Base is your AI's reference library. It searches here when customers ask detailed questions.
-
-### What you can add
-
-<CardGroup cols={2}>
-  <Card title="📄 Files" icon="file">
-    Upload documents with detailed info: product catalogs, menus, size guides, policy documents
-  </Card>
-  <Card title="🌐 Websites" icon="globe">
-    Add URLs your AI should learn from: FAQ pages, shipping info, product pages
-  </Card>
-  <Card title="🖼️ Images" icon="image">
-    Upload visuals your AI can send: size charts, promo banners, store maps
-  </Card>
-  <Card title="📝 Text Entries" icon="pen">
-    Type information directly: store locations, FAQs, current promotions
-  </Card>
-</CardGroup>
-
-### B1. Files
-
-Check the files you'll provide:
-- Product catalog or menu (with prices)
-- Size guide or specifications
-- Return and refund policy
-- Shipping information
-
-### B2. Websites
-
-Add URLs to pages your AI should learn from:
-```
-https://yoursite.com/faq
-https://yoursite.com/shipping
-https://yoursite.com/returns
-```
-
-### B3. Images
-
-For each image, specify when your AI should send it:
-
-| Image | Send when... |
-|-------|--------------|
-| Size Chart | Customer asks about sizing |
-| Current Promo | Customer asks about discounts |
-| Store Map | Customer asks for directions |
-
-### B4. Text Entries
-
-Type information directly into the form. Common entries include:
+### Part A: System Prompt
 
 <AccordionGroup>
-  <Accordion title="Store Locations">
-  List your locations with addresses and hours.
+  <Accordion title="A1. Agent Identity (Required)">
+  **What to fill in:**
+  - **Agent Name** — Keep it short and memorable (e.g., "Adi", "Maya", "Rasa")
+  - **Brand Name** — Your business name as customers know it
+  - **Brand Description** — What you sell and who you serve
   
-  *Example:*
+  **Tip:** Your brand description helps the AI understand context. Be specific about your products and target customers.
+  </Accordion>
+  
+  <Accordion title="A2. Conversation Style">
+  **What to fill in:**
+  - **Primary Language** — The AI auto-switches based on customer language
+  - **Tone of Voice** — Match your brand personality
+  - **Personality Details** — Specific phrases, emoji preferences, quirks
+  
+  **Tip:** Instead of "be friendly," be specific: "Address customers as 'Kak' and use food emojis 🍔🍟"
+  </Accordion>
+  
+  <Accordion title="A3. Welcome Message (Required)">
+  This is the first message customers see. Structure it as:
+  1. **Greeting** — Warm, branded hello
+  2. **Value** — What you offer or what's popular
+  3. **Action** — Clear next step + button
+  
+  **Tip:** Keep it short (3-4 lines max). End with a call-to-action button like "Lihat Menu" or "Mulai Belanja".
+  </Accordion>
+  
+  <Accordion title="A4. Business Rules (Optional)">
+  Add critical rules your AI must always follow:
+  - Delivery minimums and fees
+  - Product guarantees
+  - Important restrictions
+  
+  **Tip:** Only include rules that apply to *every* conversation. Detailed policies go in Part B.
+  </Accordion>
+  
+  <Accordion title="A5. Escalation Triggers (Optional)">
+  List keywords or situations that should transfer to a human:
+  - Quality issues (defective, broken, wrong item)
+  - Refund/return requests
+  - "Talk to human" — always escalate this
+  
+  **Tip:** When in doubt, escalate. It's better to hand off than frustrate a customer.
+  </Accordion>
+  
+  <Accordion title="A6. Forbidden Actions (Optional)">
+  Tell your AI what to never do:
+  - Never promise exact delivery dates
+  - Never offer unauthorized discounts
+  - Never mention competitors
+  
+  **Tip:** Think about past customer service issues. What promises caused problems?
+  </Accordion>
+  
+  <Accordion title="A7. Upselling (Optional)">
+  Structure your upsell with:
+  - **When** — The trigger situation
+  - **Suggest** — What to recommend  
+  - **Script** — Exact words to use
+  
+  **Tip:** Good upselling feels helpful, not pushy. Frame it as value for the customer.
+  </Accordion>
+  
+  <Accordion title="A8. Checkout (Optional)">
+  Define what customers need to specify (size, color, quantity) and which payment methods you accept.
+  
+  **Payment priority:** Bank Transfer → E-wallet (ShopeePay, OVO, DANA) → QRIS → Card
+  </Accordion>
+</AccordionGroup>
+
+### Part B: Knowledge Base
+
+<AccordionGroup>
+  <Accordion title="B1. Files">
+  Upload documents your AI can reference:
+  - Product catalog or menu
+  - Size guide
+  - Return policy
+  - Shipping info
+  
+  **Formats:** PDF, Excel, Word documents
+  </Accordion>
+  
+  <Accordion title="B2. Websites">
+  Add URLs your AI should learn from:
   ```
-  JAKARTA:
-  • Pacific Place L2 — 10AM-10PM
-  • Grand Indonesia L3 — 10AM-10PM
-  
-  BANDUNG:
-  • Paris Van Java L1 — 10AM-9PM
-  
-  Customer Service: 0800-123-xxxx
+  https://yoursite.com/faq
+  https://yoursite.com/shipping
+  https://yoursite.com/returns
   ```
   </Accordion>
   
-  <Accordion title="FAQ">
-  Common questions and answers.
-  
-  *Example:*
-  ```
-  Q: Bagaimana cara track pesanan?
-  A: Gunakan link tracking di email konfirmasi atau hubungi CS dengan nomor order.
-  
-  Q: Bisa return barang sale?
-  A: Bisa, dalam 14 hari jika belum dipakai dan masih ada tag.
-  ```
+  <Accordion title="B3. Images">
+  Upload visuals your AI can send to customers. For each image, specify when to send it:
+  - Size Chart → "when customer asks about sizing"
+  - Promo Banner → "when customer asks about discounts"
   </Accordion>
   
-  <Accordion title="Current Promotions">
-  Active deals and promo codes. Remember to update this regularly!
+  <Accordion title="B4. Text Entries">
+  Type information directly:
+  - **Store Locations** — Addresses and hours
+  - **FAQ** — Common questions and answers
+  - **Promotions** — Current deals and promo codes
+  - **Policies** — Returns, shipping, etc.
   
-  *Example:*
-  ```
-  YEAR END SALE — Up to 50% off!
-  
-  Promo Codes:
-  • MEMBER20 — 20% off (min Rp 500K)
-  • FREESHIP — Free shipping (min Rp 300K)
-  
-  Valid until: 31 December
-  ```
+  **Tip:** Keep promotions updated. Outdated promos frustrate customers.
   </Accordion>
 </AccordionGroup>
 
@@ -281,28 +166,17 @@ Type information directly into the form. Common entries include:
 ## What's required vs optional
 
 <Info>
-**Only 4 fields are required** to launch your AI. Everything else can be added later.
+**Only 4 fields are required** to launch. Everything else can be added later.
 </Info>
 
-### Required to launch
-
-| Field | Why it's needed |
-|-------|-----------------|
+| Required | Why |
+|----------|-----|
 | Agent Name | Your AI needs a name to introduce itself |
-| Brand Name | Identifies your business in conversations |
+| Brand Name | Identifies your business |
 | Brand Description | Helps AI understand what you sell |
 | Welcome Message | First impression for every customer |
 
-### Optional (add anytime)
-
-All other fields enhance your AI but aren't required to go live:
-- Conversation style preferences
-- Business rules and restrictions
-- Escalation triggers
-- Upselling scripts
-- Knowledge Base content
-
-Start simple. Launch with the basics and add more as you learn what your customers ask.
+**Everything else is optional.** Start simple and add more as you learn what customers ask.
 
 ---
 
@@ -310,16 +184,16 @@ Start simple. Launch with the basics and add more as you learn what your custome
 
 <CardGroup cols={2}>
   <Card title="Be specific" icon="bullseye">
-    Instead of "be friendly," say "address customers as Kak and use 🍔 emoji."
+    Vague instructions = inconsistent results. Show exactly what you want.
   </Card>
-  <Card title="Use examples" icon="lightbulb">
-    Show your AI what good looks like. Include sample phrases it can follow.
+  <Card title="Use the examples" icon="copy">
+    The form includes adidas and McDonald's examples. Copy and customize.
   </Card>
   <Card title="Start simple" icon="seedling">
-    Launch with the basics. Add more rules and content as you learn what customers ask.
+    Launch with basics. Add rules and content as you learn what customers need.
   </Card>
   <Card title="Update regularly" icon="rotate">
-    Keep promotions and inventory info current. Outdated info frustrates customers.
+    Keep promos current. Review conversations monthly to improve your AI.
   </Card>
 </CardGroup>
 
@@ -329,7 +203,7 @@ Start simple. Launch with the basics and add more as you learn what your custome
 
 <Steps>
   <Step title="Submit your form">
-    Send the completed form and any files to your bitbybit specialist.
+    Send the completed Google Doc and any files to your bitbybit specialist.
   </Step>
   <Step title="We configure your AI">
     Our team sets up your AI agent (1-3 business days).
@@ -338,7 +212,7 @@ Start simple. Launch with the basics and add more as you learn what your custome
     Try your AI and let us know if anything needs adjusting.
   </Step>
   <Step title="Go live">
-    Launch your AI and start converting conversations into sales!
+    Launch and start converting conversations into sales!
   </Step>
 </Steps>
 
@@ -346,15 +220,6 @@ Start simple. Launch with the basics and add more as you learn what your custome
 
 ## Ready to start?
 
-<Card title="Download the onboarding form" icon="download" href="/files/AI-Agent-Onboarding-Form.docx">
-  Fill out the form and send it to your bitbybit specialist. We'll handle the rest.
+<Card title="Open the Onboarding Form" icon="file-lines" href="https://docs.google.com/document/d/1ACpJel8d3JDIgRe7O6NQTwB6gpN0jniDOkHlkRYj2N4/edit?usp=sharing">
+  Make a copy, fill it out, and send it to your bitbybit specialist.
 </Card>
-
----
-
-## Need help?
-
-Our team is here to help you get set up.
-
-**Email:** support@bitbybit.studio  
-**Website:** bitbybit.studio
