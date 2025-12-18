@@ -1,0 +1,101 @@
+---
+title: "Set up AI Studio"
+description: "Create and customize your AI agent to automate customer engagement"
+---
+
+<Info>
+**Prerequisites**
+* **Plan:** You can create basic agents on any plan.
+* **Upgrade:** The **GPT-o3 Mini** model requires the **Standard Plan**.
+</Info>
+
+## Why use AI Studio
+
+AI Studio allows you to build agents that handle inquiries, provide recommendations, and automate sales tasks. It is distinct from other tools in the bitbybit ecosystem.
+
+**Difference between bitAI and AI Studio:**
+
+| Feature | bitAI | AI Studio |
+| :--- | :--- | :--- |
+| **Primary Goal** | Backend Management | Frontend Engagement |
+| **Function** | Sorts products and manages collections. | Talks to customers and closes sales. |
+| **User Interaction** | Internal tool for merchants. | External chatbot for customers. |
+
+---
+
+## Configuration steps
+
+Follow these steps to create and launch your AI agent.
+
+<Steps>
+  <Step title="Create a new agent">
+    1. Go to the **[AI Studio dashboard](https://app.bitbybit.studio/ai-studio/ai-agent)**.
+    2. Click **Create new agent**.
+
+    ![Screenshot: The AI Studio dashboard highlighting the Create new agent button]
+    
+    <Tip>
+    You can create multiple agents if you want to A/B test different personalities or strategies.
+    </Tip>
+  </Step>
+
+  <Step title="Configure the model and identity">
+    Select the "Brain" of your agent and define who it is.
+
+    <AccordionGroup>
+      <Accordion title="Model Selection">
+        Choose the AI model that powers your agent.
+        * **Standard Models:** Good for general conversation.
+        * **GPT-o3 Mini:** Best for complex reasoning (Requires Standard Plan).
+      </Accordion>
+      <Accordion title="Agent Details">
+        * **Chatbot Name:** The internal name for your reference.
+        * **Role:** The job title (e.g., "Sales Assistant").
+        * **Brand Name:** The name customers will see.
+        * **Description:** **Critical.** Provide detailed context about your business. The more detail you provide here, the smarter your AI will be.
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Set the Skillset">
+    Skills define what actions your AI can perform. Toggle on the skills you need and click them to configure specific settings.
+
+    <AccordionGroup>
+      <Accordion title="Product Recommendation">
+        Allows the AI to suggest items from your catalog based on what the customer asks for.
+      </Accordion>
+      <Accordion title="Order Tracking">
+        Enables the AI to check shipping status and provide real-time updates to customers.
+      </Accordion>
+      <Accordion title="Create Order">
+        **High Value.** Allows the AI to automatically build a cart and generate a checkout link during the conversation.
+      </Accordion>
+      <Accordion title="FAQ & Data Collection">
+        * **FAQ:** Answers questions using files you upload.
+        * **Data Collection:** Asks specific questions (like email or location) to gather leads for retargeting.
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Test your agent">
+    Before going live, use the **AI Playground** on the right side of the screen.
+    
+    1. Type a message as if you were a customer (e.g., "Where is my order?" or "Recommend a shoe").
+    2. Verify that the AI responds according to the identity and skills you set.
+
+    ![Screenshot: The AI Playground showing a test conversation]
+  </Step>
+</Steps>
+
+## Next steps
+
+Now that your agent is built, you need to connect it to your communication channels.
+
+<CardGroup cols={2}>
+  <Card title="Connect to WhatsApp" icon="whatsapp">
+    Link your agent to your WhatsApp Business number.
+  </Card>
+  <Card title="Upload Knowledge Base" icon="book">
+    Add specific files to improve your FAQ answers.
+  </Card>
+</CardGroup>
