@@ -1,67 +1,124 @@
 ---
-title: "Connect via Meta Coexistence"
-description: "Connect your existing WhatsApp Business App number to bitbybit without losing your chat history"
+title: "Connect WhatsApp using Meta Coexistence"
+description: "Migrate your existing WhatsApp Business App number to bitbybit without losing chat history"
 ---
 
 <Info>
 **Prerequisites**
-* **Verification:** Your Meta Business Manager must be fully verified.
-* **Access:** Admin access to the Facebook Business account.
-* **Device:** Keep your mobile phone with the WhatsApp Business App open and ready.
+* **Account:** A valid [Facebook Business Account](http://business.facebook.com/).
+* **App:** An active **WhatsApp Business App** phone number.
+* **Verification:** You must have completed [Meta Business Verification](https://knowledge.bitbybit.studio/bitcrm/how-to-create-and-connect-whatsapp-cloud-api).
 </Info>
 
-## What is Meta Coexistence?
+For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
 
-Meta Coexistence allows you to use your WhatsApp Business App and the WhatsApp Cloud API simultaneously. This "hybrid" mode lets you automate messages via bitbybit while keeping your existing chat history on your phone.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihnNUrOFfYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
 
-**Understanding the trade-offs**
+## Why use Meta Coexistence
 
-Before connecting, understand which features will remain active and which will be disabled on your phone once you switch to Coexistence mode.
+Meta Coexistence allows you to use your **WhatsApp Business App** and the **WhatsApp Cloud API** simultaneously. This is the ideal solution for businesses that want to automate messages using bitbybit while keeping their existing chat history and the ability to reply via the mobile app.
 
-| Feature | Status in Coexistence Mode |
-| :--- | :--- |
-| **1:1 Chats** | ✅ **Supported.** Chats are mirrored between phone and bitbybit. |
-| **Chat History** | ✅ **Synced.** Up to 6 months of history is preserved. |
-| **Group Chats** | ❌ **Not Supported.** Groups will not appear in bitbybit. |
-| **Calls (Voice/Video)** | ❌ **Not Supported.** You cannot make calls via API. |
-| **Disappearing Messages** | ❌ **Disabled.** This feature turns off for 1:1 chats. |
-| **Broadcast Lists** | ❌ **Read-only.** You cannot create new lists on the phone. |
+**Feature Limitations**
+
+Before connecting, understand how enabling the API changes your mobile app features.
+
+| Feature | WhatsApp Mobile App | Cloud API (Coexistence) |
+| :--- | :--- | :--- |
+| **1:1 Chats** | ✅ Supported | ✅ **Synced.** (History mirrors up to 6 months). |
+| **Group Chats** | ✅ Supported | ❌ **Not Supported.** Groups do not sync to bitbybit. |
+| **Calls** | ✅ Voice & Video | ❌ **Not Supported.** |
+| **Broadcast Lists** | ✅ Supported | ❌ **Read-only.** You cannot send broadcasts from the app. |
+| **Privacy Tools** | Disappearing / View Once | ❌ **Disabled** for all chats. |
 
 ---
 
 ## Connection steps
 
-Follow these steps to connect your number.
+Follow these steps to link your WhatsApp Business App number to the bitbybit platform.
 
 <Steps>
-  <Step title="Start the integration">
-    1. Go to the **Integrations** dashboard in bitbybit.
-    2. Click **WhatsApp Business App**.
-    3. Click the button to **Connect your Meta account**.
+  <Step title="Access integration settings">
+    1. Navigate to the **Integrations** dashboard.
+    2. Select **WhatsApp Business App**.
 
-    ![Screenshot: The Integrations dashboard showing the WhatsApp Business App option]
+    ![Screenshot: The Integrations dashboard showing the WhatsApp Business App option](/images/Screenshot2025-11-01094709.png)
   </Step>
 
-  <Step title="Connect Facebook Business">
-    1. Log in to the Facebook account associated with your business.
-    2. Select **Get Started** and grant the necessary permissions.
-    3. Select your **Meta Business Portfolio**.
+  <Step title="Connect your Meta account">
+    Click the button to initialize the connection with Meta.
+
+    ![Screenshot: The prompt to connect a Meta account](/images/Screenshot2025-11-01095444.png)
+  </Step>
+
+  <Step title="Log in to Facebook">
+    Log in to the Facebook account associated with your business.
+
+    ![Screenshot: The Facebook login and connection screen](/images/Screenshot2025-11-01100536.png)
+  </Step>
+
+  <Step title="Confirm permissions">
+    Click to confirm that you want to connect your account to bitbybit.
+
+    ![Screenshot: The confirmation screen to connect to bitbybit](/images/Screenshot2025-11-01100952.png)
+  </Step>
+
+  <Step title="Select Business Portfolio">
+    Choose the correct **Meta Business Portfolio** from the list.
     
-    <Note>
-    If you have multiple portfolios, ensure you select the one that contains your verified business details.
-    </Note>
+    <Warning>
+    If your business has multiple portfolios, ensure you select the one that owns your WhatsApp number.
+    </Warning>
+
+    ![Screenshot: The Business Portfolio selection screen](/images/Screenshot2025-11-01101744.png)
+  </Step>
+
+  <Step title="Select WhatsApp Business">
+    Choose **WhatsApp Business** as the asset type to connect.
+
+    ![Screenshot: The screen selecting WhatsApp Business connection](/images/Screenshot2025-11-01112005.png)
   </Step>
 
   <Step title="Enter your phone number">
-    1. Select **WhatsApp Business** as the account type.
-    2. Enter your **active WhatsApp Business phone number**.
-    3. Click **Next**.
+    Type in the active **WhatsApp Business phone number** you currently use on your mobile device.
 
-    ![Screenshot: The field for entering the WhatsApp phone number]
+    ![Screenshot: The field for entering the WhatsApp phone number](/images/Screenshot2025-11-01112127-Copy.png)
   </Step>
 
-  <Step title="Verify via QR Code">
-    A QR code will appear on your computer screen. You must verify this connection using your mobile phone.
+  <Step title="Scan the QR Code">
+    A QR code will appear on your screen. You must scan this using your phone to authorize the sync.
+    
+    1. Open the **WhatsApp Business App** on your phone.
+    2. Look for a message from **Facebook Business**.
+    3. Tap **Connect** inside the message.
+    4. Tap **Connect to the Business Platform**.
+    5. Scan the QR code on your computer screen.
 
-    <AccordionGroup>
-      <Accordion
+    ![Screenshot: The QR code displayed for scanning](/images/Screenshot2025-11-01113512.png)
+  </Step>
+
+  <Step title="Set timezone">
+    Select the correct timezone for your business operations.
+
+    ![Screenshot: The timezone selection screen](/images/Screenshot2025-11-01114914.png)
+  </Step>
+
+  <Step title="Verify connection">
+    Once the process is complete, verify the connection on both devices.
+    
+    * **On Desktop:** You will see a success message.
+    * **On Mobile:** Go to **Settings > Account**. You should see "Connected to Business Platform."
+
+    ![Screenshot: The final success screen](/images/Screenshot2025-11-01115517.png)
+    ![Screenshot: The confirmation screen inside the WhatsApp Business App](/images/Screenshot2025-11-01115927.png)
+  </Step>
+</Steps>
+
+## Next steps
+
+Your number is now connected, but you must configure payments to send messages via the API.
+
+<CardGroup cols={1}>
+  <Card title="Add payment method" icon="credit-card" href="https://knowledge.bitbybit.studio/bitcrm/how-to-create-and-connect-whatsapp-cloud-api#add-payment-method">
+    Go to Meta Business Suite to add a credit card. This is required to send marketing broadcasts.
+  </Card>
+</CardGroup>

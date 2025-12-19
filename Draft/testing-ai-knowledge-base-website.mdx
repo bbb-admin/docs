@@ -1,0 +1,88 @@
+---
+title: "Add website content to knowledge base"
+description: "Train your AI agent using specific web pages or your entire domain"
+---
+
+<Info>
+**Prerequisites**
+* **Access:** Log in to the [AI Studio dashboard](https://app.bitbybit.studio/ai-studio/knowledge-base).
+* **URL:** Ensure the website you want to add is publicly accessible (no password required).
+</Info>
+
+For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ncDKiPHGMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+
+## Why use website sources
+
+Connecting your website allows your AI agent to learn directly from your existing content, such as product documentation, blog posts, or shipping policies. This saves you from manually typing information into the agent's memory.
+
+**Understanding Crawling Options:**
+
+Before you begin, choose the right method for your needs.
+
+| Feature | Single Page | Entire Website (Crawl) |
+| :--- | :--- | :--- |
+| **Purpose** | Teaches the AI one specific topic. | Teaches the AI everything about your business. |
+| **What it reads** | Only the specific URL you provide. | The URL + the Sitemap + all linked pages. |
+| **Best for** | A specific blog post, a landing page, or a policy page. | Your main company website or help center. |
+| **Example Input** | `https://bitbybit.studio/blog/update` | `https://bitbybit.studio` |
+
+---
+
+## Configuration steps
+
+Follow these steps to feed website data into your agent.
+
+<Steps>
+  <Step title="Access the Knowledge Base">
+    1. Go to **AI Studio**.
+    2. Click **Knowledge Base** in the sidebar.
+    3. Click the **Add Knowledge** button.
+
+    ![Screenshot: The Knowledge Base dashboard showing the Add Knowledge button]
+  </Step>
+
+  <Step title="Select Website source">
+    In the source selection menu, choose **Website**.
+    
+    ![Screenshot: The source selection menu highlighting the Website option]
+  </Step>
+
+  <Step title="Configure the URL">
+    Enter a **Knowledge Title** (e.g., "Company Website") and paste your URL. Use the specific settings below based on your goal.
+
+    <AccordionGroup>
+      <Accordion title="Option A: Add a Single Page">
+        Use this to add a specific article or policy.
+        1. Paste the full URL (e.g., `https://yoursite.com/shipping-policy`).
+        2. **Uncheck** the "Crawl entire website" box.
+      </Accordion>
+      <Accordion title="Option B: Crawl Entire Website">
+        Use this to index your whole site.
+        1. Paste the **Root Domain** only (e.g., `https://yoursite.com`).
+        2. **Check** the "Crawl entire website" box.
+        
+        <Warning>
+        **Do not** use a sub-page (like `.../blog/post-1`) when crawling the entire site. The crawler needs the root domain to find the sitemap correctly.
+        </Warning>
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Save and Sync">
+    Click **Add** to finish. The status will change to "Training" or "Syncing." Once the status says **Active**, your AI knows this information.
+    
+    ![Screenshot: The knowledge base list showing the status of the new entry]
+  </Step>
+</Steps>
+
+## Next steps
+
+Now that your agent has learned from your website, verify the knowledge.
+
+<CardGroup cols={1}>
+  <Card title="Test your agent" icon="flask">
+    Go to the AI Playground and ask questions related to the website content you just added to ensure it answers correctly.
+  </Card>
+</CardGroup>
