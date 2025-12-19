@@ -1,0 +1,112 @@
+---
+title: "How to Set Up AI Agent in AI Studio"
+description: "Create and customize your AI agent to automate customer engagement"
+---
+
+<Info>
+  **Prerequisites**
+
+  - **Access:** Log in to your bitbybit dashboard.
+</Info>
+
+For a step-by-step guide, please visit our [**YouTube Channel**](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr) or watch the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TCOphd4RUHA?si" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen />
+
+## Why use AI Agent
+
+The AI Agent allows you to build assistants that handle inquiries, provide recommendations, and automate sales tasks efficiently.
+
+## Configuration steps
+
+Follow these steps to create and launch your AI Agent.
+
+<Steps>
+  <Step title="Create a new agent">
+    1. Go to the [**AI Studio dashboard**](https://app.bitbybit.studio/ai-studio/ai-agent).
+    2. Click **Create new agent**.
+
+    ![Screenshot: The AI Studio dashboard highlighting the Create new agent button](/images/Screenshot2025-12-19164109.png)
+
+    <Tip>
+      You can create multiple agents if you want to test different strategies or personalities.
+    </Tip>
+  </Step>
+  <Step title="Configure the model and identity">
+    Select the "Brain" of your agent and define how it communicates.
+
+    <AccordionGroup>
+      <Accordion title="Model Selection">
+        Choose the AI model type that powers your agent.
+
+        - **Conversation:** Powered by **Gemini 2.5 Flash**. Best for natural, fluid dialogue.
+        - **Reasoning:** Optimized for complex logic and problem-solving (**GPT-4.0 Mini**).
+
+        ![Screenshot: Model selection showing Conversation and Reasoning options](/images/Screenshot2025-12-19135459.png)
+      </Accordion>
+      <Accordion title="Agent Details">
+        Fill in the identity fields:
+
+        - **Chatbot Name:** The internal name for your reference.
+        - **Role:** The job title (e.g., "Sales Assistant").
+        - **Brand Name:** The name customers will see.
+        - **Description:** **Critical.** Provide detailed context about your business.
+
+        ![Screenshot: The agent details form including name and description](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67cac0b73a1c4e9ed47140c9_AD_4nXeM2r4RnHwLybOpGxX5qPk5PANTRsLSzb20CvtUbH3VKhiT0VXNZhW9QqMW0_zSq_C7BXO0CF-X6nP9EEWkS4gJ3qDg33FCK6-KgvSEAy82Djs_FSojLsUFTHT6si5QtWgrKHGE.png)
+      </Accordion>
+      <Accordion title="Personality Settings">
+        Customize how your agent speaks and behaves:
+
+        - **Preferred Language:** Choose the primary language for the agent.
+        - **Tone of Voice:** Select a persona (Professional, Friendly, Informative, Enthusiastic, Supportive, or Humorous).
+        - **Respond Style:** Choose between **Single Message** (concise) or **Multi Message** (more natural, broken up texts).
+
+        ![Screenshot: Personality settings configuration](/images/Screenshot2025-12-19163423.png)
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  <Step title="Set the Skillset">
+    Skills define what actions your AI Agent can perform. Scroll down to the **Skillset** section, toggle on the skills you need, and click them to configure settings.
+
+    <AccordionGroup>
+      <Accordion title="General Prompt">
+        Each skillset can behave with the guide of a general prompt to help.
+      </Accordion>
+      <Accordion title="Product Recommendation">
+        Allows the AI Agent to suggest items from your catalog based on customer preferences.
+      </Accordion>
+      <Accordion title="Order Tracking">
+        Enables the AI Agent to check shipping status and provide real-time updates.
+      </Accordion>
+      <Accordion title="Create Order">
+        **High Value.** Automatically generates orders and checkout links based on the conversation.
+      </Accordion>
+      <Accordion title="Data Collection">
+        - **Data Collection:** Gathers specific data (like email or location) for retargeting.
+      </Accordion>
+    </AccordionGroup>
+    ![Screenshot: The Skillset selection screen](/images/Screenshot2025-12-19163800.png)
+  </Step>
+  <Step title="Test your agent">
+    Before going live, use the **AI Playground** on the right side of the screen.
+
+    1. Type a message as if you were a customer (e.g., "Hey, do you have this type of bag?" or "Recommend a shoe").
+    2. Verify that the AI Agent responds according to the identity and skills you set.
+    3. Click Select customer Profile: So you can test with your saved contacts to simulate a real person interaction.
+
+    ![Screenshot: The AI Playground showing a test conversation](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67cac0b600d68cdaa2633a82_AD_4nXe1DK2B66KrH8nWshP73ZICYcc8x9FNYEavPV1vf8cvqHiVlm4bxjrnZ_Oan3VVz4LYH16C2ifsl93SMqL_DoMH8oRWjUoCz7arC4twkw5X8c5c18k4CAYr_iC96eDqrikJzLyeQQ.png)
+  </Step>
+</Steps>
+
+## Next steps
+
+Now that your agent is built, you need to connect it to your communication channels.
+
+<CardGroup cols={2}>
+  <Card title="Upload Knowledge Base" icon="book" href="https://app.bitbybit.studio/ai-studio/knowledge-base">
+    Add specific files to improve your AI Agent responds.
+  </Card>
+  <Card title="Connect to WhatsApp" icon="whatsapp" href="https://app.bitbybit.studio/integrations">
+    Link your agent to your WhatsApp API number or your other Integration.
+  </Card>
+</CardGroup>
