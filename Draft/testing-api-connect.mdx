@@ -1,0 +1,129 @@
+---
+title: "Connect WhatsApp Cloud API"
+description: "Integrate a phone number with WhatsApp Cloud API to unlock automation and broadcasting"
+---
+
+<Info>
+**Prerequisites**
+* **Meta Business Manager:** You must have Admin access.
+* **Verification:** Your [Business Manager must be verified](https://business.facebook.com/settings/security) by Meta.
+* **Phone Number:** A clean number that is **not** currently active on any WhatsApp App (Consumer or Business). If it is active, you must [delete the account](https://developers.facebook.com/docs/whatsapp/on-premises/get-started/migrate-existing-whatsapp-number-to-a-business-account) first.
+</Info>
+
+For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9mkCIy6MzLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+
+## Why use WhatsApp Cloud API
+
+The Cloud API is the enterprise version of WhatsApp. Unlike the mobile app, it allows for:
+* **High-volume broadcasting:** Send marketing campaigns to thousands of users.
+* **Advanced Automation:** Build chatbots with buttons and list messages.
+* **Multiple Agents:** Manage one number with a team using the bitbybit inbox.
+
+---
+
+## Connection steps
+
+Follow these steps to connect your number.
+
+<Steps>
+  <Step title="Access integration settings">
+    1. Navigate to the **[Integrations](https://app.bitbybit.studio/integrations)** dashboard.
+    2. Select **WhatsApp Cloud API**.
+
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08dd4_66ea7da570f8e3beace6f779_AD_4nXcwSOk5VSCE80F6VLfH8itQy8V5rvaIB2K18hZHvpR4oa6X0LW0J9slI6EQ_fXJpM8t8fbMIu0amqx3DZX_YGTi-xIb_Kz8C5PwtavVBs_e8osflehX3c5u0MNJ7EZrpDkPzysP-kmYMqhXH-Swn1g8CV3i.png" alt="Screenshot: The Integrations dashboard selecting WhatsApp Cloud API" />
+  </Step>
+
+  <Step title="Connect Facebook Account">
+    1. Click **Continue as your Facebook Account**.
+    2. Click **Get Started** on the Meta permissions window.
+
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/677cf076c370844afa6ee140_AD_4nXfWE9QU6xkpCBLjCvp-Q2MKs9WSm7cSUR1Z7_QuaWhWQsS-VD8I79S66LZldHfy-GzBikWqG8wBo9xxAYdToIgcz_5qvVoVfwm8JQ-d0Nw7G5GqPNdQUomVIE1x61hEgPft8rWtoQ.png" alt="Screenshot: Facebook login prompt" />
+    
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08de4_66ea7da4e9f6501794ec8f13_AD_4nXfmST4UcmewREfxGVVNuT-eIgvOHE5DyhGGJbj97gDiWm4hIZ4LsEdpjD1d_nFS3kLyxzcjpvjlWX5ltnUi0KE19CrZc_gfygTCtdHlqiMGfH48-7R6GJhS9adSRauES0hTKby6NH8D8JmxcpFLeTC-MPel.png" alt="Screenshot: Get Started button" />
+  </Step>
+
+  <Step title="Configure Business Information">
+    You need to associate this API connection with a Meta Business Portfolio.
+
+    <AccordionGroup>
+      <Accordion title="Option A: Select Existing Portfolio">
+        If you already have a Business Manager:
+        1. Select it from the dropdown list.
+        2. The form will auto-fill with your details.
+        
+        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08dda_66ea7da436b088acb36dabba_AD_4nXfBPq2BEqdtztaRnmDhhUqtn8EwhpFkGCbvrhERmiFmVpIEZlwL4q1j9LNwGS_vp9QnvStTGjau62ffpl_lupFhuaXuykYEHFjkN6ytw_jNkPxUnku0-YoB_VP0HXv7vagHufmoY9IIxsmbsUJe5OX3XA8.png" alt="Screenshot: Selecting an existing portfolio" />
+      </Accordion>
+      <Accordion title="Option B: Create New Portfolio">
+        If you are new to Meta Business:
+        1. Select **Create a business portfolio**.
+        2. Fill in your legal Business Name and Email.
+        
+        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08ddd_66ea7da4b7004f0c73a59a0c_AD_4nXcwDB3Prhf_J5GG1mO2qKu3rx902yoClrUXaNyFYlStd8gMPYIikbtR6soF9LU9czZPQ9jehJEXM5RsLlTAOCVNxRYKoDHzlII4QLWRZyqKxwKcpzhxEeDJ4a_rxLtVlAEtWcbib4iXjxU7Uwx360Y40aZ0.png" alt="Screenshot: Creating a new portfolio" />
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Configure WhatsApp Account">
+    Define the specific WhatsApp Business Account (WABA) and Profile that will hold your phone number.
+
+    <AccordionGroup>
+      <Accordion title="Create New Profile">
+        1. Select **Create a new WhatsApp Business Profile**.
+        2. **Display Name:** Must match your business branding and website.
+        3. **Category:** Choose your industry.
+        
+        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08dfe_66ea7da4c3b90a9271e54982_AD_4nXdt9oJpqyArXRJG8PQqcBc9gSu1K_iScFiZu2iSW-yQLyPZ1oZq9crYLrU3tlPIC63dtaTzwvdxqQ8u7Sg-yPFcDhfr2fwuBzuUhwQna1gvOgYFakZJ8OPej_yPHWtwxSFZA9VwSgCHoAMhSmOoopCtuZEP.png" alt="Screenshot: Creating a new WABA profile" />
+      </Accordion>
+      <Accordion title="Select Existing Account">
+        If you have previously created a WABA, select it from the dropdown.
+        
+        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08df8_66ea7da4525bb69c0d6a4f9f_AD_4nXdkjDysr1vz0wLQnBQafYJd5WdeB69B2jh6Yhvk01heLANe5TfLjC_j6VoqgFBrQssbXxuZUTR-U2jiiSbStHc9mZXezkuhIABEmf6PP1-n_pCbcigBI3n_eloJM5J29o8n5r14NUm81kKHNUWkHTaZGC5X.png" alt="Screenshot: Selecting existing WABA" />
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Verify Phone Number">
+    Enter the phone number you wish to connect.
+    
+    1. Enter the number (ensure it can receive SMS).
+    2. Click **Next**.
+    3. Enter the 6-digit verification code sent to your phone.
+
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bdfe70aa720df08e44_66ea7da4f99ef4e8a84a839c_AD_4nXe61a2Nm_rG42OAKPD7zcEeTrlfOdBhvVaZFoSCBrYYsLE6v-eX4XdwyP5Dbb60GCYBtNcg6ylA9DK_de_XsKnYZiuKqGIW4QSbMwIxqiPDCbqPiJdpNm5Ga0LZCYhx2LC0PhbJedvEJ1t0q-paH2IpNjl2.png" alt="Screenshot: Phone number entry" />
+    
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08df5_66ea7da44dfeeddb123b6800_AD_4nXfNpUGSm892b4ekXK4afxjh83yR74BRZaTzRV7FOziHt9iSD-62XlQzmv93roDikkFJo7JimUvp3BQwyw-vufV69K9gpRi7XqpcvyuUC1srThdz8_757WONzNZRfe9BtlBeUr1RA6mCUZ-tYzoqiN8Bjuw.png" alt="Screenshot: Verification code entry" />
+  </Step>
+
+  <Step title="Add Payment Method">
+    **Critical Step:** You must add a payment method to Meta Business Manager to unlock messaging features.
+    
+    1. Complete the wizard by clicking **Add payment method**.
+    2. If you skipped this, go to [Business Settings](https://business.facebook.com/settings).
+    3. Navigate to **Accounts > WhatsApp Accounts**.
+    4. Select your account and click **Payment Settings**.
+    5. Add your credit card.
+
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/6718b7bcfe70aa720df08dd7_66ea7da4ac7fd18cba60ec23_AD_4nXdtSUa4sXSKlLPBct5APXAgOvJArqctrFgBhootvJe7u5esW_BE1gZ0Hv15sn_qFAPjGgxcYL3C8QPmFNcCkR61YXiM2DRX2P97VjbkgTo0t_G7hq0zFuN8m84uCGRW-C-1lk21y43TeHidqjTFy11G28k.png" alt="Screenshot: Integration flow payment prompt" />
+    
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/685ba63930e1dc7bd06e6b52_AD_4nXeuVSkVCk-CGVrCJVafqAxcBrrztSSKLyWFhoOjcje2u5ogbGNHK5lZ9y9VqNfZCim4k3ShJqFwl04_M284jy26a_zvSv_b4zp8PU7HtRHggYYJhAsECfrxTWqTzohpq9rqfSmPlg.png" alt="Screenshot: Payment settings in Meta Business Manager" />
+    
+    <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/685ba63930e1dc7bd06e6b55_AD_4nXcoSVVSHp_PMDAXvmJkvh_irThZgrBGp8OJvyuQosooTFTPdw2YqNJIxYZlKXHqB76bhL1Cu4O4tTasD3JmRWvB7d1iIeXsNYWJVEDjs9_vr-XfYC90X2aGgk7hbhny0r45BqAD2A.png" alt="Screenshot: Payment method form" />
+  </Step>
+</Steps>
+
+## Next steps
+
+Your API is connected. To verify everything is working, create a test message template.
+
+<CardGroup cols={2}>
+  <Card title="Create a Campaign" icon="bullhorn" href="https://knowledge.bitbybit.studio/bitcrm/how-to-create-a-message-template-campaign-for-whatsapp-api">
+    Create a marketing template to send your first broadcast.
+  </Card>
+  <Card title="Test in LiveChat" icon="comments" href="https://app.bitbybit.studio/bitchat/livechat">
+    Send a test message to your own number to confirm delivery.
+  </Card>
+</CardGroup>
+
+<img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67e4fa1ea378e5dd1d040d45_AD_4nXceWW6XfP7Tr_e3FpAWL7gW_-Z3OoHEk0dgFw2ROI3SggXuoBYOs2-2Q90Op3leHrVWCAtRPEE9u_B6e80gAidtQWkBcU4hCqCxlti0B3h59Z8E7-v1JLi2CfmMja0rKO22zVDSRw.jpeg" alt="Screenshot: Successful test message in LiveChat" />
