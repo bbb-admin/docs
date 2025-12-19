@@ -4,14 +4,15 @@ description: "Create and customize your AI agent to automate customer engagement
 ---
 
 <Info>
-**Prerequisites**
-* **Access:** Log in to your bitbybit dashboard.
-* **Upgrades:** The **GPT-o3 Mini** model requires the **Standard Plan**.
+  **Prerequisites**
+
+  - **Access:** Log in to your bitbybit dashboard.
+  - **Credits:** Ensure you have sufficient credits, as different models have different costs per transaction (CPT).
 </Info>
 
-For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+For a visual walkthrough, check out our [**bitbybit How-to Playlist**](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr) or watch the video below:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TCOphd4RUHA?si" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TCOphd4RUHA?si" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen />
 
 ## Why use AI Studio
 
@@ -19,11 +20,11 @@ AI Studio allows you to build agents that handle inquiries, provide recommendati
 
 **Difference between bitAI and AI Studio:**
 
-| Feature | bitAI | AI Studio |
-| :--- | :--- | :--- |
-| **Primary Goal** | Backend Management | Frontend Engagement |
-| **Function** | Sorts products and manages collections. | Talks to customers and closes sales. |
-| **User Interaction** | Internal tool for merchants. | External chatbot for customers. |
+| Feature              | bitAI                                   | AI Studio                            |
+| :------------------- | :-------------------------------------- | :----------------------------------- |
+| **Primary Goal**     | Backend Management                      | Frontend Engagement                  |
+| **Function**         | Sorts products and manages collections. | Talks to customers and closes sales. |
+| **User Interaction** | Internal tool for merchants.            | External chatbot for customers.      |
 
 ---
 
@@ -33,39 +34,39 @@ Follow these steps to create and launch your AI agent.
 
 <Steps>
   <Step title="Create a new agent">
-    1. Go to the **[AI Studio dashboard](https://app.bitbybit.studio/ai-studio/ai-agent)**.
+    1. Go to the [**AI Studio dashboard**](https://app.bitbybit.studio/ai-studio/ai-agent).
     2. Click **Create new agent**.
 
     ![Screenshot: The AI Studio dashboard highlighting the Create new agent button](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67cac0b64964400d32aba97c_AD_4nXdPEz6AekLit7H2yqUQQuZlIgcJTMx4TauxtTCoVSH4zouWIEc3VouQL7iUClftD7t-xHNaPNcKJq7-wxkowjF2Qx2dTo3E2-pW2YsDAniHvHm7oQPJC8eFjq9AC5wbjHZ7TJrW.png)
-    
+
     <Tip>
-    You can create multiple agents if you want to test different strategies or personalities.
+      You can create multiple agents if you want to test different strategies or personalities.
     </Tip>
   </Step>
-
   <Step title="Configure the model and identity">
     Select the "Brain" of your agent and define who it is.
 
     <AccordionGroup>
       <Accordion title="Model Selection">
-        Choose the AI model that powers your agent.
-        * **Standard Models:** Good for general conversation.
-        * **GPT-o3 Mini:** Best for complex reasoning (Requires Standard Plan).
-        
-        ![Screenshot: The model selection screen](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67d90d9e2575606526457121_AD_4nXfatmPH6fStavM2v00OfZz_ttrC92BAxkxWDH4Z5vavto-ZmYoLuDrUsXzhmkm7VOggYq_SaIIeWYlF-WUQ-G_FEsgAPbQ2CZe0gTRFUCGrkvTTOL7tc-x1Vk4lyVGI-sMslOiYlg.png)
+        Choose the AI model type that powers your agent.
+
+        - **Conversation:** Powered by **Gemini 2.5 Pro**. Best for natural, fluid dialogue.
+        - **Reasoning:** Optimized for complex logic and problem-solving. (**CPT: 5.1 Mini**)
+
+        ![Screenshot: Model selection showing Conversation and Reasoning options](/images/Screenshot2025-12-19135459.png)
       </Accordion>
       <Accordion title="Agent Details">
         Fill in the identity fields:
-        * **Chatbot Name:** The internal name for your reference.
-        * **Role:** The job title (e.g., "Sales Assistant").
-        * **Brand Name:** The name customers will see.
-        * **Description:** **Critical.** Provide detailed context about your business. The more detail you provide here, the smarter your AI will be.
-        
+
+        - **Chatbot Name:** The internal name for your reference.
+        - **Role:** The job title (e.g., "Sales Assistant").
+        - **Brand Name:** The name customers will see.
+        - **Description:** **Critical.** Provide detailed context about your business. The more detail you provide here, the smarter your AI will be.
+
         ![Screenshot: The agent details form including name and description](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67cac0b73a1c4e9ed47140c9_AD_4nXeM2r4RnHwLybOpGxX5qPk5PANTRsLSzb20CvtUbH3VKhiT0VXNZhW9QqMW0_zSq_C7BXO0CF-X6nP9EEWkS4gJ3qDg33FCK6-KgvSEAy82Djs_FSojLsUFTHT6si5QtWgrKHGE.png)
       </Accordion>
     </AccordionGroup>
   </Step>
-
   <Step title="Set the Skillset">
     Skills define what actions your AI can perform. Scroll down to the **Skillset** section, toggle on the skills you need, and click them to configure settings.
 
@@ -80,15 +81,14 @@ Follow these steps to create and launch your AI agent.
         **High Value.** Automatically generates orders and checkout links based on the conversation.
       </Accordion>
       <Accordion title="FAQ & Data Collection">
-        * **FAQ:** Answers customer inquiries using files you upload.
-        * **Data Collection:** Gathers specific data (like email or location) for retargeting.
+        - **FAQ:** Answers customer inquiries using files you upload.
+        - **Data Collection:** Gathers specific data (like email or location) for retargeting.
       </Accordion>
     </AccordionGroup>
   </Step>
-
   <Step title="Test your agent">
     Before going live, use the **AI Playground** on the right side of the screen.
-    
+
     1. Type a message as if you were a customer (e.g., "Where is my order?" or "Recommend a shoe").
     2. Verify that the AI responds according to the identity and skills you set.
 
@@ -105,6 +105,6 @@ Now that your agent is built, you need to connect it to your communication chann
     Link your agent to your WhatsApp Business number.
   </Card>
   <Card title="Upload Knowledge Base" icon="book">
-    Add specific files to improve your FAQ answers.
+    Add specific files to improve your AI Agent.
   </Card>
 </CardGroup>
