@@ -1,0 +1,95 @@
+---
+title: "Create a WhatsApp Message Template"
+description: "Design reusable, Meta-approved message templates for your marketing campaigns"
+---
+
+<Info>
+**Prerequisites**
+* **Access:** Log in to the [WhatsApp API Settings](https://app.bitbybit.studio/misc/whatsapp-api-settings) dashboard.
+* **Approval:** All templates must be approved by Meta before they can be sent. This usually takes 1-2 minutes but can take up to 24 hours.
+</Info>
+
+For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ar6LzKkulnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+
+## Why use Message Templates
+
+To initiate a conversation with a customer on WhatsApp (after the 24-hour window has closed), you **must** use a pre-approved Message Template. These templates allow you to send notifications, shipping updates, or marketing offers at scale.
+
+**Template Categories:**
+
+Choose the correct category to ensure quick approval.
+
+| Category | Purpose | Example |
+| :--- | :--- | :--- |
+| **Marketing** | Promotions, offers, or newsletters. | "Get 50% off today!" |
+| **Utility** | Transactional updates. | "Your order #123 has shipped." |
+| **Authentication** | One-time passwords (OTP). | "Your verification code is 4920." |
+
+---
+
+## Configuration steps
+
+Follow these steps to build and submit your template.
+
+<Steps>
+  <Step title="Access the Template Dashboard">
+    1. Navigate to the **[WhatsApp API Settings](https://app.bitbybit.studio/misc/whatsapp-api-settings)**.
+    2. Click on the **Templates** tab.
+
+    ![Screenshot: The WhatsApp API settings dashboard](/images/image.png)
+  </Step>
+
+  <Step title="Initialize new template">
+    Click the **Create new template** button.
+
+    ![Screenshot: The create new template form](/images/1\(2\).png)
+  </Step>
+
+  <Step title="Configure template content">
+    Fill in the required fields. This is where you define the structure of your message.
+
+    <AccordionGroup>
+      <Accordion title="Template Basics">
+        * **Name:** Use a system-friendly name (lowercase, underscores only, e.g., `promo_june_sale`).
+        * **Category:** Select Marketing, Utility, or Authentication.
+        * **Language:** Choose the language of your message text.
+      </Accordion>
+      <Accordion title="Using Dynamic Variables ({{1}})">
+        To make messages personal (e.g., "Hi John"), use variables.
+        1. Type your message text.
+        2. Where you want a dynamic name or number, click **Add variable +**.
+        3. This inserts `{{1}}`. When you send the campaign later, you will map `{{1}}` to the customer's name column in your database.
+        
+        ![Screenshot: Adding dynamic variables to the message body](/images/1\(3\).png)
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Add Media (Header)">
+    You can add an image, video, or document to the top of your message to make it more engaging.
+    
+    1. Under **Header**, select **Image**.
+    2. Upload your file.
+
+    ![Screenshot: Uploading media to the template header](/images/1\(4\).png)
+  </Step>
+
+  <Step title="Preview and Save">
+    1. Check the preview on the right sidebar to see how your message will look on a customer's phone.
+    2. Click **Save template** to submit it to Meta for approval.
+
+    ![Screenshot: Previewing the final message template](/images/1\(5\).png)
+  </Step>
+</Steps>
+
+## Next steps
+
+Once your template status changes to **Approved**, you can use it in a broadcast.
+
+<CardGroup cols={1}>
+  <Card title="Send a Campaign" icon="paper-plane" href="https://knowledge.bitbybit.studio/bitcrm/how-to-create-a-message-template-campaign-for-whatsapp-api">
+    Learn how to select an audience and broadcast this template to thousands of customers.
+  </Card>
+</CardGroup>
