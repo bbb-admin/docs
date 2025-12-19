@@ -1,5 +1,5 @@
 ---
-title: "Connect WhatsApp using Meta Coexistence"
+title: "How to connect WhatsApp using Meta Coexistence"
 description: "Migrate your existing WhatsApp Business App number to bitbybit without losing chat history"
 ---
 
@@ -10,7 +10,7 @@ description: "Migrate your existing WhatsApp Business App number to bitbybit wit
 * **Verification:** You must have completed [Meta Business Verification](https://knowledge.bitbybit.studio/bitcrm/how-to-create-and-connect-whatsapp-cloud-api).
 </Info>
 
-For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+For a step-by-step guide, please visit our **[YouTube Channel](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ihnNUrOFfYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
 
@@ -18,17 +18,19 @@ For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www
 
 Meta Coexistence allows you to use your **WhatsApp Business App** and the **WhatsApp Cloud API** simultaneously. This is the ideal solution for businesses that want to automate messages using bitbybit while keeping their existing chat history and the ability to reply via the mobile app.
 
-**Feature Limitations**
+**Feature Limitations & Sync Rules**
 
-Before connecting, understand how enabling the API changes your mobile app features.
+Before connecting, understand which data syncs to bitbybit and which features change on your mobile app.
 
-| Feature | WhatsApp Mobile App | Cloud API (Coexistence) |
+| Feature | Changes to Mobile App | Sync Status (bitbybit) |
 | :--- | :--- | :--- |
-| **1:1 Chats** | ✅ Supported | ✅ **Synced.** (History mirrors up to 6 months). |
-| **Group Chats** | ✅ Supported | ❌ **Not Supported.** Groups do not sync to bitbybit. |
-| **Calls** | ✅ Voice & Video | ❌ **Not Supported.** |
-| **Broadcast Lists** | ✅ Supported | ❌ **Read-only.** You cannot send broadcasts from the app. |
-| **Privacy Tools** | Disappearing / View Once | ❌ **Disabled** for all chats. |
+| **1:1 Chats** | No major change (Edit/Revoke removed). | ✅ **2-Way Sync.** History mirrors up to 6 months. Future messages sync both ways. |
+| **Contacts** | No change. | ✅ **1-Way Sync.** Edits in the App are reflected in bitbybit. |
+| **Group Chats** | No change. | ❌ **Not Synced.** |
+| **Broadcast Lists** | **Read-only.** Cannot create new lists. | ❌ **Not Synced.** |
+| **Privacy Tools** | Disappearing, View Once & Live Location are **Disabled**. | ❌ **Not Synced.** |
+| **Calls** | No change (Voice & Video work). | ❌ **Not Synced.** |
+| **Business Tools** | No change (Catalogs, Labels, Quick Replies). | ❌ **Not Synced.** |
 
 ---
 
@@ -109,6 +111,7 @@ Follow these steps to link your WhatsApp Business App number to the bitbybit pla
     * **On Mobile:** Go to **Settings > Account**. You should see "Connected to Business Platform."
 
     ![Screenshot: The final success screen](/images/Screenshot2025-11-01115517.png)
+    
     ![Screenshot: The confirmation screen inside the WhatsApp Business App](/images/Screenshot2025-11-01115927.png)
   </Step>
 </Steps>
