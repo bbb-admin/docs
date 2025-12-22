@@ -1,0 +1,98 @@
+---
+title: "How to write advanced prompts for your AI Agent"
+description: "Transform your agent from a simple FAQ bot into a proactive digital salesperson using Markdown."
+---
+
+<Info>
+  **Prerequisites**
+
+  - **Tool:** Familiarity with basic Markdown formatting (Headings, Lists).
+  - **Model:** We recommend using  (Conversation model).
+</Info>
+
+## Why use structured prompts?
+
+A blank text box can be intimidating. To get the most out of powerful models, you need to provide instructions that are structured for commerce. A well-structured prompt turns a passive responder into a proactive revenue driver.
+
+## Reactive vs. Proactive prompting
+
+| Strategy      | Description              | Example Instruction                                                                              |
+| :------------ | :----------------------- | :----------------------------------------------------------------------------------------------- |
+| **Reactive**  | Waits for user input.    | "Answer questions about orders when asked."                                                      |
+| **Proactive** | Guides the conversation. | "After answering, **always** end with a question like 'Would you like to see our new arrivals?'" |
+
+## Prompting steps
+
+<Steps>
+  <Step title="Structure with Markdown">
+    An AI model processes text by identifying patterns. Use Markdown headings (`###`) to create a "brain" for your agent with distinct sections.
+
+    <AccordionGroup>
+      <Accordion title="Correct Structure">
+        Organize your prompt into these headers:
+
+        - `### Persona`
+        - `### Primary Goal`
+        - `### Core Sales Rules`
+        - `### Checkout Flow`
+      </Accordion>
+      <Accordion title="Bad Example">
+        _Avoid giant walls of text:_ "You are a helpful assistant. Help people find products. Be friendly. Try to sell things."
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  <Step title="Define Persona and Goal">
+    Be specific about the tone and objective.
+
+    ```markdown
+    ### Persona
+    You are "StyleBot," a friendly fashion advisor for "Urban Threads."
+    
+    ### Primary Goal
+    Help users discover products they'll love and guide them to a purchase.
+    ```
+  </Step>
+  <Step title="Create predictable logic">
+    Use **If-Then** statements to automate key parts of the e-commerce journey.
+
+    - "If the user asks 'track my shipment', then provide the order status."
+    - "If a product is out of stock, then apologize and ask if they'd like a back-in-stock notification."
+  </Step>
+  <Step title="Apply the Master Template">
+    Copy and paste this template into your agent's "General Prompt" field and adapt it to your brand.
+
+    <AccordionGroup>
+      <Accordion title="View Complete Template">
+        ```markdown
+        ### Persona
+        You are "StyleBot," a friendly and knowledgeable fashion advisor.
+        
+        ### Primary Goal
+        Help users discover products and guide them to a seamless purchase.
+        
+        ### Core Sales Rules
+        - Always recommend "New Arrivals" first.
+        - If a user adds an item to cart, suggest a complementary product.
+        
+        ### Checkout Flow
+        1. Confirm product details (Size/Color).
+        2. Ask for shipping address.
+        3. Generate secure checkout link.
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Next steps
+
+Now that your prompt is structured, test it immediately.
+
+<CardGroup cols={2}>
+  <Card title="Test in Playground" icon="play" href="#">
+    Simulate a customer conversation to verify your new sales logic.
+  </Card>
+  <Card title="Upload Knowledge" icon="book" href="/knowledge-base/upload-files">
+    Give your agent product specs to support its sales pitch.
+  </Card>
+</CardGroup>
