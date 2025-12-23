@@ -1,62 +1,111 @@
 ---
-title: "Add your website to AI Agent Knowledge Base"
-description: "This article will guide you to use your website as AI Agent knowledge"
+title: "How to add data sources to the Knowledge Base"
+description: "Train your AI Agent using PDF documents, spreadsheets, websites, and images."
 ---
 
-For a step-by-step guide on how to complete this process, please [visit our YouTube Channel](https://www.youtube.com/@bitbybit.studio). To help you.
+<Info>
+  **Prerequisites**
 
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/5ncDKiPHGMA" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-allowfullscreen>
-</iframe>
+  - **Access:** Logged in to [AI Studio](https://app.bitbybit.studio/ai-studio).
+  - **Supported Files:** PDF, CSV, XLSX, DOCX, TXT (Max 10MB).
+  - **Supported Images:** JPG, PNG (Max 5MB).
+</Info>
 
-Empower your AI Agent by feeding it information directly from a website. This allows your agent to learn from product documentation, blog posts, company information, or any other web-based resource. Follow these simple steps to expand your agent's knowledge. 🧠
+For a step-by-step guide, please visit our [**YouTube Channel**](https://www.youtube.com/@bitbybit.studio) or watch the video below:
 
-## Step-by-Step Guide
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ncDKiPHGMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen />
 
-Adding a website is straightforward. Here’s how you do it:
+## Why use diverse data sources?
 
-1. Go to the AI knowledge base page at [**https://app.bitbybit.studio/ai-studio/knowledge-base**](https://app.bitbybit.studio/ai-studio/knowledge-base).
-2. Click the "Add Knowledge" button.
-3. Provide a clear and descriptive Knowledge Title (e.g., "Company Blog Posts" or "Product FAQs").
-4. In the source options, select "Website".
-5. Enter the URL you want to add.
-6. Choose whether to add a single page or crawl the entire site.
+Your AI Agent needs different types of "brain food" to be effective. While a **PDF** might contain your return policy, a **CSV** might hold your pricing list, and an **Image** acts as a visual menu to send to customers. Combining these sources creates a robust, expert agent.
 
-## Understanding Your Options: Single Page vs. Entire Website
+## Data Source Types
 
-This is the most important step. You have two ways to add web content:
+Understand which source fits your content.
 
-1. **Adding a Single Page**
-   This is the default option. If you want your AI to learn from one specific article, blog post, or page, simply paste the full URL and leave the "Crawl entire website" box unchecked.
+| Type        | Format                    | Best For                                                   |
+| :---------- | :------------------------ | :--------------------------------------------------------- |
+| **File**    | PDF, DOCX, TXT, CSV, XLSX | Internal SOPs, Product Manuals, Price Lists.               |
+| **Text**    | Raw Text                  | Paste specific paragraphs or temporary rules directly.     |
+| **Website** | URL                       | Dynamic content like blog posts or help centers.           |
+| **Image**   | JPG, PNG                  | Visual assets the AI _sends_ to users (e.g., Menus, Maps). |
 
-- When to use this: You want to add a specific news article, a single product page, or one chapter of your documentation.
-- Example URL: `https://yourwebsite.com/blog/our-latest-feature`
+## Configuration steps
 
-2. **Crawling an Entire Website**
-   This is a powerful feature that instructs your AI Agent to find and learn from all the pages on a website.
+<Steps>
+  <Step title="Navigate to Knowledge Base">
+    1. Open your AI Studio dashboard.
+    2. Click on **Knowledge Base** in the side menu.
+    3. Click the **Add Knowledge** button in the top right.
 
-When you check the "Crawl entire website" box, the system looks for the website's sitemap file and systematically visits and learns from every page listed there.
+    ![Screenshot2025 12 23103440](/images/Screenshot2025-12-23103440.png)
+  </Step>
+  <Step title="Select and Configure Source">
+    Choose the tab that matches your data type.
 
-### ⚠️ Important Best Practice:
+    <AccordionGroup>
+      <Accordion title="Option A: File (Docs & Data)">
+        **Upload documents directly.**
 
-For this feature to work optimally, you should provide the main domain of the website, not a specific sub-page.
+        1. Select the **File** tab.
+        2. Drag and drop your file (Max 10MB).
+        3. Give it a clear Title (e.g., "Return Policy 2025").
+        4. Click **Save knowledge**.
+      </Accordion>
+      <Accordion title="Option B: Website (Crawl)">
+        **Connect your live web content.**
 
-- **✅ Do this:** Enter a root domain like https://bitbybit.studio or https://mycompany.com. This allows the crawler to easily find the sitemap and index all connected pages.
-- **❌ Avoid this:** Do not enter a specific page like https://bitbybit.studio/bitchat and check the "Crawl entire website" box. Doing so may cause an error or result in only that single page being indexed, as the crawler may not be able to locate the sitemap from a deep link.
+        1. Select the **Website** tab.
+        2. Enter the **Website URL**.
+        3. Choose your crawl method below.
 
-### Quick Guide: Which Option Should I Choose?
+        **Method 1: Single Page (Default)**
 
-Use this simple checklist to decide:
+        - **What it does:** Indexes _only_ the specific article or page you provide.
+        - **When to use:** For a specific blog post, product page, or news article.
+        - **Example:** `https://yourwebsite.com/blog/latest-feature` (Unchecked box).
 
-**To teach my AI about one specific blog post:**
+        **Method 2: Crawl Entire Website**
 
-- URL: https://myblog.com/posts/my-awesome-article
-- Crawl entire website: Unchecked
+        - **What it does:** Looks for the sitemap and systematically indexes _all_ connected pages.
+        - **When to use:** To teach the AI about your entire company, products, and services.
+        - **Example:** `https://yourwebsite.com` (Checked box).
 
-**To teach my AI about my entire company, its products, and services:**
+        <Tip>
+          **⚠️ Deep Dive: Crawling Best Practices**
 
-- URL: https://mycompany.com
-- Crawl entire website: Checked 👍
+          For "Crawl entire website" to work optimally, you **must provide the main domain**.
+
+          - **✅ Do this:** Enter a root domain like `https://bitbybit.studio`. This allows the crawler to easily find the sitemap.
+          - **❌ Avoid this:** Do not enter a specific sub-page like `https://bitbybit.studio/bitchat` with the crawl box checked. The crawler may fail to locate the sitemap from a deep link.
+        </Tip>
+        **Quick Decision Guide:**
+
+        | Goal                         | URL Type                  | Crawl Option   |
+        | :--------------------------- | :------------------------ | :------------- |
+        | Teach AI one specific post   | `https://myblog.com/post` | **Unchecked**  |
+        | Teach AI entire company info | `https://mycompany.com`   | **Checked** 👍 |
+      </Accordion>
+      <Accordion title="Option C: Image (Visual Assets)">
+        **Teach the AI to send images.**
+
+        1. Select the **Image** tab.
+        2. Upload your JPG/PNG.
+        3. **Critical:** In the "When should the AI send this image?" field, type the trigger prompt (e.g., "Send this when user asks for the dinner menu").
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Next steps
+
+Once your data is uploaded, verify that the agent is reading it correctly.
+
+<CardGroup cols={2}>
+  <Card title="Test in Playground" icon="flask" href="#">
+    Ask questions related to your uploaded PDF or Website to test accuracy.
+  </Card>
+  <Card title="Configure Skillsets" icon="wrench" href="/knowledge-base/configure-skillsets">
+    Enable "Product Recommendations" if you uploaded a product catalog CSV.
+  </Card>
+</CardGroup>
