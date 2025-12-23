@@ -1,0 +1,62 @@
+---
+title: "How to set up AI Tagging"
+description: "Automatically categorize conversations and extract structured data from user interactions."
+---
+
+<Info>
+  **Prerequisites**
+
+  - **Role:** Admin access to the Agent configuration.
+  - **Strategy:** Have a list of categories you want to track (e.g., Sentiment, Priority, Language).
+</Info>
+
+## Why use AI Tagging?
+
+AI Tagging allows you to turn messy chat logs into structured data. Instead of manually reading every conversation, the AI analyzes the chat in real-time and applies labels like "Urgent Support," "High Value Lead," or "Spanish Speaker." This is essential for CRM syncing and analytics.
+
+## Configuration steps
+
+<Steps>
+  <Step title="Access the AI Tagging menu">
+    1. Navigate to your active AI Agent.
+    2. Select **AI Tagging** from the configuration menu.
+    3. You will see a list of active tags (e.g., language, priority).
+  </Step>
+  <Step title="Create a new tag">
+    Click **Add new tag** to define a new category for the AI to track.
+
+    ![Screenshot2025 12 23101209](/images/Screenshot2025-12-23101209.png)
+
+    <AccordionGroup>
+      <Accordion title="Field Definitions">
+        - **Label Name:** The category name (e.g., `Priority`). Keep it short and descriptive.
+        - **Label Description:** Explain to the AI _what_ this tag represents.
+          - _Example:_ "Determine the urgency of the customer's issue."
+        - **Values:** A comma-separated list of possible outputs.
+          - _Example:_ `High, Medium, Low, Critical`
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  <Step title="Define extraction logic">
+    The "Label Description" field acts as a prompt. Be precise to get accurate data.
+
+    - **Good Description:** "Identify if the customer is interested in buying flowers. Values: Yes, No, Maybe."
+    - **Bad Description:** "Check flowers."
+  </Step>
+  <Step title="Save and Activate">
+    Click **Save**. The AI will now evaluate every incoming message against this rule and apply the tag when appropriate.
+  </Step>
+</Steps>
+
+## Next steps
+
+With your data now being structured automatically, use it to trigger workflows.
+
+<CardGroup cols={2}>
+  <Card title="View Analytics" icon="chart-bar" href="/analytics">
+    See the breakdown of your new tags in the dashboard.
+  </Card>
+  <Card title="Configure Skillsets" icon="wrench" href="/knowledge-base/configure-skillsets">
+    Use tags to trigger specific agent skills.
+  </Card>
+</CardGroup>
