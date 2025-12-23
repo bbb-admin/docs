@@ -1,6 +1,6 @@
 ---
 title: "How to configure AI Agent skillsets"
-description: "Enable specialized capabilities like data collection, product recommendations, and order creation."
+description: "Enable specialized capabilities like data collection, follow-up automation, and order creation."
 ---
 
 <Info>
@@ -8,6 +8,10 @@ description: "Enable specialized capabilities like data collection, product reco
 
   - **Status:** You must have an active AI Agent created in AI Studio.
 </Info>
+
+> **⚠️ Important: FAQ Skillset Deprecation**
+>
+> Please note that the **FAQ skillset will be deprecated soon**. We recommend moving your existing FAQ files to the new **Knowledge Base** to ensure continued functionality.
 
 ## Why use Skillsets?
 
@@ -48,24 +52,27 @@ Skillsets determine the functional actions your AI Agent can perform. Unlike a s
       </Accordion>
     </AccordionGroup>
   </Step>
-  <Step title="Enable Product Recommendations">
-    Allow the AI Agent to suggest items from your Shopify store based on user preferences.
+  <Step title="Follow-up & Auto-resolve">
+    Automate conversation lifecycles by nudging unresponsive users and automatically closing inactive tickets. 
+
+    ![Screenshot2025 12 23115211](/images/Screenshot2025-12-23115211.png)
 
     <AccordionGroup>
-      <Accordion title="General Prompt">
-        Enter a prompt to control the recommendation logic.
+      <Accordion title="1. Follow up (Re-engagement)">
+        **Goal:** Re-engage a customer who has stopped responding.
 
-        - _Example:_ "Only recommend items that are currently in stock. Always display the product image first."
+        - **Enable:** Toggle the switch in the top right.
+        - **Timer:** Set the duration (e.g., `1 Hours`) to wait before sending a nudge.
+        - **Message:** Customize the text (e.g., "Hi, do you have any other questions?").
+      </Accordion>
+      <Accordion title="2. Auto-resolve (Closure)">
+        **Goal:** Keep your ticket queue clean by closing abandoned conversations.
 
-        ![Enter general prompt for product recommendation](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce49c949caa92b0ca502f8_AD_4nXd3q6_X6-mvlXPxdhQHItGFy-8ac91sf59xn3WpoOZgYctAtTlkPSsXAWiKo2C84OR9gyH6BYK0DfAo07d-G3qC8pu1LI1Lx-QtRPuJiDN--9uXh4BV-MSeBlDzhBhcHJklSGZeMQ.png)
+        - **Enable:** Toggle the switch in the top right.
+        - **Timer:** Set the duration (e.g., `1 Hours`) to wait after the _last chat_ before automatically resolving the ticket.
+        - **Closure Message:** Optional text sent when the ticket closes (e.g., "What would be your suggestion for this AI Agent?").
       </Accordion>
     </AccordionGroup>
-  </Step>
-  <Step title="Enable Order Skills">
-    Activate high-value commerce tools.
-
-    - **Order Tracking:** Provides real-time shipping status updates.
-    - **Create Order:** Automatically generates orders and checkout links based on the conversation.
   </Step>
 </Steps>
 
