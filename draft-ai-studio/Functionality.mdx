@@ -5,19 +5,13 @@ description: "Enable specialized capabilities like data collection, product reco
 
 <Info>
   **Prerequisites**
-  * **Status:** You must have an active AI Agent created in AI Studio.
+
+  - **Status:** You must have an active AI Agent created in AI Studio.
 </Info>
 
 ## Why use Skillsets?
+
 Skillsets determine the functional actions your AI Agent can perform. Unlike a standard text-based bot, an agent with skillsets enabled can actively capture leads, look up shipping data, and process sales directly in the chat.
-
-## Skillset vs General Prompt
-Understand how skillsets differ from the agent's general instructions.
-
-| Feature | Function | Example |
-| :--- | :--- | :--- |
-| **General Prompt** | Defines personality and broad rules. | "Be polite and helpful." |
-| **Skillset** | Defines specific executable actions. | "Collect email address" or "Create Shopify Order". |
 
 ## Configuration steps
 
@@ -27,53 +21,51 @@ Understand how skillsets differ from the agent's general instructions.
     2. Scroll down to the **Skillset** section.
     3. Toggle **On** the skills you wish to enable.
 
-    <img src="https://mintcdn.com/bitbybit-new/cfLlURkaH-jgIgCm/images/Screenshot2025-12-19163800.png?fit=max&auto=format&n=cfL1URkaH-jgIgCm&q=85&s=56a0686cac5bdd910b5a4c9c1323d20a" alt="Screenshot: The Skillset selection screen" />
+    ![Screenshot2025 12 23095237](/images/Screenshot2025-12-23095237.png)
   </Step>
-
   <Step title="Enable Data Collection">
     Use this skill to gather customer information for leads or retargeting.
-    
+
     <AccordionGroup>
       <Accordion title="1. Select Primary Data">
         Select the checkboxes for the specific data you need (e.g., Email, Name).
-        
-        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d826753f7b9f0c1447_AD_4nXe-wevuprKFwIvgfa18_-4YESYIz3KgGifyZzAptCALkQv4gcCY3hvvLlD70UwF7pThf3FGNQMKO7JfTDGg0vDhtp5zu3AQz_bbItwf944Ktqiui9Kg9qnkVIPf5UEoDM46i8Lz.png" alt="Click Checkbox on your preferred customer information" />
+
+        ![Click Checkbox on your preferred customer information](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d826753f7b9f0c1447_AD_4nXe-wevuprKFwIvgfa18_-4YESYIz3KgGifyZzAptCALkQv4gcCY3hvvLlD70UwF7pThf3FGNQMKO7JfTDGg0vDhtp5zu3AQz_bbItwf944Ktqiui9Kg9qnkVIPf5UEoDM46i8Lz.png)
       </Accordion>
-      
       <Accordion title="2. Add Instructions">
         Type specific instructions in the data field to guide **how** the AI Agent asks for the info.
-        
-        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d88f2c435d499aed7e_AD_4nXfqaEb0eohHicP3oNDsUFFMtFqkbNmfD1SK-IxFn356KBmD2yUgSaaC9dou5rzwQB7R5bExYAwaszLgRfmbjB4G_OsvBtYxebLMkTXQ11_HNhK5Yj6giV6VkdLCSTC0zkwKViFMtA.png" alt="Type additional instructions inside the data field" />
+
+        ![Type additional instructions inside the data field](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d88f2c435d499aed7e_AD_4nXfqaEb0eohHicP3oNDsUFFMtFqkbNmfD1SK-IxFn356KBmD2yUgSaaC9dou5rzwQB7R5bExYAwaszLgRfmbjB4G_OsvBtYxebLMkTXQ11_HNhK5Yj6giV6VkdLCSTC0zkwKViFMtA.png)
       </Accordion>
-      
       <Accordion title="3. Extra & Custom Fields">
         In addition to primary data, you can enable extra fields or create custom ones (like "Shoe Size") in the **Customers** menu.
-        
-        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d8ba85b0a643d151a0_AD_4nXe2SAqsFWR-udQEfLIDxuVy9YZtUdIbi-MlxRpI0Haz8KxxoULBtsUwqbKLmax2rU5_kMjiZT_-ZbddLH8BXaSVw8ArKCvySMNbPW5D7mv39nQralcsElLchVX56VxFQVnuEpAAlg.png" alt="Enable extra fields then provide data description and instruction" />
-        
-        *To add a custom field:*
-        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d9402a352f4c55439d_AD_4nXcv0yuCqKneJDoSccP1E7DBmVwv0IzJCngmNrBgDSDhvyh3qDvzTqpYnf2YEiY1bNQ-xy0CP5VjIBvAO6E9eV0I2EO_cq6gJjMHxw7Myhb3XgGqRX0LMWBURZ_dCx_2qKy248rKrw.png" alt="Add custom fields by clicking Add new field" />
+
+        ![Enable extra fields then provide data description and instruction](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d8ba85b0a643d151a0_AD_4nXe2SAqsFWR-udQEfLIDxuVy9YZtUdIbi-MlxRpI0Haz8KxxoULBtsUwqbKLmax2rU5_kMjiZT_-ZbddLH8BXaSVw8ArKCvySMNbPW5D7mv39nQralcsElLchVX56VxFQVnuEpAAlg.png)
+
+        _To add a custom field:_
+
+        ![Add custom fields by clicking Add new field](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce47d9402a352f4c55439d_AD_4nXcv0yuCqKneJDoSccP1E7DBmVwv0IzJCngmNrBgDSDhvyh3qDvzTqpYnf2YEiY1bNQ-xy0CP5VjIBvAO6E9eV0I2EO_cq6gJjMHxw7Myhb3XgGqRX0LMWBURZ_dCx_2qKy248rKrw.png)
       </Accordion>
     </AccordionGroup>
   </Step>
-
   <Step title="Enable Product Recommendations">
     Allow the AI Agent to suggest items from your Shopify store based on user preferences.
-    
+
     <AccordionGroup>
       <Accordion title="General Prompt">
         Enter a prompt to control the recommendation logic.
-        * *Example:* "Only recommend items that are currently in stock. Always display the product image first."
-        
-        <img src="https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce49c949caa92b0ca502f8_AD_4nXd3q6_X6-mvlXPxdhQHItGFy-8ac91sf59xn3WpoOZgYctAtTlkPSsXAWiKo2C84OR9gyH6BYK0DfAo07d-G3qC8pu1LI1Lx-QtRPuJiDN--9uXh4BV-MSeBlDzhBhcHJklSGZeMQ.png" alt="Enter general prompt for product recommendation" />
+
+        - _Example:_ "Only recommend items that are currently in stock. Always display the product image first."
+
+        ![Enter general prompt for product recommendation](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/67ce49c949caa92b0ca502f8_AD_4nXd3q6_X6-mvlXPxdhQHItGFy-8ac91sf59xn3WpoOZgYctAtTlkPSsXAWiKo2C84OR9gyH6BYK0DfAo07d-G3qC8pu1LI1Lx-QtRPuJiDN--9uXh4BV-MSeBlDzhBhcHJklSGZeMQ.png)
       </Accordion>
     </AccordionGroup>
   </Step>
-  
   <Step title="Enable Order Skills">
     Activate high-value commerce tools.
-    * **Order Tracking:** Provides real-time shipping status updates.
-    * **Create Order:** Automatically generates orders and checkout links based on the conversation.
+
+    - **Order Tracking:** Provides real-time shipping status updates.
+    - **Create Order:** Automatically generates orders and checkout links based on the conversation.
   </Step>
 </Steps>
 
