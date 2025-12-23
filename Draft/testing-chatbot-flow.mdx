@@ -4,33 +4,23 @@ description: "Automate customer interactions on WhatsApp and Instagram using bit
 ---
 
 <Info>
-**Prerequisites**
-* **Access:** Log in to the [bitChat dashboard](https://app.bitbybit.studio/bitchat).
-* **Connection:** Ensure you have at least one channel (WhatsApp or Instagram) connected.
+  **Prerequisites**
+
+  - **Access:** Log in to the [bitChat dashboard](https://app.bitbybit.studio/bitchat).
+  - **Connection:** Ensure you have at least one channel (WhatsApp or Instagram) connected.
 </Info>
 
-For a visual walkthrough, check out our **[bitbybit How-to Playlist](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr)** or watch the video below:
+For a visual walkthrough, check out our [**bitbybit How-to Playlist**](https://www.youtube.com/playlist?list=PLRL1ZR6nJQefSC-CAWzD5cRr-kwnf6JAr) or watch the video below:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tuuXDzGGYgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tuuXDzGGYgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
 ## Why create a chatbot flow
 
 Chatbot flows allow you to automate responses to common queries, categorize tickets automatically, and guide customers through a menu system without human intervention.
 
-
-
 **Channel Capabilities:**
 
 The available features depend on which channel you are using.
-
-| Feature | WhatsApp Business App / Instagram | WhatsApp Cloud API |
-| :--- | :--- | :--- |
-| **Trigger Logic** | Keywords & Fallbacks | Keywords & Fallbacks |
-| **Reply Types** | Simple Text List | **Interactive Buttons** or **Lists** |
-| **Button Limits** | N/A | Max 3 Buttons / Max 10 List Items |
-| **"Back" Button** | ✅ Supported | ❌ Not native (Requires flow looping) |
-
----
 
 ## Configuration steps
 
@@ -43,37 +33,34 @@ Follow these steps to build your automation flow.
 
     ![Screenshot: The chatbot dashboard highlighting the Create new chatbot button](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a2d7295996d732efcd1f9_AD_4nXeYdJYahJ-qXaxbu_zdqq6eRRHkb1zv6q5VSojqDuUnZP-4eIQCQ1ukcC7Q8KmakzhTTv6PWOnD7cIjXZsxwQhSWbibD44cvs-WLRFsfI3IcB3p2UayC3rSKPZvVvTCT68cpaSf_8hZ45hIhnytb3Dzxf8.png)
   </Step>
-
   <Step title="Select the channel">
     Choose the channel for this specific flow. The settings will adjust based on your selection.
 
     ![Screenshot: The channel selection screen showing WhatsApp and Instagram options](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a2d7267c10f74f139a768_AD_4nXcBTDwgF9qq2jZuaIUDFm1q0RMWUvltvGMvyz4xWnmcl7Q-yQ29FU5tu0tydMLaMq2eD8BnCO6UEzRFKQMMfrCwOTGCow755Q5mR4lgcd4gOVK0X_rdm6ayyTGCesth5NhydgjgKHdUNhUEU5Pl16nLTIw.png)
   </Step>
-
   <Step title="Configure the Trigger">
     The "Trigger" is the first message that starts the bot. Configure the conditions below.
 
     <AccordionGroup>
       <Accordion title="Keyword Settings">
-        * **Fallback Message:** Choose what happens if the user replies with something the bot doesn't understand later in the flow.
-        * **Keyword Condition:**
-            * **Is contain:** Triggers if the word is anywhere in the sentence (e.g., "Hello" triggers on "Hello there").
-            * **Is exact:** Triggers only on an exact match.
-        * **Input Keyword:** Type your keywords and press Enter.
+        - **Fallback Message:** Choose what happens if the user replies with something the bot doesn't understand later in the flow.
+        - **Keyword Condition:**
+          - **Is contain:** Triggers if the word is anywhere in the sentence (e.g., "Hello" triggers on "Hello there").
+          - **Is exact:** Triggers only on an exact match.
+        - **Input Keyword:** Type your keywords and press Enter.
 
         ![Screenshot: The keyword condition settings](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a38bd6389266d151b3603_AD_4nXdEiSF7joBa5N06CRsvf76tBNDhg74qxcAgeTZf1x0y6Yn1_RVDisd4_7O18UF7BSUPFB41qBfEOI0aRac1agG98yf2QGAugcVbKp50En2Set7hqWrSVwOpPHArJ0gLMVyLmDWljeM1qw_8LrwJht-yO5ZS.png)
-        
+
         ![Screenshot: The keyword input field](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a391b69ba41945e7cd542_AD_4nXcgzLLIqq5Pbdjw8Rg291GnXWGAOwmUZ7wIVlKA-4T0OR1xzrh_kgmt_fYyhX0ZR-OTvFM2xqjreK466P37qHwnSpo3thd4b6Xtxl94O8-pRlkWYzH2kS10DiYWUFERe3yuS_9inwHnfQEwASD6QGhbaNk.png)
       </Accordion>
       <Accordion title="Categorization & Media">
-        * **Ticket Category/Tag:** Automatically tag customers who trigger this flow (e.g., "Potential Lead").
-        * **Media:** Drag and drop an image to send a visual response along with your text.
-        
+        - **Ticket Category/Tag:** Automatically tag customers who trigger this flow (e.g., "Potential Lead").
+        - **Media:** Drag and drop an image to send a visual response along with your text.
+
         ![Screenshot: The settings for ticket categorization and media upload](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a2d7269c590bec3297015_AD_4nXc_mZQGLrg9qsZQwER6znRElNs8mCKA0xNvEKl2laOLxZavuFZ8Uo2UFZ-nE13CDttr2lNrgh3wM2UE4HGAJPAHXsVlPckwawHp3GY60X3dXMjaff-wvQeCotiNAOzuJy0g0TAlB5EtDBeIZj9tomkhBVgK.png)
       </Accordion>
     </AccordionGroup>
   </Step>
-
   <Step title="Configure the Reply Options">
     Define the message the user receives and the options they can click. This step varies by channel.
 
@@ -81,34 +68,31 @@ Follow these steps to build your automation flow.
       <Accordion title="For WhatsApp App & Instagram">
         1. **Message:** Type your response text.
         2. **Reply Options:** List the text options users can reply with.
-        
+
         ![Screenshot: Reply configuration for WhatsApp App](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a39c774131814a39da805_AD_4nXevrkq_X9KPpfsShg0UOVtgoq2SkPJ6T2WYrQQirrmJbSlwuEnDlNdysI0Z5TGMuPik107rLpy-RAGXaReIFfM4jn-diyDyWxWyKti1CLHR9bZpBtsK7M-Vcn3iBr9ms4eJciAmrOuGZDWqQ5ElgHAKiJSJ.png)
       </Accordion>
       <Accordion title="For WhatsApp Cloud API">
         1. **Message:** Type your response text.
         2. **Reply Options:** Choose a format.
-            * **Buttons:** Create up to 3 clickable buttons.
-            * **Options List:** Create a menu with up to 10 items.
-        
+           - **Buttons:** Create up to 3 clickable buttons.
+           - **Options List:** Create a menu with up to 10 items.
+
         ![Screenshot: Comparison between Buttons and Options List in Cloud API](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a33fa5ed0c265c7df39cd_AD_4nXcBULWHifOQ5ItLdfUIeROSt87eu2uKaOWwaU1JFxZR4fn34Z9WxXehMZT8yiHfR-XvyEFqkM9ioDoWDrvQ-sQTsjq0EWjCQZvLeiy-iVMPaooFZ2osIzUn8FsYQlXRf15VQg2NhQYV0IDHcguTo33CEGuh.png)
       </Accordion>
     </AccordionGroup>
-    
     Click **Save** to enter the flow editor.
   </Step>
-
   <Step title="Build the Next Flow">
     You will now see the Flow Board.
-    
+
     1. Click on one of the **Reply Options** you just created.
     2. Choose an outcome:
-        * **Action:** Perform a backend task (e.g., Add Tag).
-        * **Message:** Send another message (Continue the conversation).
-        * **Back (App/IG only):** Return to the previous menu.
-    
+       - **Action:** Perform a backend task (e.g., Add Tag).
+       - **Message:** Send another message (Continue the conversation).
+       - **Back (App/IG only):** Return to the previous menu.
+
     ![Screenshot: Creating the next flow step on the board](https://cdn.prod.website-files.com/659655f5b20d395a5c69efcf/669a2d72ffd0c6497eec0658_AD_4nXd8wviwyipQwP8U0aSnHA6lT15ki1bzrK_zwriqhDXBJiOaJ55dw0ggUCdecj15sFiaG_cJ6iFzyfZFrPboeIPT8OoUj9UbkqTr_tZjjn_vjzMsZgg2yTimFe1P1f4LdPi_uk9cXWQ_JtV1bYSk8AIocvgV.png)
   </Step>
-
   <Step title="Save and Activate">
     1. Click the **Save** icon in the top right.
     2. Toggle the switch next to the title to **Active**.
