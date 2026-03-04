@@ -18,12 +18,12 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": [              
-    "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
-    "bitcrm/how-to-create-and-connect-WhatsApp-Coex-with-bitbybit",
-    "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
-    "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-facebook"
- ]
+            "pages": [
+              "bitcrm/how-to-create-and-connect-whatsapp-cloud-api",
+              "bitcrm/how-to-create-and-connect-WhatsApp-Coex-with-bitbybit",
+              "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-the-app",
+              "bitcrm/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-from-facebook"
+            ]
           },
           {
             "group": "Creating and Editing a Campaign",
@@ -72,7 +72,8 @@
             "group": "Report & Analytics",
             "pages": [
               "bitcrm/understanding-whatsapp-campaign-metrics",
-              "bitcrm/understanding-automation-metrics-pending","bitcrm/how-to-View-Campaign-Analytics-in-bitCRM",
+              "bitcrm/understanding-automation-metrics-pending",
+              "bitcrm/how-to-View-Campaign-Analytics-in-bitCRM",
               "bitcrm/understanding-push-app-notification-metrics-pending"
             ]
           },
@@ -82,7 +83,8 @@
               "bitcrm/how-to-create-a-review-request-scenario-with-stamped-io",
               "bitcrm/how-to-create-a-review-request-scenario-with-yotpo",
               "bitcrm/how-to-integrate-bitcrm-with-shopify",
-              "bitcrm/bitbybit-x-n8n"
+              "bitcrm/bitbybit-x-n8n",
+              "bitcrm/bitbybit-open-api-documentation"
             ]
           }
         ]
@@ -93,15 +95,15 @@
           {
             "group": "Getting Started",
             "pages": [
-    "bitchat/how-to-create-and-connect-whatsapp-cloud-api-with-bitbybit",
-    "bitchat/how-to-create-and-connect-bitbybit-using-meta-coexistance",
-    "bitchat/how-to-integrate-bitchat-with-whatsapp-sandbox", 
-    "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-the-app",
-    "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-facebook",
-    "bitchat/how-to-integrate-your-instagram-business-with-bitchat",
-    "bitchat/how-to-integrate-facebook-messenger-with-bitchat",
+              "bitchat/how-to-create-and-connect-whatsapp-cloud-api-with-bitbybit",
+              "bitchat/how-to-create-and-connect-bitbybit-using-meta-coexistance",
+              "bitchat/how-to-integrate-bitchat-with-whatsapp-sandbox",
+              "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-the-app",
+              "bitchat/how-to-add-a-profile-picture-to-your-whatsapp-cloud-api-via-facebook",
+              "bitchat/how-to-integrate-your-instagram-business-with-bitchat",
+              "bitchat/how-to-integrate-facebook-messenger-with-bitchat",
               "bitchat/how-to-integrate-kiriminaja-with-bitbybit"
-  ]
+            ]
           },
           {
             "group": "Working with Livechat",
@@ -348,13 +350,13 @@
           {
             "group": "Getting Started",
             "pages": [
-        "ai-studio/getting-started-with-your-ai-agent",
-        "ai-studio/how-to-setup-ai-agent-in-ai-studio",
-        "ai-studio/how-to-setup-skillset-in-ai-studio",
-        "ai-studio/how-to-add-your-data-to-ai-knowledge-base",
-        "ai-studio/how-to-configure-ai-tagging",
-        "ai-studio/best-practice-to-prompt-your-ai-agent"
-      ]
+              "ai-studio/getting-started-with-your-ai-agent",
+              "ai-studio/how-to-setup-ai-agent-in-ai-studio",
+              "ai-studio/how-to-setup-skillset-in-ai-studio",
+              "ai-studio/how-to-add-your-data-to-ai-knowledge-base",
+              "ai-studio/how-to-configure-ai-tagging",
+              "ai-studio/best-practice-to-prompt-your-ai-agent"
+            ]
           }
         ]
       }
